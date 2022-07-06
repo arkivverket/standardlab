@@ -16,7 +16,7 @@ labels: behov
 ### Område/prosess
 <!-- Hva blir enklere/bedre for forvaltningen? Hva blir enklere/bedre for leverandørene? Hva blir enklere/bedre for Arkivverket? (Eksempler: Utveksling av dokumentasjon, gjenfinning av dokumentasjon, bevarings- og kassasjonsvurderinger, uttrekks- og mottaksprosesser, bevaring av dokumentasjon, tilgjengeliggjøring av dokumentasjon) -->
 
-## Målgrupper
+### Målgrupper
 <!-- Hvem (hvilken/hvilke brukergrupper) tjener på at løsning på behovet blir normert? -->
 
 ## Hastegrad
