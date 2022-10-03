@@ -27,7 +27,7 @@ Her vurderes det i hvilken grad det å løse behovet gir verdi i form av gevinst
 - Nytte for forvaltning: Hvor stor andel av forvaltningen er dette nyttig for
 - Nytte for Arkivverket (og kommunene som bevaringsinstitusjoner): Bidrag til behov ved uttrekks- og mottaksprosesser
 - Nytte for Arkivverket (og kommunene som bevaringsinstitusjoner): Bidrag til behov for bevaring
-- Nytte for Arkivverket (og kommunene ): Bidrag til behov for tilgjengeliggjøring
+- Nytte for Arkivverket (og kommunene som bevaringsinstitusjoner): Bidrag til behov for tilgjengeliggjøring
 - Nytte for Arkivverket: Bidrag til behov ved tilsyn
 - Innovasjon: Bidrag til endring i eksisterende løsninger i markedet
 - Innovasjon: Antatt påvirkning på at flere aktører kommer inn på markedet
