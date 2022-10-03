@@ -1,6 +1,6 @@
 ﻿# Kvalifikasjons- og prioriteringskriterier for behov
 
-[![Generic badge](https://img.shields.io/badge/Status-Forslag-yellow.svg)](../README.md#statuser)
+[![Generic badge](https://img.shields.io/badge/Status-Besluttet-darkgreen.svg)](../README.md#statuser)
 
 Dette dokumentet beskriver de kriteriene som skal legges til grunn når teamet skal vurdere hvilke behov som er viktige nok til at de skal jobbes videre med (***behovskvalifikasjon***) og styre rekkefølgen behov skal jobbes med (***behovsprioritering***).
 
