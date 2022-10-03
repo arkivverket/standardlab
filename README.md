@@ -4,6 +4,10 @@ Standardisering for dokumentasjonsforvaltning og arkiv i kjølvannet etter Noark
 
 Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https://github.com/arkivverket/standardlab/issues), og etterhvert til å dele styrende dokumenter for arbeidet og standarder vi jobber med - både under utvikling og ferdigstilte.
 
+## Styrende dokumenter
+
+- [Prioriteringskriterier](/styrende/prioriteringskriterier.md) - hvilke faktorer legges til grunn for vurderingen av de ulike behovene opp mot hverandre.
+
 ## Statuser
 
 Vi bruker status-markering på de ulike dokumentene for å vise hvor langt de er kommet.
