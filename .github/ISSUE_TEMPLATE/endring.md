@@ -6,7 +6,8 @@ labels: endringsønske
 <!-- Merk at hvis du har et konkret forslag, legg gjerne inn en pull request istedenfor en issue -->
 
 ## Gjelder dokument(er)
-<!-- Hvilke(t) dokument(er) foreslår du en endring av -->
+
+<!-- Hvilke(t) dokument(er) (som ligger på dette GitHub-området) foreslår du en endring av? -->
 
 ## Hva bør endres?
 <!-- Hva foreslår du at endres? Er det et tillegg, en sletting eller endring av en formulering? -->
