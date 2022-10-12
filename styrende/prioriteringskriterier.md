@@ -12,7 +12,7 @@ $$ Prioritering = {Gjennomførbarhet\*(2\*Verdi+Hastegrad+Risiko)} $$
 
 Det er antatt at samme kriterier vil være relevant for behovskvalifikasjon, og at dette vil medføre at det settes en terskelverdi for hva slags score en må oppnå for at tiltak skal vurderes videre. Vurderingene av kriteriene gjøres relativt, ved at ett behov brukes som baseline for det enkelte kriteriet, og øvrige behov scores utfra relativ forskjell til denne baselinen.
 
-Vi deler fortløpende resultatet av forrige prioritering. Første prioritering skjer i uke 40 2022.
+Vi deler fortløpende [resultatet av forrige prioritering](veikart.md).
 
 ## Verdi
 
