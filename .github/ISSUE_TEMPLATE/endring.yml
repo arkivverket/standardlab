@@ -19,11 +19,11 @@ body:
     id: type
     attributes:
       label: Hva slags endring?
-    multiple: false
-    options:
-      - label: Endring
-      - label: Sletting
-      - label: Tillegg
+     multiple: false
+     options:
+       - label: Endring
+       - label: Sletting
+       - label: Tillegg
 
   - type: textarea
     id: beskrivelse
