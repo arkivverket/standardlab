@@ -1,0 +1,54 @@
+name: "Behov"
+description: "Meld inn et behov for ny standard eller utvidelse av eksisterende standard"
+labels: ["behov"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Se gjerne etter om behovet allerede er beskrevet ved å sjekke lista over issues.
+  
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Beskrivelse av behov
+      description: Legg inn en kort beskrivelse av behovet slik du opplever det.
+    validations:
+      required: true
+      
+  - type: textarea
+    id: maal-motivasjon
+    attributes:
+      label: Mål/motivasjon
+      description: Hvordan ønsker du at situasjonen er etter normering? Hvorfor er det viktig at dette normeres?
+
+  - type: textarea
+    id: suksesskriterier
+    attributes:
+      label: Suksesskriterier/måling
+      description: Hvordan vet vi at behovet er dekket?   
+ 
+  - type: textarea
+    id: omraade
+    attributes:
+      label: Område/prosess
+      description: Hva blir enklere/bedre for forvaltningen? Hva blir enklere/bedre for leverandørene? Hva blir enklere/bedre for Arkivverket? (Eksempler; Utveksling av dokumentasjon, gjenfinning av dokumentasjon, bevarings- og kassasjonsvurderinger, uttrekks- og mottaksprosesser, bevaring av dokumentasjon, tilgjengeliggjøring av dokumentasjon) 
+
+  - type: textarea
+    id: maalgrupper
+    attributes:
+      label: Målgrupper
+      description: Hvem (hvilken/hvilke brukergrupper) tjener på at løsning på behovet blir normert?
+
+  - type: textarea
+    id: hastegrad
+    attributes:
+      label: Hastegrad
+      description: Haster det å finne løsning på behovet, og i så fall hvorfor? (Hvis det ikke haster, skriv gjerne «Lav hastegrad»)
+
+  - type: textarea
+    id: loesningsforslag
+    attributes:
+      label: Forslag til løsning
+      description: Hva tror du kan være en løsning? Hva har eventuelt vært forsøkt allerede? (Hvis du ikke har noe forslag, skriv gjerne «Må utredes»)
+
+
