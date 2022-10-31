@@ -1,0 +1,40 @@
+name: Endring
+description: Meld inn et ønske om justering av en standard eller et styrende dokument.
+labels: ["endringsønske"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Merk at hvis du har et konkret forslag, legg gjerne inn en pull request istedenfor en issue. Se også gjerne etter om ønsket allerede er beskrevet ved å sjekke lista over issues.
+
+ - type: textarea
+    id: dokument
+    attributes:
+      label: Gjelder dokument(er)
+      description: Hvilke(t) dokument(er) (som ligger på dette GitHub-området) foreslår du en endring av?
+    validations:
+      required: true
+
+ - type: dropdown
+    id: type
+    attributes:
+      label: Hva slags endring?
+    multiple: false
+    options:
+      - label: Endring
+      - label: Sletting
+      - label: Tillegg
+
+  - type: textarea
+    id: beskrivelse
+    attributes:
+      label: Hva bør endres?
+      description: Hva foreslår du at endres?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: begrunnelse
+    attributes:
+      label: Hvorfor bør det endres?
+      description: Beskriv hvorfor det er hensiktsmessig å gjøre endringen du foreslår
