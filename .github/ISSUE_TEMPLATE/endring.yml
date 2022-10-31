@@ -21,9 +21,9 @@ body:
       label: Hva slags endring?
       multiple: false
       options:
-       - label: Endring
-       - label: Sletting
-       - label: Tillegg
+       - Endring
+       - Sletting
+       - Tillegg
 
   - type: textarea
     id: beskrivelse
