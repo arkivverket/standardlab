@@ -19,8 +19,8 @@ body:
     id: type
     attributes:
       label: Hva slags endring?
-     multiple: false
-     options:
+      multiple: false
+      options:
        - label: Endring
        - label: Sletting
        - label: Tillegg
