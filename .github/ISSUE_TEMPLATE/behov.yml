@@ -1,5 +1,5 @@
-name: Behov
-description: Meld inn et behov for ny standard eller utvidelse av eksisterende standard
+name: "Behov"
+description: "Meld inn et behov for ny standard eller utvidelse av eksisterende standard"
 labels: ["behov"]
 body:
   - type: markdown
