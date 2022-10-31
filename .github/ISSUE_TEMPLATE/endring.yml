@@ -1,5 +1,5 @@
 name: "Endring"
-description: "Meld inn et ønske om justering av en standard eller et styrende dokument.""
+description: "Meld inn et ønske om justering av en standard eller et styrende dokument."
 labels: ["endringsønske"]
 body:
   - type: markdown
