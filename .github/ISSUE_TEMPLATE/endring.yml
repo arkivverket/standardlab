@@ -7,7 +7,7 @@ body:
       value: |
         Merk at hvis du har et konkret forslag, legg gjerne inn en pull request istedenfor en issue. Se også gjerne etter om ønsket allerede er beskrevet ved å sjekke lista over issues.
 
- - type: textarea
+  - type: textarea
     id: dokument
     attributes:
       label: Gjelder dokument(er)
@@ -15,7 +15,7 @@ body:
     validations:
       required: true
 
- - type: dropdown
+  - type: dropdown
     id: type
     attributes:
       label: Hva slags endring?
