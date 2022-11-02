@@ -10,9 +10,9 @@ Utgangspunktet er at det er besluttet hvilket område (arkiv og dokumentasjonsfo
 
 ## Fase 1: Behov
 
-I denne fasen gjør vi først innhenting av behov - både aktivt i form av intervjuer med relevante interessenter, og passivt ved at alle kan [melde inn behov her på GitHub](https://github.com/arkivverket/standardlab/issues/new?assignees=&labels=behov&template=behov.yml). I tillegg registrerer vi behov vi har sett selv som følge av hvordan situasjonen for standardisering er.
+I denne fasen gjør vi først innhenting av behov - både aktivt i form av intervjuer med relevante interessenter, og passivt ved at alle kan [melde inn behov her på GitHub](https://github.com/arkivverket/standardlab/issues/new?assignees=&labels=behov&template=behov.yml) eller på e-post. I tillegg registrerer vi behov vi har sett selv som følge av hvordan situasjonen for standardisering er.
 
-Deretter gjør vi arbeid for å sikre at behovet er tilstrekkelig beskrevet for å kunne vurderes. Vi gjør jevnlige vurderinger av hvilke behov vi skal jobbe aktivt med. Dette skjer etter [fastsatte prioriteringskriterier](prioriteringskriterier.md), og vi deler [resultatene](veikart.md) fortløpende. Det gjøres nye vurderinger av de ulike behovene for hver prioriteringsrunde, fordi forståelsen av behovene vil utvikles over tid.
+Deretter gjør vi arbeid for å sikre at behovet er tilstrekkelig beskrevet for å kunne vurderes. Vi gjør jevnlige vurderinger av hvilke behov vi skal jobbe aktivt med. Dette skjer etter [fastsatte prioriteringskriterier](prioriteringskriterier.md), og vi deler [resultatene](veikart.md) fortløpende. Det gjøres nye vurderinger av alle behovene for hver prioriteringsrunde, fordi forståelsen av behovene vil utvikles over tid.
 
 ## Fase 2: Utvikling
 
