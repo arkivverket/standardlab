@@ -6,7 +6,8 @@ Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https:/
 
 ## Styrende dokumenter
 
-- [Mål og prinsipper](/styrende/maal-og-prinsipper.md) - hva vi ønsker å oppnå og hvordan vi ser for oss å jobbe for å nå målene
+- [Mål og prinsipper](/styrende/maal-og-prinsipper.md) - hva vi ønsker å oppnå og prinsipper for hvordan vi ser for oss å jobbe for å nå målene
+- [Metode](/styrende/metode.md) - en mer konkret beskrivelse av hvordan vi jobber
 - [Prioriteringskriterier](/styrende/prioriteringskriterier.md) - hvilke faktorer legges til grunn for vurderingen av de ulike behovene opp mot hverandre.
 - [Veikart](/styrende/veikart.md) - resultatet av forrige prioriteringsrunde, som er vår beste hypotese for hvilken rekkefølge vi vil løse behovene i.
 
