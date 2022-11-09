@@ -20,7 +20,7 @@
 
 ### Opprinnelig behovsbeskrivelse
 
-[Issue #12: Autentisitetsstøtte](https://github.com/arkivverket/standardlab/issues/12)]
+[Issue #12: Autentisitetsstøtte](https://github.com/arkivverket/standardlab/issues/12)
 
 ### Oppdatert/utdypet målbeskrivelse
 
