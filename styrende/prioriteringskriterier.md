@@ -10,7 +10,7 @@ Utgangspunktet for kriteriene er forslaget fra forprosjektet om følgende formel
 
 $$ Prioritering = {Gjennomførbarhet\*(2\*Verdi+Hastegrad+Risiko)} $$
 
-Det er antatt at samme kriterier vil være relevant for behovskvalifikasjon, og at dette vil medføre at det settes en terskelverdi for hva slags score en må oppnå for at tiltak skal vurderes videre. Vurderingene av kriteriene gjøres relativt, ved at ett behov brukes som baseline for det enkelte kriteriet, og øvrige behov scores utfra relativ forskjell til denne baselinen.
+Det er antatt at samme kriterier vil være relevant for behovskvalifikasjon, og at dette vil medføre at det settes en terskelverdi for hva slags score en må oppnå for at tiltak skal vurderes videre. Vurderingene av kriteriene gjøres relativt, ved at ett behov brukes som baseline for det enkelte kriteriet, og øvrige behov scores utfra relativ forskjell til denne baselinen. Det benyttes en skala fra 2 (laveste score) til 6 (høyeste score). [^1]
 
 Vi deler fortløpende [resultatet av forrige prioritering](veikart.md).
 
@@ -79,3 +79,5 @@ Faktorer som bør vurderes:
 - Tror vi at vi kan lage et tiltak som treffer?
 - Tror vi at det er et marked for tiltaket?
 - Er opplevd kost/nytte (jf. verdi) for tiltaket god nok?
+
+[^1]: Det ble i første prioriteringsrunde brukt en skala fra 1 til 5. Denne ble justert fra og med prioriteringsrunde 2, for å gi et bedre bilde på den relative forskjellen mellom de høyest og lavest prioriterte behovene.
