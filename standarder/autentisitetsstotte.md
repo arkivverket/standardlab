@@ -23,7 +23,7 @@
 
 ### Normeringsgrad
 
-Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er ikke aktuelt, og vi kan vurdere å bruke anbefalt standard.
+Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er neppe aktuelt, og vi kan vurdere å bruke anbefalt standard.
 
 ### Hypotese for løsning
 
