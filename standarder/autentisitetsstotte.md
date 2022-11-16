@@ -31,19 +31,19 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er m
 
 > Vi skriver "standard" her, men mener "normeringsprodukt"
 
-Ønsket resultat av stanard:
+Ønsket resultat av standard:
 * Lesere vet hvor de har behov for autentisitet av dokumentasjon i sitt arbeid
 * Lesere kan beskrive hva de skal gjøre for å sikre autentisitet i sitt arbeid
 * Lesere har en ideé om hvor de skal se etter mer informasjon for å sikre autentisitet i sitt arbeid
-* Lesere vet hvordan de skal gå frem for å gi tilbakemelding på standard
-* Lesere vet hvor de skal gå om det er mer ifm bruk av standard de lurer på
+* _Lesere vet hvordan de skal gå frem for å gi tilbakemelding på standard_
+* _Lesere vet hvor de skal gå om det er mer ifm bruk av standard de lurer på_
 * Standard dekker alle tilfeller når autentisitet er relevant innen StdLabs virkeområde
 
 #### Temaer som skal dekkes
 
 * Når er denne standarden nyttig?
-	* Brukerhistorier - eksempler
-	* Autentisitet som opplved kvalitet ved dokumentasjon
+	* Hvorfor standardisert tilnærming til autentisitet? Brukerhistorier - eksempler
+	* Mål: Autentisitet som opplved kvalitet ved dokumentasjon
 	* Begrepene
 	    * Observatør
 	    * Dokumentasjon
@@ -51,16 +51,18 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er m
 * Sikre autentisitet
 	* Oversikt over løsninger og overganger
 	    * Perspektiv på oversikt
-	    * Risikovurdering
+	    * Risikovurdering (vurdering av behov for autentisitet)
 	    * Forslag til måter å gå frem på
 	    * Eksempler av beskrivelser av oversikt
-	* Autentisitet innen en løsning
+	* Autentisitet i ro (innen en løsning)
 		* Informasjonssikkerhet
 		* Teknologiske overganger
+	* Autentisitet i bevegelse (transformasjoner og overganger)
 * Dra nytte av autentisitet
-	* Autentisitet ved overføring mellom løsninger
+	* Autentisitet i bevegelse
 		* Handlinger som krever overføring mellom løsninger
-		* 
+	* Hvordan bevise autentisitet
+		
 
 #### Begrep
 
