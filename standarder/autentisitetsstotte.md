@@ -6,7 +6,7 @@
 
 - [Standard](#standard)
 	- [Normeringsgrad](#normeringsgrad)
-	- [Hypotese for løsning](#hypotese-for-l%C3%B8sning)
+	- [Hypotese for videre arbeid](#hypotese-for-videre-arbeid)
 	- [Åpne spørsmål](#%C3%A5pne-sp%C3%B8rsm%C3%A5l)
 - [Rammer](#rammer)
 	- [Gjenbrukskilder](#gjenbrukskilder)
@@ -23,9 +23,44 @@
 
 ### Normeringsgrad
 
-Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er neppe aktuelt, og vi kan vurdere å bruke anbefalt standard.
+Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er mest sannsynlig ikke aktuelt, og vi kan vurdere å bruke anbefalt standard.
 
-### Hypotese for løsning
+### Hypotese for videre arbeid
+
+#### Målet med normeringsprodukt
+
+> Vi skriver "standard" her, men mener "normeringsprodukt"
+
+Ønsket resultat av stanard:
+* Lesere vet hvor de har behov for autentisitet av dokumentasjon i sitt arbeid
+* Lesere kan beskrive hva de skal gjøre for å sikre autentisitet i sitt arbeid
+* Lesere har en ideé om hvor de skal se etter mer informasjon for å sikre autentisitet i sitt arbeid
+* Lesere vet hvordan de skal gå frem for å gi tilbakemelding på standard
+* Lesere vet hvor de skal gå om det er mer ifm bruk av standard de lurer på
+* Standard dekker alle tilfeller når autentisitet er relevant innen StdLabs virkeområde
+
+#### Temaer som skal dekkes
+
+* Når er denne standarden nyttig?
+	* Brukerhistorier - eksempler
+	* Autentisitet som opplved kvalitet ved dokumentasjon
+	* Begrepene
+	    * Observatør
+	    * Dokumentasjon
+	    * Løsning
+* Sikre autentisitet
+	* Oversikt over løsninger og overganger
+	    * Perspektiv på oversikt
+	    * Risikovurdering
+	    * Forslag til måter å gå frem på
+	    * Eksempler av beskrivelser av oversikt
+	* Autentisitet innen en løsning
+		* Informasjonssikkerhet
+		* Teknologiske overganger
+* Dra nytte av autentisitet
+	* Autentisitet ved overføring mellom løsninger
+		* Handlinger som krever overføring mellom løsninger
+		* 
 
 #### Begrep
 
@@ -39,8 +74,7 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er n
 
 ### Åpne spørsmål
 
-* Hvor omfattende er behovet for autentisitet fra arkiv perspektiv? Dvs alt
-* Hvordan behovet for 
+* Hva er omfanget av autentisitet for StdLab?
 
 #### Begrensninger
 
@@ -92,5 +126,7 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er n
 
 - Grad av konsensus/aksept av beskrivelser som beste praksis
 - Antall løsninger som produserer ønskede metadata
+
+----------
 
 [^1]: Teknologiskifter behandles som en prosess i denne sammenhengen
