@@ -61,7 +61,7 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er m
 * Dra nytte av autentisitet
 	* Autentisitet i bevegelse
 		* Handlinger som krever overføring mellom løsninger
-	* Hvordan bevise autentisitet
+	* Hvordan bevise autentisitet 
 		
 
 #### Begrep
