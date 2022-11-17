@@ -32,8 +32,8 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er m
 > Vi skriver "standard" her, men mener "normeringsprodukt"
 
 Ønsket resultat av standard:
-* Lesere vet hvor de har behov for autentisitet av dokumentasjon i sitt arbeid
-* Lesere kan beskrive hva de skal gjøre for å sikre autentisitet i sitt arbeid
+* Lesere vet hvor de har behov for autentisitet av dokumentasjon i sitt arbeid, også når den strekker seg over tid
+* Lesere kan beskrive hva de skal gjøre for å sikre autentisitet i sitt arbeid, også når den strekker seg over tid
 * Lesere har en ideé om hvor de skal se etter mer informasjon for å sikre autentisitet i sitt arbeid
 * _Lesere vet hvordan de skal gå frem for å gi tilbakemelding på standard_
 * _Lesere vet hvor de skal gå om det er mer ifm bruk av standard de lurer på_
