@@ -1,6 +1,8 @@
 # StandardLab
 
-Standardisering for dokumentasjonsforvaltning og arkiv i kjølvannet etter Noark. Se [informasjon på arkivverket.no](https://www.arkivverket.no/arkivutvikling/innebygd-arkivering/standardlab) for å få vite mer om bakgrunnen og arbeidet som er gjort så langt.
+Standardisering for dokumentasjonsforvaltning og arkiv i kjølvannet etter Noark. Se [informasjon på arkivverket.no](https://www.arkivverket.no/arkivutvikling/innebygd-arkivering/standardlab) for å få vite mer om bakgrunnen og arbeidet som er gjort så langt. Vi arrangerer også [åpne statusmøter](statusmoete.md) der du kan få høre mer om det vi jobber med.
+
+StandardLab jobber etter åpne og involverende prosesser. Vi deler derfor dokumenter vi arbeider med i tidlige faser, slik at alle som ønsker det kan holde seg orientert om og komme med innspill til standardiseringsarbeidet. For mer informasjon om hvordan vi jobber, se [metodebeskrivelsen vår](/styrende/metode.md).
 
 Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https://github.com/arkivverket/standardlab/issues), og til å dele styrende dokumenter for arbeidet og standarder vi jobber med - både under utvikling og ferdigstilte. Om du ikke er komfortabel med å melde behov her på GitHub, kan de sendes til standardlab@arkivverket.no.
 
@@ -13,7 +15,6 @@ Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https:/
 ## Styrende dokumenter
 
 - [Mål og prinsipper](/styrende/maal-og-prinsipper.md) - hva vi ønsker å oppnå og prinsipper for hvordan vi ser for oss å jobbe for å nå målene
-- [Metode](/styrende/metode.md) - en mer konkret beskrivelse av hvordan vi jobber
 - [Prioriteringskriterier](/styrende/prioriteringskriterier.md) - hvilke faktorer legges til grunn for vurderingen av de ulike behovene opp mot hverandre.
 - [Veikart](/styrende/veikart.md) - resultatet av forrige prioriteringsrunde, som er vår beste hypotese for hvilken rekkefølge vi vil løse behovene i.
 
