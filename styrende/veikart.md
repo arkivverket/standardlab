@@ -6,7 +6,7 @@ Her er resultatet av forrige prioriteringsrunde av behovene som er meldt inn. Be
 
 Siste prioriteringsrunde har vært gjennomført den **6. oktober 2022**.
 
-Neste prioriteringsrunde er planlagt **medio november 2022**. Hvis du ønsker ditt behov med i neste prioriteringsrunde, [meld det inn her](https://github.com/arkivverket/standardlab/issues/new?assignees=&labels=behov&template=behov.md). StandardLab-teamet vil også gjennomføre aktiv behovsinnhenting i form av intervjuer fram mot denne prioriteringsrunden.
+Neste prioriteringsrunde er planlagt **primo januar 2023**. Hvis du ønsker ditt behov med i neste prioriteringsrunde, [meld det inn her](https://github.com/arkivverket/standardlab/issues/new?assignees=&labels=behov&template=behov.md). StandardLab-teamet vil også gjennomføre aktiv behovsinnhenting i form av intervjuer fram mot denne prioriteringsrunden.
 
 ## Vurderte behov
 
