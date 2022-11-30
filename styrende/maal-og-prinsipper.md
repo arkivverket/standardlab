@@ -49,7 +49,7 @@ Standardisering benyttes som virkemiddel for å dekke identifiserte behov hos en
 
 #### Forklaring
 
-Standardiseringsarbeidet baserer seg på identifiserte brukerbehov innenfor formålet i Arkivlova. Behovene må være tilstrekkelig beskrevet og vurdert/kvalifisert. ​Behovsdrevet standardisering vektlegger at standardene skal være anvendbare i praksis. Det innebærer også at standardiseringen virker med produktene og fremmer innovasjon/hensiktsmessige løsninger tilpasset brukerbehov. ​
+Standardiseringsarbeidet baserer seg på identifiserte brukerbehov innenfor [formålet i Arkivlova](https://lovdata.no/lov/1992-12-04-126/§1). Behovene må være tilstrekkelig beskrevet og vurdert/kvalifisert. Behovsdrevet standardisering vektlegger at standardene skal være anvendbare i praksis. Det innebærer også at standardiseringen virker med produktene og fremmer innovasjon/hensiktsmessige løsninger tilpasset brukerbehov. ​
 
 #### Konsekvens
 
