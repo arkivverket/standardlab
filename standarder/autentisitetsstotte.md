@@ -19,50 +19,56 @@
 
 ## Standard
 
-> Innhold er ennå ikke produsert. Det første som vil deles er vår hypotese til form på standard (inkludert en tidligversjon av disposisjon).
+> Dette er vår hypotese til form på standard (inkludert en tidligversjon av disposisjon). Den vil bli fylt med innhold fortløpende.
 
 ### Normeringsgrad
 
 Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er mest sannsynlig ikke aktuelt, og vi kan vurdere å bruke anbefalt standard.
 
-### Hypotese for videre arbeid
+### Nivå
 
-#### Målet med normeringsprodukt
+Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesser. Ikke krav/spesifikasjoner på teknologisk nivå, men kanskje innhold i logisk informasjonsmodell.
+<!--> Dette er fortsatt ganske uklart for oss, men det blir nok klarere etterhvert <-->
 
-> Vi skriver "standard" her, men mener "normeringsprodukt"
+### Målgruppe(r)
 
-Ønsket resultat av standard:
-* Lesere vet hvor de har behov for autentisitet av dokumentasjon i sitt arbeid, også når den strekker seg over tid
-* Lesere kan beskrive hva de skal gjøre for å sikre autentisitet i sitt arbeid, også når den strekker seg over tid
-* Lesere har en ideé om hvor de skal se etter mer informasjon for å sikre autentisitet i sitt arbeid
-* _Lesere vet hvordan de skal gå frem for å gi tilbakemelding på standard_
-* _Lesere vet hvor de skal gå om det er mer ifm bruk av standard de lurer på_
-* Standard dekker alle tilfeller når autentisitet er relevant innen StdLabs virkeområde
+- Ansvarlige for dokumentasjonsforvaltning/arkiv hos arkivskaper
+- De som gjør kravspesifisering i forbindelse med anskaffelse/utvikling av systemer som behandler dokumentasjon
+- Forretningsressurser hos systemutviklere
 
-#### Temaer som skal dekkes
+### Disposisjon/temaer som skal dekkes
 
 * Når er denne standarden nyttig?
+	* Hva er autentisitet (i kontekst arkiv/dokumentasjonsforvaltning)?
 	* Hvorfor standardisert tilnærming til autentisitet? Brukerhistorier - eksempler
-	* Mål: Autentisitet som opplved kvalitet ved dokumentasjon
-	* Begrepene
-	    * Observatør
-	    * Dokumentasjon
-	    * Løsning
-* Sikre autentisitet
+	* Mål: Autentisitet som opplevd kvalitet ved dokumentasjon
+		* Verdi - for forretning / for langtidsperspektiv
+* Kontekst
+	* Relaterte egenskaper - sammenheng som gir autentisitet større verdi
+	* Forholdet til lovverk - hvilke krav er standarden til hjelp med å dekke
+* Sentrale begreper
+    * Observatør
+	* Autentisitet
+    * Dokumentasjon
+    * Løsning
+* Hvordan sikre autentisitet
+	* Risiko- og verdivurdering (vurdering av behov for autentisitet og sammenhengen med andre verdier)
 	* Oversikt over løsninger og overganger
 	    * Perspektiv på oversikt
-	    * Risikovurdering (vurdering av behov for autentisitet)
 	    * Forslag til måter å gå frem på
 	    * Eksempler av beskrivelser av oversikt
-	* Autentisitet i ro (innen en løsning)
+	* Autentisitet i ferdigstilling (fra utarbeidet til ferdigstilt)?
+		* Prosessmetadata
+	* Autentisitet i ro (innen en løsning - forretningsmessig bruk)
 		* Informasjonssikkerhet
+		* Autentisitet for filer vs. autentisitet for metadata - jf. frysing
+	* Autentisitet i bevegelse (transformasjoner og overføringer)
 		* Teknologiske overganger
-	* Autentisitet i bevegelse (transformasjoner og overganger)
-* Dra nytte av autentisitet
-	* Autentisitet i bevegelse
-		* Handlinger som krever overføring mellom løsninger
-	* Hvordan bevise autentisitet 
-		
+		* Endringslogging
+		* Ivaretakelse av metadata	
+* Hvordan bevise/ettergå autentisitet
+	* Hvordan vurdere autentisitet for dokumentasjon
+	* Autentisitetsstøttende metadata (for digitalt skapt dokumentasjon)
 
 #### Begrep
 
@@ -79,13 +85,27 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er m
 * Hva er omfanget av autentisitet for StdLab?
 
 #### Begrensninger
+<!--> Dette kapittelet vil nok fjernes på et tidspunkt<-->
 
 * Overgang fra løsninger hvor informasjonen er blitt skapt til løsninger hvor den skal tas vare på på lang sikt er ikke sett på som noe spesielt overgang. Det tolkes på samme måte som overgang mellom de forskjellige løsningene hvor informasjonen skapes og brukes
-
+* Det som skjer før et dokument er utarbeidet/fanget er ikke noe vi vil forsøke å standardisere
 
 ---
 
 ## Rammer
+
+### Målet med normeringsprodukt
+
+> Vi skriver "standard" her, men mener "normeringsprodukt"
+
+Ønsket resultat av standard:
+
+* Lesere vet hvor de har behov for autentisitet av dokumentasjon i sitt arbeid, også når den strekker seg over tid
+* Lesere kan beskrive hva de skal gjøre for å sikre autentisitet i sitt arbeid, også når den strekker seg over tid
+* Lesere har en ideé om hvor de skal se etter mer informasjon for å sikre autentisitet i sitt arbeid
+* _Lesere vet hvordan de skal gå frem for å gi tilbakemelding på standard_
+* _Lesere vet hvor de skal gå om det er mer ifm bruk av standard de lurer på_
+* Standard dekker alle tilfeller når autentisitet er relevant innen StdLabs virkeområde
 
 ### Gjenbrukskilder
 
