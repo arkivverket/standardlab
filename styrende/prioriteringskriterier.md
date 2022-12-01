@@ -31,7 +31,6 @@ Her vurderes det i hvilken grad det å løse behovet gir verdi i form av gevinst
 - Nytte for Arkivverket: Bidrag til behov ved tilsyn
 - Innovasjon: Bidrag til endring i eksisterende løsninger i markedet
 - Innovasjon: Antatt påvirkning på at flere aktører kommer inn på markedet
-- Innovasjon: Grad av nytenking
 
 ## Hastegrad
 
