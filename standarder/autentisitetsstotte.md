@@ -28,7 +28,7 @@ Dette behovet skal dekkes av retningslinje eller veileder. Påbudt standard er m
 ### Nivå
 
 Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesser. Ikke krav/spesifikasjoner på teknologisk nivå, men kanskje innhold i logisk informasjonsmodell.
-<!--> Dette er fortsatt ganske uklart for oss, men det blir nok klarere etterhvert <-->
+<!-- Dette er fortsatt ganske uklart for oss, men det blir nok klarere etterhvert -->
 
 ### Målgruppe(r)
 
@@ -85,7 +85,7 @@ Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesse
 * Hva er omfanget av autentisitet for StdLab?
 
 #### Begrensninger
-<!--> Dette kapittelet vil nok fjernes på et tidspunkt<-->
+<!-- Dette kapittelet vil nok fjernes på et tidspunkt -->
 
 * Overgang fra løsninger hvor informasjonen er blitt skapt til løsninger hvor den skal tas vare på på lang sikt er ikke sett på som noe spesielt overgang. Det tolkes på samme måte som overgang mellom de forskjellige løsningene hvor informasjonen skapes og brukes
 * Det som skjer før et dokument er utarbeidet/fanget er ikke noe vi vil forsøke å standardisere
