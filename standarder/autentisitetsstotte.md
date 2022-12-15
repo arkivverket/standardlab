@@ -6,13 +6,20 @@
 
 - [Standard](#standard)
 	- [Normeringsgrad](#normeringsgrad)
-	- [Hypotese for videre arbeid](#hypotese-for-videre-arbeid)
-	- [Åpne spørsmål](#%C3%A5pne-sp%C3%B8rsm%C3%A5l)
+	- [Nivå](#niv%C3%A5)
+	- [Målgruppe\(r\)](#m%C3%A5lgrupper)
+	- [Disposisjon/temaer som skal dekkes](#disposisjontemaer-som-skal-dekkes)
+		- [Begrep](#begrep)
+	- [Åpne spørsmål](#%C3%85pne-sp%C3%B8rsm%C3%A5l)
+		- [Begrensninger](#begrensninger)
 - [Rammer](#rammer)
+	- [Målet med normeringsprodukt](#m%C3%A5let-med-normeringsprodukt)
 	- [Gjenbrukskilder](#gjenbrukskilder)
 	- [Opprinnelig behovsbeskrivelse](#opprinnelig-behovsbeskrivelse)
 	- [Oppdatert/utdypet målbeskrivelse](#oppdatertutdypet-m%C3%A5lbeskrivelse)
 	- [Oppdaterte/utdypede suksesskriterier](#oppdaterteutdypede-suksesskriterier)
+		- [Testkriterier før normering](#testkriterier-f%C3%B8r-normering)
+		- [KPIer etter normering](#kpier-etter-normering)
 
 <!-- /MarkdownTOC -->
 
