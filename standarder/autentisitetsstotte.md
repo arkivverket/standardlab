@@ -46,33 +46,32 @@ Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesse
 * Kontekst
 	* Relaterte egenskaper - sammenheng som gir autentisitet større verdi
 	* Forholdet til lovverk - hvilke krav er standarden til hjelp med å dekke
-* Sentrale begreper
-    * Observatør
-	* Autentisitet
-    * Dokumentasjon
-    * Løsning
-* Hvordan sikre autentisitet
+* Rammer
 	* Risiko- og verdivurdering (vurdering av behov for autentisitet og sammenhengen med andre verdier)
+	* Roller og ansvar
+* Hvordan etablere og opprettholde autentisitet
 	* Oversikt over løsninger og overganger
-	    * Perspektiv på oversikt
 	    * Forslag til måter å gå frem på
-	    * Eksempler av beskrivelser av oversikt
-	* Autentisitet i ferdigstilling (fra utarbeidet til ferdigstilt)?
+	    * Eksempler på løsninger og overganger
+	* Autentisitet etablere (fra utarbeidet til ferdigstilt)?
 		* Prosessmetadata
-	* Autentisitet i ro (innen en løsning - forretningsmessig bruk)
+	* Autentisitet opprettholde i tid (innen en løsning - forretningsmessig bruk)
 		* Informasjonssikkerhet
 		* Autentisitet for filer vs. autentisitet for metadata - jf. frysing
-	* Autentisitet i bevegelse (transformasjoner og overføringer)
+	* Autentisitet opprettholde gjennom teknologiskifter (transformasjoner og overføringer)
 		* Teknologiske overganger
 		* Endringslogging
-		* Ivaretakelse av metadata	
-* Hvordan bevise/ettergå autentisitet
+		* Ivaretakelse av metadata
+		* Autorisert/uatorisert endring	
+* Hvordan bevise, vurdere og verifisere autentisitet
 	* Hvordan vurdere autentisitet for dokumentasjon
 	* Autentisitetsstøttende metadata (for digitalt skapt dokumentasjon)
+	* Endringslogging
 
 #### Begrep
 
 * **Autentisitet**: tolkes som evne av dokumentasjon til å fremstå og fungere troverdig nok for sine formål
+* **Autentisitetsstøtte**: tba
 * **Dokumentasjon**: Informasjon som kan brukes som bevis for en handling
 * **Løsning**: Sammensetning av tekniske systemer og organisatoriske enheter som er sett på som en helhet. En løsning reliserer som regel en eller flere tjenester innen en virksomhet.
 * **Overgang mellom løsninger**: Prosess når dokumentasjon overføres mellom løsninger. Kan også bli sett på en hendelser. Hendelsene kan sendes på tvers av virksomheter.
@@ -114,6 +113,11 @@ Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesse
 - ISO 16175: Information and documentation — Processes and functional requirements for software for managing records
 - ISO 18829: Document management — Assessing ECM/EDRM implementations — Trustworthiness
 - ISO 23081: Information and documentation — Records management processes — Metadata for records
+- ISO 15489: Information and documentation - Records management - Part 1: Concepts and principles
+- EN 15898: Conservation of cultural heritage - Main general terms and definitions
+- Decentralized Identifiers (DIDs) v1.0 - W3C Recommendation https://www.w3.org/TR/did-core/
+- Use Cases and Requirements for Decentralized Identifiers -  W3C Working Group Note 17 March 2021 https://www.w3.org/TR/did-use-cases/
+
 
 ### Opprinnelig behovsbeskrivelse
 
