@@ -77,14 +77,7 @@ Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesse
 
 #### Begrep
 
-* **Autentisitet**: tolkes som evne av dokumentasjon til å fremstå og fungere troverdig nok for sine formål
-* **Autentisitetsstøtte**: tba
-* **Dokumentasjon**: Informasjon som kan brukes som bevis for en handling
-* **Løsning**: Sammensetning av tekniske systemer og organisatoriske enheter som er sett på som en helhet. En løsning reliserer som regel en eller flere tjenester innen en virksomhet.
-* **Overgang mellom løsninger**: Prosess når dokumentasjon overføres mellom løsninger. Kan også bli sett på en hendelser. Hendelsene kan sendes på tvers av virksomheter.
-* **Autentisitet i ro**: Ivaretagelse av autentisistet så lenge dokumentasjon befinner seg innen en løsning
-* **Autentisitet i bevegelse**: Ivaretagelse av autentisitet når dokumentasjon overføres mellom løsninger
-* **Observatør**: Fordeling i løsninger og overganger mellom de avhenger av hvilken rolle og ekspertise som utformer oversikt over virksomheters løsninger og overganger mellom de. Teknisk utvikler kommer å ha en annen perspektiv enn saksbehander eller leder i virsomheten
+Egen fil: [autentisitetsstøtte-begrep.md](autentisitetsstøtte-begrep.md)
 
 ### Åpne spørsmål
 
