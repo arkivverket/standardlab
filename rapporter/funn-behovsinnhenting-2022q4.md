@@ -26,11 +26,11 @@ Det vil bli registrert to nye behov som følge av behovssamtalene.
 
 1. **Metadata for gjenfinning**
 Fire intervjuobjekter pekte på at det å finne igjen et bestemt dokument/informasjonsobjekt er et sentralt mål for deres dokumentasjonsforvaltning. Blant de konkrete forslagene til løsning var mer bruk av tagging av dokumenter, og å redusere avhengigheten til fritekstfelter for å finne igjen dokumentene.
-> _- Det er gjenfinningen som er utfordringen. En standard vil gi bedre tjenester til de som søker om innsyn._
+> _- Det er gjenfinningen som er utfordringen. En standard vil gi bedre tjenester til de som søker om innsyn._  
 > _- Vi ser ulike måter å bruke felter på, og ulike skriveregler. Bør være færrest mulig fritekstfelt._
 2. **Beskrivelser av datasett**
 To intervjuobjekter pekte på at man ønsket seg standardisering av hvordan datasett beskrives og struktureres. Dette kan henge sammen med at dagens standardisering er bedre tilpasset sakarkiver enn objektarkiver.
-> _- Vi ønsker å lage felles skjema når vi beskriver datasett._
+> _- Vi ønsker å lage felles skjema når vi beskriver datasett._  
 > _- Noen krav til en struktur her hadde hjulpet de som skal forvalte dataene senere._
 
 StandardLab vil vurdere om det er hensiktsmessig å beskrive behovene slik de gikk fram, eller om våre vurderinger tilsier at det som beskrives er konsekvenser av underliggende behov.
@@ -40,10 +40,10 @@ StandardLab vil vurdere om det er hensiktsmessig å beskrive behovene slik de gi
 Syv av behovene som allerede var registrert i backlog ble nevnt i intervjuene. Det var spesielt tre behov som gikk igjen.
 
 1. [**Interoperabilitet / integrasjoner (#21)**](https://github.com/arkivverket/standardlab/issues/21)
-> _- Det viktigste for fremtiden er å se på integrasjonsstandarden, tvinge fram interoperabilitet._
+> _- Det viktigste for fremtiden er å se på integrasjonsstandarden, tvinge fram interoperabilitet._  
 > _- Det trengs en protokoll for hva som overføres (innhold), hvordan, når og til hvor. Det handler om løsningsarkitektur og hvordan dokumentasjonsforvaltning passer inn der._
 2. [**Produksjon av uttrekk (#15)**](https://github.com/arkivverket/standardlab/issues/15)
-> _- Det er en kostbar og stor jobb med å få tatt uttrekk._
+> _- Det er en kostbar og stor jobb med å få tatt uttrekk._  
 > _- Hvordan sørge for at leverandørene lager ordentlige uttrekk._
 3. [**Integritet (#13)**](https://github.com/arkivverket/standardlab/issues/13)
 > _- Når man skal fange dokumentasjon_ _må_ _integriteten være godt ivaretatt._
@@ -61,16 +61,16 @@ Det at behov har fått støtte i behovssamtalene vil kunne påvirke prioritering
 
 Noen intervjuobjekter ga innspill som ikke peker direkte på behov, men heller er innspill til hvordan StandardLab bør jobbe.
 
-> _- Dere bør ikke standardisere arkivperioder og klassifisering._
-> _- Vi bør lene oss mer på internasjonale standarder, og man må ha god grunn til å lage noe eget norsk._
-> _- Det er viktig at dere finner balansen mellom presist fagspråk og klarspråk._
-> _- Vi tar vare på data så det kan brukes for andre formål enn det opprinnelig var laget for. Kanskje er det lurt å skille mer på dokumentfangst og langtidsbevaring?_
+> _- Dere bør ikke standardisere arkivperioder og klassifisering._  
+> _- Vi bør lene oss mer på internasjonale standarder, og man må ha god grunn til å lage noe eget norsk._  
+> _- Det er viktig at dere finner balansen mellom presist fagspråk og klarspråk._  
+> _- Vi tar vare på data så det kan brukes for andre formål enn det opprinnelig var laget for. Kanskje er det lurt å skille mer på dokumentfangst og langtidsbevaring?_  
 > _- Godkjenningsordningen som er i dag – bør den forbli eller skrotes? Den har både fordeler og ulemper._
 
 ### Funn som sendes videre
 
 Flere ting som ble nevnt i intervjuer er mer egnet for behandling i andre fora enn StandardLab. Disse vil kanaliseres til rette vedkommende – i hovedsak andre deler av Arkivverket.
 
-> _- Forholdet mellom arkivering og postliste er en utfordring – knytningen her hemmer arkivering._
-> _- Se hvordan man kan ta vare på strukturert informasjon. Å ta vare på det som PDF er helt ubrukelig._
+> _- Forholdet mellom arkivering og postliste er en utfordring – knytningen her hemmer arkivering._  
+> _- Se hvordan man kan ta vare på strukturert informasjon. Å ta vare på det som PDF er helt ubrukelig._  
 > _- Vi trenger en oversikt over hva som er nødvendig å kvalitetssikre._
