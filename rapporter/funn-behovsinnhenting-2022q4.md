@@ -16,7 +16,7 @@ Det ble gjennomført 13 intervjuer i perioden 13. oktober til 11. november 2022.
 | Pasient- og brukerombudene | | |
 | Sørlandet sykehus (SSHF) | | |
 
-Samtalene ble gjennomført som halvstrukturerte intervjuer, med utgangspunkt i en intervjuguide som ble benyttet i alle intervjuene. Intervjuobjektene ble bedt om å tenke fritt rundt hva de trenger og/eller ønsker at skal være standardisert innenfor dokumentasjonsforvaltning og arkiv, og om å identifisere faktorer eller prosesser som fremstår som vanskelige innenfor dagens standardisering. Samtalen dreide seg deretter om at Arkivverket skulle få bedre forståelse av ideene og utfordringene, slik at behov kunne identifiseres og beskrives på hensiktsmessig form.
+Samtalene ble gjennomført som semistrukturerte intervjuer, med utgangspunkt i en intervjuguide som ble benyttet i alle intervjuene. Intervjuobjektene ble bedt om å tenke fritt rundt hva de trenger og/eller ønsker at skal være standardisert innenfor dokumentasjonsforvaltning og arkiv, og om å identifisere faktorer eller prosesser som fremstår som vanskelige innenfor dagens standardisering. Samtalen dreide seg deretter om at Arkivverket skulle få bedre forståelse av ideene og utfordringene, slik at behov kunne identifiseres og beskrives på hensiktsmessig form.
 
 ## Funn
 
