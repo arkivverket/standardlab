@@ -45,7 +45,7 @@ Alle som ønsker det, skal kunne holde seg orientert om og komme med innspill ti
 
 #### Overordnet prinsipp
 
-Standardisering benyttes kun som virkemiddel når det er det best egnede tiltaket for å dekke identifiserte behov hos en eller flere berettigede interessenter.
+Standardisering benyttes som virkemiddel kun når det er det best egnede tiltaket for å dekke identifiserte behov hos en eller flere berettigede interessenter.
 
 #### Forklaring
 
