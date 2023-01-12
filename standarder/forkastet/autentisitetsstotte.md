@@ -1,15 +1,30 @@
-# Autentisitetsstøtte
+# Autentisitetsstøtte :no_entry:
 
-[![Generic badge](https://img.shields.io/badge/Status-Kladd-red.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Status-Forkastet-darkred.svg)](https://shields.io/)
+
+>Autentisitet er en vesentlig egenskap for arkivmateriale. Hvis vi skal ha tillit til materialets dokumentasjonsverdi, må vi kjenne til dets opphav, dvs. hvem som opprettet det og når det skjedde. Dette ble bekreftet av samtlige gjenbrukskilder teamet vurderte i arbeidet med behovet.
+>
+>Det vi også erfarte i dette arbeidet, var at det gav liten mening å se på autentisitet som et isolert behov. Autentisitet er en av flere egenskaper ved dokumentasjon, som skal støtte opp under behovet for tillit. De andre egenskapene er integritet, pålitelighet og anvendbarhet. Ingen ISO-standarder eller andre gjenbrukskilder pekte på spesifikke krav som alene støtter opp under autentisitetsstøtte. Det var mulig å identifisere visse metadata for autentisitetsstøtte, men det vil ikke gi så mye mening å definere et sett av metadata kun for dette formålet.  
+>
+>Det som kjennetegner spesielt ISO-standarder innenfor området Informasjon og dokumentasjon, er at de fremsetter en rekke metoder, tiltak og krav som samlet støtter opp under de grunnleggende egenskapene ved dokumentasjon, nemlig autentisitet, integritet, pålitelighet og anvendbarhet. Dette er ikke isolerte egenskaper som kan behandles hver for seg, men egenskaper som støtter opp under hverandre og samlet bidrar til å peke på hva som skal til for at målgruppen har tillit til dokumentasjon.  
+>
+>For utviklingen av arkivfaget hadde det vært nyttig og interessant å jobbe videre med et dokument som gikk nærmere inn på autentisitetsstøtte. Vi ser allikevel at et normativt produkt (en standard, veileder eller lignende) som kun fokuserte på dette ville gitt liten verdi i seg selv. En slik standard vil for eksempel ikke kunne erstatte dagens standardisering, men vil i beste fall kunne tydeliggjøre hvordan deler av hva dagens arkivdanningsstandard (Noark) ivaretar det samme behovet. Men det er ikke gitt at det kunne bidratt til en kortsiktig forenkling av dagens standard heller, uten samtidig å støtte de andre egenskapene ved dokumentasjon.  
+>
+>Det som er produsert frem til nå vil ha verdi i det videre arbeidet, om vi går videre med å se på de grunnleggende egenskapene ved dokumentasjon samlet. Mye av det som er skrevet om autentisitet, gjelder også for de andre egenskapene – hvordan de ivaretas ved fangst og forvaltning av dokumentasjon, over tid, og i stillstand og ved skifte av teknologi.  
+
+Da det som ble produsert ikke er tenkt viderebrukt i denne formen, deles det av effektivitetshensyn som PDF, ikke som redigerbart innhold: [Påbegynt standard - autentisitetsstøtte (PDF)](autentisitetsstotte-innhold.pdf)
+
+Innholdet under linjen er hypotese og rammer som lå til grunn for dokumentet som er produsert.
+
+---
 
 <!-- MarkdownTOC -->
 
-- [Standard](#standard)
+- [Hypotese](#hypotese)
 	- [Normeringsgrad](#normeringsgrad)
 	- [Nivå](#niv%C3%A5)
 	- [Målgruppe\(r\)](#m%C3%A5lgrupper)
-	- [Disposisjon/temaer som skal dekkes](#disposisjontemaer-som-skal-dekkes)
-		- [Begrep](#begrep)
+	- [Innhold](#innhold)
 	- [Åpne spørsmål](#%C3%85pne-sp%C3%B8rsm%C3%A5l)
 		- [Begrensninger](#begrensninger)
 - [Rammer](#rammer)
@@ -23,10 +38,7 @@
 
 <!-- /MarkdownTOC -->
 
-
-## Standard
-
-> Dette er vår hypotese til form på standard (inkludert en tidligversjon av disposisjon). Den vil bli fylt med innhold fortløpende.
+## Hypotese
 
 ### Normeringsgrad
 
@@ -43,7 +55,7 @@ Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesse
 - De som gjør kravspesifisering i forbindelse med anskaffelse/utvikling av systemer som behandler dokumentasjon
 - Forretningsressurser hos systemutviklere
 
-### Disposisjon/temaer som skal dekkes
+### Innhold
 
 * Når er denne standarden nyttig?
 	* Hva er autentisitet (i kontekst arkiv/dokumentasjonsforvaltning)?
@@ -75,7 +87,7 @@ Praktisk veiledning til hvordan autentisitet kan ivaretas i systemer og prosesse
 	* Autentisitetsstøttende metadata (for digitalt skapt dokumentasjon)
 	* Endringslogging
 
-#### Begrep
+### Begrep
 
 Egen fil: [autentisitetsstøtte-begrep.md](autentisitetsstøtte-begrep.md)
 
