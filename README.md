@@ -8,9 +8,9 @@ Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https:/
 
 ## Standarder
 
-### Under arbeid
+### Forkastet
 
-- [Autentisitetsstøtte](/standarder/autentisitetsstotte.md)
+- [Autentisitetsstøtte](/standarder/forkastet/autentisitetsstotte.md)
 
 ## Styrende dokumenter
 
