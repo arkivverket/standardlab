@@ -45,11 +45,11 @@ Alle som ønsker det, skal kunne holde seg orientert om og komme med innspill ti
 
 #### Overordnet prinsipp
 
-Standardisering benyttes som virkemiddel for å dekke identifiserte behov hos en eller flere berettigede interessenter.
+Standardisering benyttes som virkemiddel kun når det er det best egnede tiltaket for å dekke identifiserte behov hos en eller flere berettigede interessenter.
 
 #### Forklaring
 
-Standardiseringsarbeidet baserer seg på identifiserte brukerbehov innenfor [formålet i Arkivlova](https://lovdata.no/lov/1992-12-04-126/§1). Behovene må være tilstrekkelig beskrevet og vurdert/kvalifisert. Behovsdrevet standardisering vektlegger at standardene skal være anvendbare i praksis. Det innebærer også at standardiseringen virker med produktene og fremmer innovasjon/hensiktsmessige løsninger tilpasset brukerbehov. ​
+Standardiseringsarbeidet baserer seg på identifiserte brukerbehov innenfor [formålet i Arkivlova](https://lovdata.no/lov/1992-12-04-126/§1). Behovene må være tilstrekkelig beskrevet og vurdert/kvalifisert. Behovsdrevet standardisering vektlegger at standardene skal være anvendbare i praksis. Det innebærer også at standardiseringen virker med produktene og fremmer innovasjon/hensiktsmessige løsninger tilpasset brukerbehov. ​Det skal ikke stilles flere eller strengere krav enn nødvendig for å oppnå hensikten.
 
 #### Konsekvens
 
