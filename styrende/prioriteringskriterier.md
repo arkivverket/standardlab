@@ -16,7 +16,9 @@ Vi deler fortløpende [resultatet av forrige prioritering](veikart.md).
 
 ## Verdi
 
-Her vurderes det i hvilken grad det å løse behovet gir verdi i form av gevinster eller måloppnåelse. Faktorer som bør vurderes er:
+Her vurderes det i hvilken grad det å løse behovet gir verdi i form av gevinster eller måloppnåelse. Faktorer som kan vurderes er:
+
+> Merk: Listen under er ikke et kriteriesett, men eksempler på hva som *kan* gi positivt utslag for kriteriet verdi.
 
 - Nytte for forvaltning: Bidrag til å sikre effektiv dokumentasjonsforvaltning
 - Nytte for forvaltning: Bidrag til å sikre effektiv utveksling av dokumentasjon for arkivformål
@@ -29,6 +31,13 @@ Her vurderes det i hvilken grad det å løse behovet gir verdi i form av gevinst
 - Nytte for Arkivverket (og kommunene som bevaringsinstitusjoner): Bidrag til behov for bevaring
 - Nytte for Arkivverket (og kommunene som bevaringsinstitusjoner): Bidrag til behov for tilgjengeliggjøring
 - Nytte for Arkivverket: Bidrag til behov ved tilsyn
+- Nytte for samfunnet: Antatt samfunnsøkonomisk gevinst
+- Nytte for samfunnet: Bidrag til forenklet samarbeid på tvers av virksomheter
+- Nytte for brukere av arkivene: Bidrag til bedre kvalitet på tjenester
+- Nytte for brukere av arkivene: Bidrag til mer tilgjengelige tjenester
+- Nytte for brukere av arkivene: Bidrag til mer effektive tjenester
+- Nytte for privatpersoner: Bidrag til enklere og bedre ivaretakelse av individuelle rettigheter
+- Nytte for arkiver i andre institusjoner (f.eks. veldedige eller private kulturinstitusjoner)
 - Innovasjon: Bidrag til endring i eksisterende løsninger i markedet
 - Innovasjon: Antatt påvirkning på at flere aktører kommer inn på markedet
 - Innovasjon: Grad av nytenking
