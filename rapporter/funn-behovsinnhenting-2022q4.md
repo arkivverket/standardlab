@@ -22,15 +22,15 @@ Samtalene ble gjennomført som semistrukturerte intervjuer, med utgangspunkt i e
 
 ### Nye behov
 
-Det vil bli registrert to nye behov som følge av behovssamtalene.
+Det er registrert to nye behov som følge av behovssamtalene.
 
-#### 1. Metadata for gjenfinning
+#### 1. [Metadata for gjenfinning](https://github.com/arkivverket/standardlab/issues/45)
 
 Fire intervjuobjekter pekte på at det å finne igjen et bestemt dokument/informasjonsobjekt er et sentralt mål for deres dokumentasjonsforvaltning. Det ble pekt på at gjenfinning var en utfordring både for interne og for eksterne som ønsket innsyn. Blant de konkrete forslagene til løsning var mer bruk av tagging av dokumenter, og å redusere avhengigheten til fritekstfelter for å finne igjen dokumentene.
 > _- Det er gjenfinningen som er utfordringen. En standard vil gi bedre tjenester til de som søker om innsyn._  
 > _- Vi ser ulike måter å bruke felter på, og ulike skriveregler. Det bør være færrest mulig fritekstfelt._
 
-#### 2. Beskrivelser av datasett
+#### 2. [Beskrivelser av datasett](https://github.com/arkivverket/standardlab/issues/40)
 
 To intervjuobjekter pekte på at man ønsket seg standardisering av hvordan datasett beskrives og struktureres. Dette kan henge sammen med at dagens standardisering er bedre tilpasset sakarkiver enn objektarkiver.
 > _- Vi ønsker å lage felles skjema når vi beskriver datasett._  
