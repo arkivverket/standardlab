@@ -74,19 +74,27 @@ Eksempler på risikoer som kan oppstå:
 
 ## Gjennomførbarhet
 
-Her vurderes sannsynligheten for at tiltak i StandardLab (eller nærliggende aktiviteter) er et egnet virkemiddel for å løse behovet (teller positivt på score), og hvor omfattende arbeidet med å få på plass et tiltak vil være (teller negativt på score).
+Her vurderes to hovedaspekter:
 
-Indikatorer på høy gjennomførbarhet kan være:
+1. Sannsynlighet for suksess, det vil si at tiltak i StandardLab (eller nærliggende aktiviteter) er et egnet virkemiddel for å løse behovet (teller positivt på score)
+2. Hvor omfattende arbeidet med å få på plass et tiltak vil være (teller negativt på score)
 
-- Andre har løst tilsvarende behov med samme type tiltak (med godt resultat)
-- Det finnes relevante gjenbrukskilder å ta utgangspunkt i for å løse behovet
+Indikatorer på **høy sannsynlighet for suksess** kan være:
+
+- Målet er godt forstått
+  - Vi er samstemte i hvordan vi forstår behovet
+  - Vi er sikre på at behovet er reelt
+  - Vi forstår hvordan det å løse behovet vil gi verdi til relevante målgrupper
+- Løsning på behovet er lett å forutsi
+  - Det finnes relevante gjenbrukskilder å ta utgangspunkt i for å løse behovet (og vi føler oss sikre på at de er egnet)
+  - Vi er sikre på at normering fra StandardLab/Arkivverket er en egnet løsning på behovet
+  - Vi ser for oss hvilken form et tiltak som løser behovet bør ha (inkludert hvilken normeringsgrad som er relevant)
+
+Indikatorer på **lav antatt ressursbruk** kan være:
+
 - StandardLab-teamet har tilgang på god kompetanse på området det skal utføres tiltak på
-- Arkivverket har tilgang på god kompetanse på området det skal utføres tiltak på
-
-Faktorer som bør vurderes:
-
-- Tror vi at vi kan lage et tiltak som treffer?
-- Tror vi at det er et marked for tiltaket?
-- Er opplevd kost/nytte (jf. verdi) for tiltaket god nok?
+- Antatt omfang på behov for standardisering er lavt
+- Kompleksiteten for området oppleves som lav
+- Det finnes arbeid eller gjenbrukskilder som er antatt direkte gjenbrukbart
 
 [^1]: Det ble i første prioriteringsrunde brukt en skala fra 1 til 5. Denne ble justert fra og med prioriteringsrunde 2, for å gi et bedre bilde på den relative forskjellen mellom de høyest og lavest prioriterte behovene.
