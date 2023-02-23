@@ -8,6 +8,10 @@ Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https:/
 
 ## Standarder
 
+### Under arbeid
+
+- [Informasjonsmodeller og API](/standarder/infomodell-api.md)
+
 ### Forkastet
 
 - [Autentisitetsstøtte](/standarder/forkastet/autentisitetsstotte.md)
