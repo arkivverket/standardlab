@@ -12,20 +12,20 @@ Neste prioriteringsrunde er planlagt **primo april 2023**. Hvis du ønsker ditt 
 
 | **ID** |                                **Tittel og lenke**                                | Begrunnelse for prioritering | **Verdi** | **Hastegrad** | **Risiko** | **Prioriteringsverdi** |
 | :----- | :-------------------------------------------------------------------------------- | ---------------------------- | :-------- | :------------ | :--------- | :--------------------- |
-| 2      | [Dokumentasjon av prosessen fram til et dokument er fryst]()                      | Lenke                        | 4         | 4             | 5          | 17                     |
-| 3      | [Felles forståelse av definisjoner for sentrale begreper]()                       | Lenke                        | 3         | 5             | 3          | 14                     |
-| 5      | [Struktur, format og protokoll for arkivpakker for utveksling mellom systemer ]() | Lenke                        | 4         | 3             | 4          | 15                     |
-| 7      | [Arkiv på tvers av offentlige virksomheter ved livshendelser]()                   | Lenke                        | 4         | 4             | 2          | 14                     |
-| 12     | [Autentisitetsstøtte]()                                                           | Lenke                        | 6         | 2             | 3          | 17                     |
-| 13     | [Integritetssikring]()                                                            | Lenke                        | 6         | 3             | 3          | 18                     |
-| 14     | [Sanere data/slette informasjon]()                                                | Lenke                        | 3         | 3             | 5          | 14                     |
+| 45     | [Metadata for gjenfinning]()                                                      | Lenke                        | 6         | 6             | 3          | 21                     |
 | 15     | [Skape arkivuttrekk og overføringspakke]()                                        | Lenke                        | 5         | 5             | 5          | 20                     |
 | 21     | [Samhandlingsevne (interoperabilitet)]()                                          | Lenke                        | 5         | 4             | 6          | 20                     |
 | 40     | [Beskrivelser av datasett]()                                                      | Lenke                        | 6         | 3             | 4          | 19                     |
-| 45     | [Metadata for gjenfinning]()                                                      | Lenke                        | 6         | 6             | 3          | 21                     |
-| 46     | [Pålitelighet]()                                                                  | Lenke                        | 5         | 3             | 3          | 16                     |
+| 13     | [Integritetssikring]()                                                            | Lenke                        | 6         | 3             | 3          | 18                     |
+| 2      | [Dokumentasjon av prosessen fram til et dokument er fryst]()                      | Lenke                        | 4         | 4             | 5          | 17                     |
+| 12     | [Autentisitetsstøtte]()                                                           | Lenke                        | 6         | 2             | 3          | 17                     |
 | 48     | [Vurderere gjenbruk av standarder for beskriveles av datasett]()                  | Lenke                        | 5         | 3             | 4          | 17                     |
 | 49     | [Anvendbarhet]()                                                                  | Lenke                        | 5         | 3             | 4          | 17                     |
+| 46     | [Pålitelighet]()                                                                  | Lenke                        | 5         | 3             | 3          | 16                     |
+| 5      | [Struktur, format og protokoll for arkivpakker for utveksling mellom systemer ]() | Lenke                        | 4         | 3             | 4          | 15                     |
+| 3      | [Felles forståelse av definisjoner for sentrale begreper]()                       | Lenke                        | 3         | 5             | 3          | 14                     |
+| 7      | [Arkiv på tvers av offentlige virksomheter ved livshendelser]()                   | Lenke                        | 4         | 4             | 2          | 14                     |
+| 14     | [Sanere data/slette informasjon]()                                                | Lenke                        | 3         | 3             | 5          | 14                     |
 
 ## Utsatte behov
 
