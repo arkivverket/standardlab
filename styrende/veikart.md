@@ -10,22 +10,22 @@ Neste prioriteringsrunde er planlagt **primo april 2023**. Hvis du ønsker ditt 
 
 ## Vurderte behov
 
-| **ID** |                                **Tittel og lenke**                                | Begrunnelse for prioritering | **Verdi** | **Hastegrad** | **Risiko** | **Prioriteringsverdi** |
-| :----- | :-------------------------------------------------------------------------------- | ---------------------------- | :-------- | :------------ | :--------- | :--------------------- |
-| 45     | [Metadata for gjenfinning]()                                                      | Lenke                        | 6         | 6             | 3          | 21                     |
-| 15     | [Skape arkivuttrekk og overføringspakke]()                                        | Lenke                        | 5         | 5             | 5          | 20                     |
-| 21     | [Samhandlingsevne (interoperabilitet)]()                                          | Lenke                        | 5         | 4             | 6          | 20                     |
-| 40     | [Beskrivelser av datasett]()                                                      | Lenke                        | 6         | 3             | 4          | 19                     |
-| 13     | [Integritetssikring]()                                                            | Lenke                        | 6         | 3             | 3          | 18                     |
-| 2      | [Dokumentasjon av prosessen fram til et dokument er fryst]()                      | Lenke                        | 4         | 4             | 5          | 17                     |
-| 12     | [Autentisitetsstøtte]()                                                           | Lenke                        | 6         | 2             | 3          | 17                     |
-| 48     | [Vurderere gjenbruk av standarder for beskriveles av datasett]()                  | Lenke                        | 5         | 3             | 4          | 17                     |
-| 49     | [Anvendbarhet]()                                                                  | Lenke                        | 5         | 3             | 4          | 17                     |
-| 46     | [Pålitelighet]()                                                                  | Lenke                        | 5         | 3             | 3          | 16                     |
-| 5      | [Struktur, format og protokoll for arkivpakker for utveksling mellom systemer ]() | Lenke                        | 4         | 3             | 4          | 15                     |
-| 3      | [Felles forståelse av definisjoner for sentrale begreper]()                       | Lenke                        | 3         | 5             | 3          | 14                     |
-| 7      | [Arkiv på tvers av offentlige virksomheter ved livshendelser]()                   | Lenke                        | 4         | 4             | 2          | 14                     |
-| 14     | [Sanere data/slette informasjon]()                                                | Lenke                        | 3         | 3             | 5          | 14                     |
+| **ID** |                                                         **Tittel og lenke**                                                          | Begrunnelse for prioritering | **Verdi** | **Hastegrad** | **Risiko** | **Prioriteringsverdi** |
+| :----- | :----------------------------------------------------------------------------------------------------------------------------------- | ---------------------------- | :-------- | :------------ | :--------- | :--------------------- |
+| 45     | [Metadata for gjenfinning](https://github.com/arkivverket/standardlab/issues/45)                                                     | Lenke                        | 6         | 6             | 3          | 21                     |
+| 15     | [Skape arkivuttrekk og overføringspakke](https://github.com/arkivverket/standardlab/issues/15)                                       | Lenke                        | 5         | 5             | 5          | 20                     |
+| 21     | [Samhandlingsevne (interoperabilitet)](https://github.com/arkivverket/standardlab/issues/21)                                         | Lenke                        | 5         | 4             | 6          | 20                     |
+| 40     | [Beskrivelser av datasett](https://github.com/arkivverket/standardlab/issues/40)                                                     | Lenke                        | 6         | 3             | 4          | 19                     |
+| 13     | [Integritetssikring](https://github.com/arkivverket/standardlab/issues/13)                                                           | Lenke                        | 6         | 3             | 3          | 18                     |
+| 2      | [Dokumentasjon av prosessen fram til et dokument er fryst](https://github.com/arkivverket/standardlab/issues/2)                      | Lenke                        | 4         | 4             | 5          | 17                     |
+| 12     | [Autentisitetsstøtte](https://github.com/arkivverket/standardlab/issues/12)                                                          | Lenke                        | 6         | 2             | 3          | 17                     |
+| 48     | [Vurderere gjenbruk av standarder for beskriveles av datasett](https://github.com/arkivverket/standardlab/issues/48)                 | Lenke                        | 5         | 3             | 4          | 17                     |
+| 49     | [Anvendbarhet](https://github.com/arkivverket/standardlab/issues/49)                                                                 | Lenke                        | 5         | 3             | 4          | 17                     |
+| 46     | [Pålitelighet](https://github.com/arkivverket/standardlab/issues/46)                                                                 | Lenke                        | 5         | 3             | 3          | 16                     |
+| 5      | [Struktur, format og protokoll for arkivpakker for utveksling mellom systemer ](https://github.com/arkivverket/standardlab/issues/5) | Lenke                        | 4         | 3             | 4          | 15                     |
+| 3      | [Felles forståelse av definisjoner for sentrale begreper](https://github.com/arkivverket/standardlab/issues/3)                       | Lenke                        | 3         | 5             | 3          | 14                     |
+| 7      | [Arkiv på tvers av offentlige virksomheter ved livshendelser](https://github.com/arkivverket/standardlab/issues/7)                   | Lenke                        | 4         | 4             | 2          | 14                     |
+| 14     | [Sanere data/slette informasjon](https://github.com/arkivverket/standardlab/issues/14)                                               | Lenke                        | 3         | 3             | 5          | 14                     |
 
 ## Utsatte behov
 
