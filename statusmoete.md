@@ -2,6 +2,9 @@
 
 Vi gjennomfører statusmøter den siste torsdagen i hver måned. I møtene forteller vi om hva vi har gjort siden forrige møte, og tar opp ulike problemstillinger og dilemmaer vi jobber med. Disse møtene er åpne for alle, og det er anledning til å stille spørsmål underveis.
 
+> :calendar: **Gå ikke glipp av neste møte**  
+> Vi tilbyr nå en møteinnkalling du kan ha i din kalender, slik at det skal være enklere å huske på statusmøtene våre. Du får da også beskjed om vi (mot formodning) endrer møtetidspunktet. [Kall meg inn!](mailto:standardlab@arkivverket.no?subject=Møteinnkalling)
+
 ## Neste møte
 
 **Tidspunkt:** Torsdag 30. mars kl 09.00 - 09.30  
