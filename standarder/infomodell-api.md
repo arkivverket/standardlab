@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/Status-Kladd-red.svg)](https://shields.io/)
 
-> Merk: Dette er kun på hyptese-stadiet. Vesentlige endringer kan forekomme.
+> Merk: Dette er kun på hypotese-stadiet. Vesentlige endringer kan forekomme.
 
 Det er lite sannsynlig at best egnede løsning på behovene beskrevet i GitHub som issue [#5](https://github.com/arkivverket/standardlab/issues/5), [#21](https://github.com/arkivverket/standardlab/issues/21) og [#45](https://github.com/arkivverket/standardlab/issues/45) er å lage ett sammenhengende produkt. Det er heller ikke antatt hensiktsmessig å lage ett produkt per behov. Vi ser derfor for oss å lage en pakke bestående av tre (eller fire) normerende produkter.
 
@@ -18,6 +18,8 @@ På grunn av interne avhengigheter bør produkt 1 utvikles til en MVP (minste ve
 Dette normerende produktet er antatt å bli en de facto obligatorisk standard for enkelte typer systemer (systemer som er lagd for å forvalte dokumentasjon/arkiv), og deler av produktet vil også kunne være en anbefalt standard for andre typer systemer. Gevinstene ved at informasjonsmodellen er lik på tvers av virksomheter og systemer er antatt å være så stor at etterlevelse ikke vil trenge å være de jure obligatorisk for at den skal følges. Gevinstene handler både om å lette utveksling mellom systemer og å forenkle for depotinstitusjoner.
 
 For å ta hensyn til systemer og grensesnitt som allerede brukes, bør vi ta utgangspunkt i eksisterende informasjonsmodell ([Noark metadatakatalog](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden/_/attachment/download/9f16ce02-80e7-48d4-b6ac-a01bcaa27858:e31d3dd2f0b988cda2d254d9e1f3004b668bca4c/Noark%205%20v%205%20vedl1%20Metadatakatalog.pdf)). Dette vil redusere sannsynlighet for uholdbart store investeringsbehov hos leverandører (både av felleskomponenter og av systemer) og forvaltningen.
+
+Den første leveransen - [MVP for informasjonsmodell](infomodell-mvp.md) - vil være en minimumsmodell for informasjonsmodell for dokumentasjonssystemer.
 
 Endringer som vil skje fra dagens situasjon vil i hovedsak falle i kategoriene[^2]:
 
