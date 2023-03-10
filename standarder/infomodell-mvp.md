@@ -29,3 +29,22 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
 - Vi starter fra grunnen med å definere metadatabehovene
 - ISO 23081-2 vil benyttes som første kilde til hvilke typer metadata som er nødvendig
 - Implementeringer av denne standarden (inkl. Noark metadatakatalog) vil brukes som inspirasjon til hvordan behovet kan løses i praksis
+
+
+### Hypotese på format / metamodell
+
+Formatet vil ligne noe på Noark metadatakatalog objektsortert - det vil si at utgangspunktet er at det finnes ulike objekttyper/klasser, og for hver objekttype vil det være spesifisert hvilke egenskaper/metadata som skal/bør være definert for det enkelte objekt av typen.
+
+For hver egenskap vil følgende beskrives:
+
+- Identifikator - stabil id for egenskapen - unik innen den gitte konteksten, lik på tvers av språk
+- Tittel - navn på egenskapen - kan være ulik mellom språk
+- Beskrivelse - utfyllende forklaring på hva egenskapen er - ikke obligatorisk, kan være ulik mellom språk
+- Tilsvarende hos andre - mapping til hvordan tilsvarende egenskaper er navngitt/identifisert i andre standarder
+- Relasjon til grunnleggende egenskaper - hvordan egenskapen bidrar til APIA
+  - Anvendbarhet
+  - Pålitelighet
+  - Integritet
+  - Autentisitet
+- Begrunnelse - beskrivelse av hvorfor egenskapen trenger være del av minimumsmodellen
+
