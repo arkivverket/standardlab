@@ -33,7 +33,7 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
 
 ### Hypotese på format / metamodell
 
-Formatet vil ligne noe på Noark metadatakatalog objektsortert - det vil si at utgangspunktet er at det finnes ulike objekttyper/klasser, og for hver objekttype vil det være spesifisert hvilke egenskaper/metadata som skal/bør være definert for det enkelte objekt av typen.
+Formatet vil ligne noe på Noark metadatakatalog objektsortert - det vil si at utgangspunktet er at det finnes ulike objekttyper/klasser, og for hver objekttype vil det være spesifisert hvilke egenskaper/metadata som skal/bør være definert for det enkelte objekt av typen. I utgangspunktet ser vi for oss to typer/klasser - registering/record (et generisk enkelt informasjonsobjekt) og aggregering (en generisk samling av informasjonsobjekter).
 
 For hver egenskap vil følgende beskrives:
 
