@@ -4,7 +4,7 @@
 
 > Merk: Dette er kun på hypotese-stadiet. Vesentlige endringer kan forekomme.
 
-Denne modellen er ment å være MVP for informasjonsmodell for dokumentasjonssystemer.
+Denne modellen er ment å være MVP for [informasjonsmodell for dokumentasjonssystemer](infomodell-api.md#informasjonsmodell-for-dokumentasjonssystemer).
 
 ## Bruksområde
 
