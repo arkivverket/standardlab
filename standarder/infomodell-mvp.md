@@ -28,7 +28,10 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
 
 - Vi starter fra grunnen med å definere metadatabehovene
 - ISO 23081-2 vil benyttes som første kilde til hvilke typer metadata som er nødvendig
-- Implementeringer av denne standarden (inkl. Noark metadatakatalog) vil brukes som inspirasjon til hvordan behovet kan løses i praksis
+- For å definere konkrete metadata prøver vi ut to ulike tilnærminger
+  1.  Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
+  2.  Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
+- Sammenligning og sammenslåing av resultatet fra de to tilnærmingene.
 
 ### Hypotese på format / metamodell
 
