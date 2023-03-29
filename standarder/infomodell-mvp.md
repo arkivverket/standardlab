@@ -6,6 +6,27 @@
 
 Denne modellen er ment å være MVP for [informasjonsmodell for dokumentasjonssystemer](infomodell-api.md#informasjonsmodell-for-dokumentasjonssystemer).
 
+## Hvorfor minimumsmodell?
+
+Vi så tidlig at det å dekke hele behovet for å utvikle informasjonsmodell for dokumentasjonssystemer ville bli for stort til at det var egnet å løse hele behovet med en gang. Derfor tar vi i bruk en smidig tilnærming ved å levere biter som kan deles fortløpende slik at flere kan gi tilbakemelding på det vi tenker, og gi verdi fort. Samtidig får vi da bygd erfaring på å jobbe med informasjonsmodellen(e), og en bedre forståelse for totalbehovet. En mindre omfattende modell er også antatt å være enklere å vedlikeholde og tilpasse eventuelle endrede behov enn det en større modell vil være.
+
+En slik minimumsmodell må finne riktig balanse mellom behovet for å kunne avgrense nok (slik at det ikke blir for omfattende) og behovet for å ikke avgrense for mye (slik at man lager noe som kan brukes).
+
+### Hvordan har vi avgrenset oss?
+
+Grunnleggende kan man se for seg to ulike tilnærminger til hvordan man kan komme fram til en verdigivende delmengde av den fullstendige informasjonsmodellen:
+
+- **Funksjonsbasert inndeling** – at man deler inn etter hva slags funksjonalitet som er relevant å ha informasjonsmodell for. Eksempelvis: Ivaretakelse av dokumentasjonsverdi / offentlig journal / saksflyt
+- **Domenebasert inndeling** – at man deler inn etter hva slags ulike typer systemer som er relevant å ha informasjonsmodell for. Eksempelvis: Møtedokumentasjon / korrespondanse / register eller bygg / kjøretøy / helse
+
+Vi har vurdert det til at det gir mer verdi totalt sett hvis vi legger funksjonsbasert tilnærming til grunn i første runde, og har derfor landet på en modell som ivaretar «noe» for alle dokumentasjonssystemer framfor noe som ivaretar alt for «noen» systemer.
+
+### Hvorfor har vi ikke avgrenset oss mer?
+
+For en funksjonsbasert inndeling vil det være logisk at den første modellen er en grunnmodell eller minimumsmodell. Begge vil være grunnlag som beskriver et minste felles multiplum av egenskaper det må finnes metadata for, og fungerer som grunnlag for ulike utvidelser. Forskjellen på disse modellene (slik vi tolker det) er at en minimumsmodell, i motsetning til en grunnmodell, må være omfattende nok til at den er tilstrekkelig til å dekke noen brukstilfeller. Det er derfor mer verdi i en minimumsmodell enn en grunnmodell.
+
+En konsekvens av at dette skal være en minimumsmodell, ikke en grunnmodell, er at flere egenskaper må være del av modellen. I vår minimumsmodell er dette egenskaper som er betinget obligatoriske eller sterkt anbefalte for å kunne ivareta grunnegenskapene for dokumentasjon (autentisitet, pålitelighet, integritet og anvendbarhet - ref. ISO 15489 kap 5.2.2). Dette er også hovedargumentasjonen for at det er behov for to klasser (registering og aggregering), ikke bare én (dokumentasjonsobjekt).
+
 ## Bruksområde
 
 Modellen skal brukes i dokumentasjonssystemer som brukes i offentlig sektor.
@@ -21,7 +42,7 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
   - «Rike» objekter og relasjoner er begge gyldige måter å håndtere modellen på
   - Krav til implementeringen KAN komme som følge av pålagte grensesnitt, uttrekksformat mv.
 - Ikke pålagt hierarki – men likevel støtte for at man kan (og bør?) lage aggregeringer av flere objekter
-- Sørger for at **nødvendige** egenskaper for at objekter skal regnes som dokumentasjon (ref. Arkivfaglige hensyn i forslag til ny Arkivlov (§4) / karakteristikker fra ISO 15489 kap 5.2.2 - APIA) er på plass
+- Sørger for at **nødvendige** egenskaper for at objekter skal regnes som dokumentasjon (ref. Arkivfaglige hensyn i forslag til ny Arkivlov (§4) / grunnegenskaper for dokumentasjon) er på plass
 - Peker på de konkrete metadataene som er **nødvendige** for at en skal kunne fastslå at egenskapene er ivaretatt
 
 ## Tilnærming
@@ -44,8 +65,8 @@ For hver egenskap vil følgende beskrives:
 - Beskrivelse - utfyllende forklaring på hva egenskapen er - ikke obligatorisk, kan være ulik mellom språk
 - Tilsvarende hos andre - mapping til hvordan tilsvarende egenskaper er navngitt/identifisert i andre standarder
 - Relasjon til grunnleggende egenskaper - hvordan egenskapen bidrar til APIA
+  - Autentisitet
   - Anvendbarhet
   - Pålitelighet
   - Integritet
-  - Autentisitet
 - Begrunnelse - beskrivelse av hvorfor egenskapen trenger være del av minimumsmodellen
