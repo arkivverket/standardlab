@@ -70,3 +70,55 @@ For hver egenskap vil følgende beskrives:
   - Pålitelighet
   - Integritet
 - Begrunnelse - beskrivelse av hvorfor egenskapen trenger være del av minimumsmodellen
+
+## Klasser og egenskaper
+
+Som nevnt over er det to klasser for dokumentasjonsobjekter - aggregering og registrering. Sammenhengen mellom dem kan illustreres slik:
+
+![Dokumentasjonsobjekter i minimumsmodellen: Aggregering peker på seg selv og på registrering](/standarder/figurer/infomodell-mvp-dokumentasjonsobjekter.png)
+
+**Registrering** er et enkelt informasjonselement som ikke har kobling "nedover". Det er tenkt som "atom" av informasjon. Hva det i praksis er avhenger av oppgaven som løsningen ivaretar.  
+**Aggregering** er en samling av registreringer og andre aggregeringer. Aggregeringer skal alltid ha kobling(er) til andre (underliggende) objekter.Det kan variere veldig hva en aggregering er avhengig av hvilke oppgaver som løses.
+
+For både registreringer og aggregeringer har vi støtteklasser for hendelser og planlagte hendelser. Sammenhengen kan illustreres slik:
+
+![Klasser i minimumsmodellen: Aggregering og registrering peker på hendelse og planlagt hendelse](/standarder/figurer/infomodell-mvp-klasser.png)
+
+**Hendelse** er del av endringshistorikk på registrering og aggregering. Det er hendelse eller handling som har skjedd med registrering eller aggregering.Eksempel er opprettelse av registrering eller aggregering.  
+**Planlagt hendelse** er hendelse eller handling som skal skje med registrering eller aggregering.Eksempel er kassasjon eller oppheving av skjermingshjemmel.
+
+For hver klasse er det definert hvilke egenskaper det skal finnes metadata for på hvert objekt av klassen:
+
+![Egenskaper i minimumsmodellen: Egenskaper som ligger på de ulike klassene er utlistet](/standarder/figurer/infomodell-mvp-egenskaper.png)
+
+> **Lesehjelp:**  
+> Fet: Gjennomtenkt  
+> Kursiv: Tenking påbegynt  
+> Asterisk: Obligatorisk på det enkelte objekt  
+> NB! Alt fortsatt åpent for diskusjon
+
+### Eksempler på bruk
+
+For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel på hvordan den kan brukes i et system som håndterer bompasseringer. Begge eksempler bygger på følgende scenario:
+
+- Bompengeinnkrevingen skjer ved registrering av passering bomstasjon. Det samles opp passeringer i en periode og man får samlefaktura for dette.
+- Bompengeselskapet har forvaltningsmessig behov for å ivareta grunnegenskaper ved dokumentasjonen (APIA) som skapes i denne prosessen over en viss tid.
+- De tar i bruk minimumsmodellen
+
+#### Eksempel 1: Dokumentbasert innhold
+
+- Ved hver bompassering tas det et bilde av bilen som passerer
+- I dokumentasjonssystemet opprettes det en registrering for hver passering, som har bildet som informasjonsinnhold
+- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en hendelse av typen «opprettelse») og (indirekte) hvor det skjedde (=utfører for opprettelsen, dvs. kameraet som registrerte)
+- Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
+- Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
+- Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som pdf som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
+
+#### Eksempel 2: Strukturert innhold
+
+- Ved hver bompassering leses data fra autopass-brikken til bilen som passerer av en sensor
+- I dokumentasjonssystemet opprettes det en registrering for hver passering, som har data om passeringen som informasjonsinnhold
+- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en hendelse av typen «opprettelse») og hvordan det skjedde (=utfører for opprettelsen, dvs. systemet som registrerte)
+- Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
+- Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
+- Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som strukturerte data som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
