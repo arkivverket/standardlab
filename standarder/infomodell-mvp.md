@@ -105,7 +105,7 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Bompengeselskapet har forvaltningsmessig behov for å ivareta grunnegenskaper ved dokumentasjonen (APIA) som skapes i denne prosessen over en viss tid.
 - De tar i bruk minimumsmodellen
 
-#### Eksempel 1: Dokumentbasert innhold¨
+#### Eksempel 1: Dokumentbasert innhold
 
 - Ved hver bompassering tas det et bilde av bilen som passerer
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har bildet som informasjonsinnhold
