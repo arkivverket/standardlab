@@ -1,0 +1,26 @@
+name: "Spørsmål"
+description: "Still et spørsmål til StandardLab (eller andre som følger med på dette området)"
+labels: ["spørsmål"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Hvis spørsmålet ditt handler om et av behovene, legg det inn som kommentar på behovet.
+  
+  - type: textarea
+    id: sporsmal
+    attributes:
+      label: Spørsmål
+      description: Hva er det spørsmålet du ønsker å stille?
+    validations:
+      required: true
+
+- type: dropdown
+    id: tilHvem
+    attributes:
+      label: Hvem ønsker du svar fra?
+      multiple: false
+      options:
+       - StandardLab
+       - Andre
+       - Hvem som helst
