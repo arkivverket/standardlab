@@ -92,7 +92,7 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 ![Egenskaper i minimumsmodellen: Egenskaper som ligger på de ulike klassene er utlistet](/standarder/figurer/infomodell-mvp-egenskaper.png)
 
 > **Lesehjelp:**  
-> Fet: Gjennomtenkt
-> Kursiv: Tenking påbegynt
-> Asterisk: Obligatorisk på det enkelte objekt
+> Fet: Gjennomtenkt  
+> Kursiv: Tenking påbegynt  
+> Asterisk: Obligatorisk på det enkelte objekt  
 > NB! Alt fortsatt åpent for diskusjon
