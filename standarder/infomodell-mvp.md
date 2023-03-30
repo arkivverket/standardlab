@@ -96,3 +96,29 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 > Kursiv: Tenking påbegynt  
 > Asterisk: Obligatorisk på det enkelte objekt  
 > NB! Alt fortsatt åpent for diskusjon
+
+### Eksempler på bruk
+
+For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel på hvordan den kan brukes i et system som håndterer bompasseringer. Begge eksempler bygger på følgende scenario:
+
+- Bompengeinnkrevingen skjer ved registrering av passering bomstasjon. Det samles opp passeringer i en periode og man får samlefaktura for dette.
+- Bompengeselskapet har forvaltningsmessig behov for å ivareta grunnegenskaper ved dokumentasjonen (APIA) som skapes i denne prosessen over en viss tid.
+- De tar i bruk minimumsmodellen
+
+#### Eksempel 1: Dokumentbasert innhold¨
+
+- Ved hver bompassering tas det et bilde av bilen som passerer
+- I dokumentasjonssystemet opprettes det en registrering for hver passering, som har bildet som informasjonsinnhold
+- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en hendelse av typen «opprettelse») og (indirekte) hvor det skjedde (=utfører for opprettelsen, dvs. kameraet som registrerte)
+- Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
+- Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
+- Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som pdf som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
+
+#### Eksempel 2: Strukturert innhold
+
+- Ved hver bompassering leses data fra autopass-brikken til bilen som passerer av en sensor
+- I dokumentasjonssystemet opprettes det en registrering for hver passering, som har data om passeringen som informasjonsinnhold
+- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en hendelse av typen «opprettelse») og hvordan det skjedde (=utfører for opprettelsen, dvs. systemet som registrerte)
+- Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
+- Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
+- Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som strukturerte data som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
