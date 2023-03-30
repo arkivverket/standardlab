@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Hvis spørsmålet ditt handler om et av behovene, legg det inn som kommentar på behovet.
+        Hvis spørsmålet ditt handler om et av behovene i issue-lista, legg det inn som kommentar på behovet.
   
   - type: textarea
     id: sporsmal
@@ -15,7 +15,7 @@ body:
     validations:
       required: true
 
-- type: dropdown
+  - type: dropdown
     id: tilHvem
     attributes:
       label: Hvem ønsker du svar fra?
