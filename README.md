@@ -21,6 +21,7 @@ Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https:/
 - [Mål og prinsipper](/styrende/maal-og-prinsipper.md) - hva vi ønsker å oppnå og prinsipper for hvordan vi ser for oss å jobbe for å nå målene
 - [Prioriteringskriterier](/styrende/prioriteringskriterier.md) - hvilke faktorer legges til grunn for vurderingen av de ulike behovene opp mot hverandre.
 - [Veikart](/styrende/veikart.md) - resultatet av forrige prioriteringsrunde, som er vår beste hypotese for hvilken rekkefølge vi vil løse behovene i.
+- [Mandat](/styrende/2022juli%20Prosjektmandat%20StandardLab-publiseringsversjon.pdf) - beskrivelse av mål og rammer for arbeidet. NB! Ikke oppdatert siden september 2022.
 
 ## Statuser
 
