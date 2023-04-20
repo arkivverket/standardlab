@@ -35,6 +35,14 @@ _Dokumentasjonssystemer_ er definert som "System som forvalter dokumentasjon ove
 
 _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person produserer, mottar og vedlikeholder som bevis og som et aktivum, som et ledd i å oppfylle rettslige forpliktelser eller i en forretningstransaksjon" (jf. ISO 30300)
 
+### Brukstilfeller
+
+Følgende brukerhistorier skal løses av modellen:
+
+- Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til systemer slik at jeg kan vite at løsningen jeg anskaffer sørger for at riktige metadata for å dekke (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den
+- Som systemansvarlig for dokumentasjonssystem i forvaltningen / utvikler av dokumentasjonssystem / leverandør av felleskomponent ønsker jeg å oppnå/opprettholde semantisk interoperabilitet med systemer som følger standarden når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system for å sikre effektiv utveksling av dokumentasjon
+- Som leverandør av felleskomponent/fellesløsning eller dokumentasjonssystem ønsker jeg å sikre at krav (f.eks. regelverk) er ivaretatt når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system for å sikre at min løsning kan spille sammen med andre arkivløsninger
+
 ## Noen kjennetegn
 
 - Minste felles multiplum – bør kunne brukes på alt som skal ha verdi som dokumentasjon
