@@ -37,8 +37,8 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
 
 ## Noen kjennetegn
 
-- Minste felles multiplum – bør kunne brukes på alt som er dokumentasjon
-- En konseptuell modell – stiller ikke krav til implementeringen så lenge nødvendige metadata finnes (og kan nyttiggjøres)
+- Minste felles multiplum – bør kunne brukes på alt som skal ha verdi som dokumentasjon
+- En modell på semantisk nivå – stiller ikke krav til implementeringen så lenge nødvendige metadata finnes (og kan nyttiggjøres)
   - «Rike» objekter og relasjoner er begge gyldige måter å håndtere modellen på
   - Krav til implementeringen KAN komme som følge av pålagte grensesnitt, uttrekksformat mv.
 - Ikke pålagt hierarki – men likevel støtte for at man kan (og bør?) lage aggregeringer av flere objekter
@@ -50,8 +50,8 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
 - Vi starter fra grunnen med å definere metadatabehovene
 - ISO 23081-2 vil benyttes som første kilde til hvilke typer metadata som er nødvendig
 - For å definere konkrete metadata prøver vi ut to ulike tilnærminger
-  1.  Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
-  2.  Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
+  1. Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
+  2. Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
 - Sammenligning og sammenslåing av resultatet fra de to tilnærmingene.
 
 ### Hypotese på format / metamodell
