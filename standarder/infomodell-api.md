@@ -29,7 +29,7 @@ Endringer som vil skje fra dagens situasjon vil i hovedsak falle i kategoriene[^
 - Flere elementer får kodeverk (i dagens metadatakatalog omtalt som «obligatoriske verdier»)
 - Tydeliggjøring av definisjoner, kilder mv.
 
-Informasjonsmodellen vil fortsatt være på konseptuelt nivå. Vi skal så langt det er forsvarlig tilrettelegge for at informasjonsmodellen skal kunne uttrykkes i flere hensiktsmessige formater. Vi kan[^3] lage schema i ulike formater for hvordan vi ser for oss at datamodellen bør være som følge av informasjonsmodellen. Aktuelle formater er i så fall antatt å være JSON Schema og XML Schema (alternativt: Relax NG), og kanskje også RDF Schema/OWL (alternativt: SHACL).
+Informasjonsmodellen vil fortsatt være på semantisk nivå. Vi skal så langt det er forsvarlig tilrettelegge for at informasjonsmodellen skal kunne uttrykkes i flere hensiktsmessige formater. Vi kan[^3] lage schema i ulike formater for hvordan vi ser for oss at den tekniske datamodellen bør være som følge av den semantiske informasjonsmodellen. Aktuelle formater er i så fall antatt å være JSON Schema og XML Schema (alternativt: Relax NG), og kanskje også RDF Schema/OWL (alternativt: SHACL).
 
 Som del av arbeidet vil vi også vurdere om informasjonsmodellen kan/bør uttrykkes i tråd med [Spesifikasjon for beskrivelse av informasjonsmodeller (ModellDCAT-AP-NO)](https://data.norge.no/specification/modelldcat-ap-no). Dette vil i så fall kunne være med på å tilrettelegge for gjenbruk av elementer fra andre datamodeller inn i datamodeller bygget på vår informasjonsmodell.
 

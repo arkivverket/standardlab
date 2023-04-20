@@ -35,10 +35,18 @@ _Dokumentasjonssystemer_ er definert som "System som forvalter dokumentasjon ove
 
 _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person produserer, mottar og vedlikeholder som bevis og som et aktivum, som et ledd i å oppfylle rettslige forpliktelser eller i en forretningstransaksjon" (jf. ISO 30300)
 
+### Brukstilfeller
+
+Følgende brukerhistorier skal løses av modellen:
+
+- Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til systemer slik at jeg kan vite at løsningen jeg anskaffer sørger for at riktige metadata for å dekke (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den
+- Som systemansvarlig for dokumentasjonssystem i forvaltningen / utvikler av dokumentasjonssystem / leverandør av felleskomponent ønsker jeg å oppnå/opprettholde semantisk interoperabilitet med systemer som følger standarden når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system for å sikre effektiv utveksling av dokumentasjon
+- Som leverandør av felleskomponent/fellesløsning eller dokumentasjonssystem ønsker jeg å sikre at krav (f.eks. regelverk) er ivaretatt når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system for å sikre at min løsning kan spille sammen med andre arkivløsninger
+
 ## Noen kjennetegn
 
-- Minste felles multiplum – bør kunne brukes på alt som er dokumentasjon
-- En konseptuell modell – stiller ikke krav til implementeringen så lenge nødvendige metadata finnes (og kan nyttiggjøres)
+- Minste felles multiplum – bør kunne brukes på alt som skal ha verdi som dokumentasjon
+- En modell på semantisk nivå – stiller ikke krav til implementeringen så lenge nødvendige metadata finnes (og kan nyttiggjøres)
   - «Rike» objekter og relasjoner er begge gyldige måter å håndtere modellen på
   - Krav til implementeringen KAN komme som følge av pålagte grensesnitt, uttrekksformat mv.
 - Ikke pålagt hierarki – men likevel støtte for at man kan (og bør?) lage aggregeringer av flere objekter
@@ -50,8 +58,8 @@ _Dokumentasjon_ er definert som "informasjon som en organisasjon eller person pr
 - Vi starter fra grunnen med å definere metadatabehovene
 - ISO 23081-2 vil benyttes som første kilde til hvilke typer metadata som er nødvendig
 - For å definere konkrete metadata prøver vi ut to ulike tilnærminger
-  1.  Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
-  2.  Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
+  1. Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
+  2. Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
 - Sammenligning og sammenslåing av resultatet fra de to tilnærmingene.
 
 ### Hypotese på format / metamodell
