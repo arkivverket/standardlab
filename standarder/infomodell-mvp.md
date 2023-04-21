@@ -73,7 +73,6 @@ Dersom modellen krever at informasjonsobjekter skal ha egenskapen `identifikator
 - **«Rike» objekter og relasjoner er begge gyldige måter å håndtere modellen på**  
 Det er likeverdig om kravet "informasjon om aktør som opprettet et informasjonsobjekt" er dekket ved at informasjon ligger direkte som datafeltet `oppretter` på informasjonsobjektet eller det er en henvisning til en hendelse av typen "opprettelse" i `historikk` på informasjonsobjektet, og hendelsen har datafeltet `oppretter` på seg.
 
-
 ### Hvorfor minimumsmodell?
 
 Vi så tidlig at det å dekke hele behovet for å utvikle informasjonsmodell for dokumentasjonssystemer ville bli for stort til at det var egnet å løse hele behovet med en gang. Derfor tar vi i bruk en smidig tilnærming ved å levere biter som kan deles fortløpende slik at flere kan gi tilbakemelding på det vi tenker, og gi verdi fort. Samtidig får vi da bygd erfaring på å jobbe med informasjonsmodellen(e), og en bedre forståelse for totalbehovet. En mindre omfattende modell er også antatt å være enklere å vedlikeholde og tilpasse eventuelle endrede behov enn det en større modell vil være.
@@ -143,7 +142,7 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 
 ![Egenskaper i minimumsmodellen: Egenskaper som ligger på de ulike klassene er utlistet](/standarder/figurer/infomodell-mvp-egenskaper.png)
 
-#### > #### Lesehjelp
+> #### Lesehjelp
 >
 > **Fet:** Gjennomtenkt  
 > _Kursiv:_ Tenking påbegynt  
