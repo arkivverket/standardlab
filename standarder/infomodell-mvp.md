@@ -8,19 +8,22 @@
 <!-- TOC -->
 
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
-  - [Hensikt](#hensikt)
-    - [Bruksområde](#bruksomr%C3%A5de)
-    - [Brukstilfeller](#brukstilfeller)
-  - [Semantisk informasjonsmodell](#semantisk-informasjonsmodell)
-    - [Konsekvenser / eksempler](#konsekvenser--eksempler)
-  - [Hvorfor minimumsmodell?](#hvorfor-minimumsmodell)
-    - [Hvordan har vi avgrenset oss?](#hvordan-har-vi-avgrenset-oss)
-    - [Hvorfor har vi ikke avgrenset oss mer?](#hvorfor-har-vi-ikke-avgrenset-oss-mer)
-  - [Tilnærming](#tiln%C3%A6rming)
-    - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
+    - [Hensikt](#hensikt)
+        - [Bruksområde](#bruksomr%C3%A5de)
+        - [Brukstilfeller](#brukstilfeller)
+    - [Semantisk informasjonsmodell](#semantisk-informasjonsmodell)
+        - [Konsekvenser / eksempler](#konsekvenser--eksempler)
+    - [Hvorfor minimumsmodell?](#hvorfor-minimumsmodell)
+        - [Hvordan har vi avgrenset oss?](#hvordan-har-vi-avgrenset-oss)
+        - [Hvorfor har vi ikke avgrenset oss mer?](#hvorfor-har-vi-ikke-avgrenset-oss-mer)
+    - [Tilnærming](#tiln%C3%A6rming)
+        - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
-  - [Klasser og egenskaper](#klasser-og-egenskaper)
-  - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
+    - [Klasser og egenskaper](#klasser-og-egenskaper)
+        - [> #### Lesehjelp](#--lesehjelp)
+    - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
+        - [Eksempel 1: Dokumentbasert innhold](#eksempel-1-dokumentbasert-innhold)
+        - [Eksempel 2: Strukturert innhold](#eksempel-2-strukturert-innhold)
 
 <!-- /TOC -->
 
@@ -69,9 +72,10 @@ Dersom modellen peker på at informasjonsobjekter skal ha egenskapen `tittel`, e
 - **Ikke (pålagt) en-til-en-forhold mellom egenskaper i modellen og datafelt i systemet/datasettet**  
 Et system som legger `tittel` i ulike felter avhengig av typen informasjonsobjekt (f.eks. `sakstittel`, `møtetittel` og `dokumenttittel`) er i henhold til standarden så lenge det er kjent når de ulike feltene er `tittel`. Et system som har `tittel` fordelt på flere datafelter (f.eks. at tittel er "`dokumenttype` om `tema`") vil også være innenfor standarden.
 - **Få/ingen krav til format**  
-Dersom modellen krever at informasjonsobjekter skal ha egenskapen `identifikator` kan løpenummer, UUID og farge alle være gyldige måter å angi hva identifikatoren er, så lenge funksjonelle krav (f.eks. at identifikator skal være kontekstuelt unik) er ivaretatt.
+Dersom modellen krever at informasjonsobjekter skal ha egenskapen `identifikator` kan løpenummer, UUID og farge alle være gyldige måter å angi hva identifikatoren er, så lenge funksjonelle krav (f.eks. at identifikator skal være kontekstuelt unik) er
 - **«Rike» objekter og relasjoner er begge gyldige måter å håndtere modellen på**  
 Det er likeverdig om kravet "informasjon om aktør som opprettet et informasjonsobjekt" er dekket ved at informasjon ligger direkte som datafeltet `oppretter` på informasjonsobjektet eller det er en henvisning til en hendelse av typen "opprettelse" i `historikk` på informasjonsobjektet, og hendelsen har datafeltet `oppretter` på seg.
+
 
 ### Hvorfor minimumsmodell?
 
@@ -175,3 +179,26 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som strukturerte data som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
+
+# Spørsmål og svar
+
+**Kommer denne informasjonsmodellen til å basere seg på ontologier og RDF?**  
+Dette er ikke noe vi har tatt stilling til ennå. Om du har innspill, sjekk gjerne [issue 76](https://github.com/arkivverket/standardlab/issues/76)
+
+**Er det en målsetning at modellen skal dekke det som i dag er klassiske Noark 5- og fagsystem-innhold?**  
+Ja. Modellen skal være relevant for alle system som inneholder dokumentasjon der det er relevant å ivareta grunnegenskapene, jf. [hensiktsbeskrivelsen](#hensikt).
+
+**Har dere tenkt å teste det ut på ulike typer dokumentasjon?**  
+Testene for modellen er ennå ikke definert ennå, men når vi lager eksempler og tester vil det være logisk å favne bredt.
+
+**Angående RDF har dere sett på RIC CM?**  
+_Records in Context - Conceptual model_ er en modell vi er klar over at finnes, men ikke har tatt stilling til hvordan vi skal forholde oss til.
+
+**Slik dere definerer dokumentasjon vil også registre f.eks. Folkeregisteret og Matrikkelen være inkludert. Hva tenker dere er aggrergeringsnivå i den typen dokumentasjonssystemer?**  
+Det er opp til eieren av et system eller datasett å finne ut hvilke aggregeringer som gir verdi for deres informasjon. For matrikkelen kan f.eks. dokumentasjon per kommune være en mulig aggregering. Merk også at det ikke (så langt) er pålagt at man skal benytte både registrerings- og aggregeringsnivået for at man skal være kompatibel med denne modellen. Dersom en flat struktur med registreringer er mest relevant, er det også en gyldig måte å organisere dokumentasjonen.
+
+**Når modellen er på semantisk nivå - hvordan sikrer dere da at tittel som begrep forstås i langtidbevaringen, når feltnavnet bevart kan være 1000 ulike?**  
+Den semantiske modellen i seg selv er ikke lagd for å sikre dette. Det er derfor vi nevner i siste avsnitt av [semantisk informasjonsmodell](#semantisk-informasjonsmodell) at krav til teknisk implementasjon vil være relevant i forbindelse med utveksling, uttrekk og kanskje andre prosesser.
+
+**Vil det finnes et overordnet metadata-katalog, ala et utvidet Noark 5-sett der alle mulige felttyper eller entiteter som vi ofte kaller det, blir unikt forklart hva er?**  
+Minimumsmodellen vil kompletteres med forklaring av de ulike egenskapene som er del av modellen. Men siden informasjonen i systemene vil være så ulik, vil en metadata-katalog aldri kunne bli komplett. Når det er sagt, er det nok enkelte egenskaper som går igjen i flere systemer/prosesser som det kan være relevant å beskrive. Hvor mange av disse som vil defineres av StandardLab/Arkivverket er ikke besluttet ennå.
