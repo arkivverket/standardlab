@@ -20,10 +20,7 @@
         - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
     - [Klasser og egenskaper](#klasser-og-egenskaper)
-        - [> #### Lesehjelp](#--lesehjelp)
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
-        - [Eksempel 1: Dokumentbasert innhold](#eksempel-1-dokumentbasert-innhold)
-        - [Eksempel 2: Strukturert innhold](#eksempel-2-strukturert-innhold)
 
 <!-- /TOC -->
 
