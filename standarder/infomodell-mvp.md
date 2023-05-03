@@ -7,6 +7,7 @@
 ## Innhold i dokumentet
 <!-- TOC -->
 
+- [Innhold i dokumentet](#innhold-i-dokumentet)
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
     - [Hensikt](#hensikt)
         - [Bruksområde](#bruksomr%C3%A5de)
@@ -20,10 +21,10 @@
         - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
     - [Klasser og egenskaper](#klasser-og-egenskaper)
-        - [> #### Lesehjelp](#--lesehjelp)
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
-        - [Eksempel 1: Dokumentbasert innhold](#eksempel-1-dokumentbasert-innhold)
-        - [Eksempel 2: Strukturert innhold](#eksempel-2-strukturert-innhold)
+        - [Eksempel: Bompenger](#eksempel-bompenger)
+        - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
+- [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
 
 <!-- /TOC -->
 
@@ -156,13 +157,15 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 
 ### Eksempler på bruk
 
+#### Eksempel: Bompenger
+
 For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel på hvordan den kan brukes i et system som håndterer bompasseringer. Begge eksempler bygger på følgende scenario:
 
 - Bompengeinnkrevingen skjer ved registrering av passering bomstasjon. Det samles opp passeringer i en periode og man får samlefaktura for dette.
 - Bompengeselskapet har forvaltningsmessig behov for å ivareta grunnegenskaper ved dokumentasjonen (APIA) som skapes i denne prosessen over en viss tid.
 - De tar i bruk minimumsmodellen
 
-#### Eksempel 1: Dokumentbasert innhold
+##### Variant 1: Dokumentbasert innhold
 
 - Ved hver bompassering tas det et bilde av bilen som passerer
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har bildet som informasjonsinnhold
@@ -171,7 +174,7 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som pdf som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
 
-#### Eksempel 2: Strukturert innhold
+##### Variant 2: Strukturert innhold
 
 - Ved hver bompassering leses data fra autopass-brikken til bilen som passerer av en sensor
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har data om passeringen som informasjonsinnhold
@@ -180,7 +183,37 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som strukturerte data som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
 
-# Spørsmål og svar
+#### Eksempel: Sensordata med verdi over tid
+
+Dette hypotetiske eksempelet viser hvordan data i en database som ikke følger modellen kan avbildes mot modellen. Utgangspunktet er et scenario der det er plassert ut sensorer som måler f.eks. vannivå og vanntemperatur i vassdrag.Disse sensorene rapporterer jevnlig inn i et system som tar vare på opplysningene. Opplysningene brukes blant annet til å observere endringer over tid i de ulike verdiene. NVE som eier av systemet ønsker å sikre autentisitet, integritet og pålitelighet for måledataene, og tilpasser systemet til å dekke minimumsmodellen
+
+Hver innrapporterte måling kan regnes som en registrering i systemet. Systemet lagrer data i en database med feltene:
+
+- MålingID
+- Sensor
+- Tidspunkt
+- Vannnivå
+- Vanntemperatur
+
+Dette kan avbildes til klassen `registrering` i minimumsmodellen slik:
+
+- `MålingID` er egnet som `identifikator` for registreringen.
+- `Tittel` for registreringen finnes ikke i systemet, men kan lages automatisk på formatet «Måling for `sensor` – `tidspunkt`»
+- Måledataene er `informasjonsinnhold` i registreringen(e)
+- Hvis ønskelig kan `type` benyttes til å skille ulike data  
+Istedenfor en registrering med `informasjonsinnhold` om både vannivå og vanntemperatur, kan det opprettes en registrering av type «vannivå» og en annen registrering av type «vanntemperatur». I et slikt tilfelle kan tittel også berikes med informasjon om typen registrering - f.eks på formatet "Måling av `type` for `sensor` - `tidspunkt`»
+- Hendelsene som ligger i `historikk` kan få `identifikator` opprettet automatisk. Den vanligste `Type` for hendelser vil være «opprettet», `tidspunkt` er navngitt likt i databasen og `utfører` av hendelsen er `sensor` i databasen.
+
+Det kan opprettes en `aggregering` når det er fornuftig med en sammenstilling av flere registreringer. Et eksempel på en slik aggregering kan være «Målinger av vannivå under vårflommen i Numedalslågen 2022». Den kan se slik ut:
+
+- Alle registreringer av typen «vannivå», for sensorer i Numedalslågen og tidspunkt for opprettet er innenfor relevant periode gjøres til barn av aggregeringen – f.eks. gjennom en automatisert regel
+- `Identifikator` tildeles automatisk
+- `Tittel` settes manuelt
+- `Historikk` dokumenterer hvem som opprettet sammenstillingen (som egenskapen `utfører`) og når (som egenskapen `tidspunkt`)
+
+En slik aggregering gir lettere tilgang til informasjon om den spesifikke flommen. Aggregeringen kan ha `type` «rapport om flom», slik at det er lettere å finne igjen informasjon om flere flommer.
+
+## Spørsmål og svar
 
 **Kommer denne informasjonsmodellen til å basere seg på ontologier og RDF?**  
 Dette er ikke noe vi har tatt stilling til ennå. Om du har innspill, sjekk gjerne [issue 76](https://github.com/arkivverket/standardlab/issues/76)
