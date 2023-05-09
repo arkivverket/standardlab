@@ -8,19 +8,23 @@
 <!-- TOC -->
 
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
-  - [Hensikt](#hensikt)
-    - [Bruksområde](#bruksomr%C3%A5de)
-    - [Brukstilfeller](#brukstilfeller)
-  - [Semantisk informasjonsmodell](#semantisk-informasjonsmodell)
-    - [Konsekvenser / eksempler](#konsekvenser--eksempler)
-  - [Hvorfor minimumsmodell?](#hvorfor-minimumsmodell)
-    - [Hvordan har vi avgrenset oss?](#hvordan-har-vi-avgrenset-oss)
-    - [Hvorfor har vi ikke avgrenset oss mer?](#hvorfor-har-vi-ikke-avgrenset-oss-mer)
-  - [Tilnærming](#tiln%C3%A6rming)
-    - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
+    - [Hensikt](#hensikt)
+        - [Bruksområde](#bruksomr%C3%A5de)
+        - [Brukstilfeller](#brukstilfeller)
+    - [Semantisk informasjonsmodell](#semantisk-informasjonsmodell)
+        - [Konsekvenser / eksempler](#konsekvenser--eksempler)
+    - [Hvorfor minimumsmodell?](#hvorfor-minimumsmodell)
+        - [Hvordan har vi avgrenset oss?](#hvordan-har-vi-avgrenset-oss)
+        - [Hvorfor har vi ikke avgrenset oss mer?](#hvorfor-har-vi-ikke-avgrenset-oss-mer)
+    - [Tilnærming](#tiln%C3%A6rming)
+        - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
-  - [Klasser og egenskaper](#klasser-og-egenskaper)
-  - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
+    - [Klasser og egenskaper](#klasser-og-egenskaper)
+    - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
+        - [Eksempel: Bompenger](#eksempel-bompenger)
+        - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
+- [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
+
 
 <!-- /TOC -->
 
@@ -72,6 +76,7 @@ Et system som legger `tittel` i ulike felter avhengig av typen informasjonsobjek
 Dersom modellen krever at informasjonsobjekter skal ha egenskapen `identifikator` kan løpenummer, UUID og farge alle være gyldige måter å angi hva identifikatoren er, så lenge funksjonelle krav (f.eks. at identifikator skal være kontekstuelt unik) er ivaretatt.
 - **«Rike» objekter og relasjoner er begge gyldige måter å håndtere modellen på**  
 Det er likeverdig om kravet "informasjon om aktør som opprettet et informasjonsobjekt" er dekket ved at informasjon ligger direkte som datafeltet `oppretter` på informasjonsobjektet eller det er en henvisning til en hendelse av typen "opprettelse" i `historikk` på informasjonsobjektet, og hendelsen har datafeltet `oppretter` på seg.
+
 
 ### Hvorfor minimumsmodell?
 
@@ -152,13 +157,15 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 
 ### Eksempler på bruk
 
+#### Eksempel: Bompenger
+
 For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel på hvordan den kan brukes i et system som håndterer bompasseringer. Begge eksempler bygger på følgende scenario:
 
 - Bompengeinnkrevingen skjer ved registrering av passering bomstasjon. Det samles opp passeringer i en periode og man får samlefaktura for dette.
 - Bompengeselskapet har forvaltningsmessig behov for å ivareta grunnegenskaper ved dokumentasjonen (APIA) som skapes i denne prosessen over en viss tid.
 - De tar i bruk minimumsmodellen
 
-#### Eksempel 1: Dokumentbasert innhold
+##### Variant 1: Dokumentbasert innhold
 
 - Ved hver bompassering tas det et bilde av bilen som passerer
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har bildet som informasjonsinnhold
@@ -167,7 +174,7 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som pdf som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
 
-#### Eksempel 2: Strukturert innhold
+##### Variant 2: Strukturert innhold
 
 - Ved hver bompassering leses data fra autopass-brikken til bilen som passerer av en sensor
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har data om passeringen som informasjonsinnhold
@@ -175,3 +182,56 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som strukturerte data som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
+
+#### Eksempel: Sensordata med verdi over tid
+
+Dette hypotetiske eksempelet viser hvordan data i en database som ikke følger modellen kan avbildes mot modellen. Utgangspunktet er et scenario der det er plassert ut sensorer som måler f.eks. vannivå og vanntemperatur i vassdrag.Disse sensorene rapporterer jevnlig inn i et system som tar vare på opplysningene. Opplysningene brukes blant annet til å observere endringer over tid i de ulike verdiene. NVE som eier av systemet ønsker å sikre autentisitet, integritet og pålitelighet for måledataene, og tilpasser systemet til å dekke minimumsmodellen
+
+Hver innrapporterte måling kan regnes som en registrering i systemet. Systemet lagrer data i en database med feltene:
+
+- MålingID
+- Sensor
+- Tidspunkt
+- Vannnivå
+- Vanntemperatur
+
+Dette kan avbildes til klassen `registrering` i minimumsmodellen slik:
+
+- `MålingID` er egnet som `identifikator` for registreringen.
+- `Tittel` for registreringen finnes ikke i systemet, men kan lages automatisk på formatet «Måling for `sensor` – `tidspunkt`»
+- Måledataene er `informasjonsinnhold` i registreringen(e)
+- Hvis ønskelig kan `type` benyttes til å skille ulike data  
+Istedenfor en registrering med `informasjonsinnhold` om både vannivå og vanntemperatur, kan det opprettes en registrering av type «vannivå» og en annen registrering av type «vanntemperatur». I et slikt tilfelle kan tittel også berikes med informasjon om typen registrering - f.eks på formatet "Måling av `type` for `sensor` - `tidspunkt`»
+- Hendelsene som ligger i `historikk` kan få `identifikator` opprettet automatisk. Den vanligste `Type` for hendelser vil være «opprettet», `tidspunkt` er navngitt likt i databasen og `utfører` av hendelsen er `sensor` i databasen.
+
+Det kan opprettes en `aggregering` når det er fornuftig med en sammenstilling av flere registreringer. Et eksempel på en slik aggregering kan være «Målinger av vannivå under vårflommen i Numedalslågen 2022». Den kan se slik ut:
+
+- Alle registreringer av typen «vannivå», for sensorer i Numedalslågen og tidspunkt for opprettet er innenfor relevant periode gjøres til barn av aggregeringen – f.eks. gjennom en automatisert regel
+- `Identifikator` tildeles automatisk
+- `Tittel` settes manuelt
+- `Historikk` dokumenterer hvem som opprettet sammenstillingen (som egenskapen `utfører`) og når (som egenskapen `tidspunkt`)
+
+En slik aggregering gir lettere tilgang til informasjon om den spesifikke flommen. Aggregeringen kan ha `type` «rapport om flom», slik at det er lettere å finne igjen informasjon om flere flommer.
+
+## Spørsmål og svar
+
+**Kommer denne informasjonsmodellen til å basere seg på ontologier og RDF?**  
+Dette er ikke noe vi har tatt stilling til ennå. Om du har innspill, sjekk gjerne [issue 76](https://github.com/arkivverket/standardlab/issues/76)
+
+**Er det en målsetning at modellen skal dekke det som i dag er klassiske Noark 5- og fagsystem-innhold?**  
+Ja. Modellen skal være relevant for alle system som inneholder dokumentasjon der det er relevant å ivareta grunnegenskapene, jf. [hensiktsbeskrivelsen](#hensikt).
+
+**Har dere tenkt å teste det ut på ulike typer dokumentasjon?**  
+Testene for modellen er ennå ikke definert ennå, men når vi lager eksempler og tester vil det være logisk å favne bredt.
+
+**Angående RDF har dere sett på RIC CM?**  
+_Records in Context - Conceptual model_ er en modell vi er klar over at finnes, men ikke har tatt stilling til hvordan vi skal forholde oss til.
+
+**Slik dere definerer dokumentasjon vil også registre f.eks. Folkeregisteret og Matrikkelen være inkludert. Hva tenker dere er aggrergeringsnivå i den typen dokumentasjonssystemer?**  
+Det er opp til eieren av et system eller datasett å finne ut hvilke aggregeringer som gir verdi for deres informasjon. For matrikkelen kan f.eks. dokumentasjon per kommune være en mulig aggregering. Merk også at det ikke (så langt) er pålagt at man skal benytte både registrerings- og aggregeringsnivået for at man skal være kompatibel med denne modellen. Dersom en flat struktur med registreringer er mest relevant, er det også en gyldig måte å organisere dokumentasjonen.
+
+**Når modellen er på semantisk nivå - hvordan sikrer dere da at tittel som begrep forstås i langtidbevaringen, når feltnavnet bevart kan være 1000 ulike?**  
+Den semantiske modellen i seg selv er ikke lagd for å sikre dette. Det er derfor vi nevner i siste avsnitt av [semantisk informasjonsmodell](#semantisk-informasjonsmodell) at krav til teknisk implementasjon vil være relevant i forbindelse med utveksling, uttrekk og kanskje andre prosesser.
+
+**Vil det finnes et overordnet metadata-katalog, ala et utvidet Noark 5-sett der alle mulige felttyper eller entiteter som vi ofte kaller det, blir unikt forklart hva er?**  
+Minimumsmodellen vil kompletteres med forklaring av de ulike egenskapene som er del av modellen. Men siden informasjonen i systemene vil være så ulik, vil en metadata-katalog aldri kunne bli komplett. Når det er sagt, er det nok enkelte egenskaper som går igjen i flere systemer/prosesser som det kan være relevant å beskrive. Hvor mange av disse som vil defineres av StandardLab/Arkivverket er ikke besluttet ennå.
