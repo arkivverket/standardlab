@@ -23,6 +23,7 @@
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
         - [Eksempel: Bompenger](#eksempel-bompenger)
         - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
+        - [Eksempel: Dokmunetasjon fra en prosess - gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
 - [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
 
 
@@ -212,6 +213,55 @@ Det kan opprettes en `aggregering` når det er fornuftig med en sammenstilling a
 - `Historikk` dokumenterer hvem som opprettet sammenstillingen (som egenskapen `utfører`) og når (som egenskapen `tidspunkt`)
 
 En slik aggregering gir lettere tilgang til informasjon om den spesifikke flommen. Aggregeringen kan ha `type` «rapport om flom», slik at det er lettere å finne igjen informasjon om flere flommer.
+
+
+#### Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen
+
+Dette eksempelet viser hvordan man kan bruke minimumsmodellen til å dokumentere prosesser som skaper dokumentasjon. Utgangspunktet er et scenario der man skal ta vare på dokumentasjonen som skapes ved å gjennomføre skriftlig eksamen på en videregående skole. Dette er en strukturert prosess som skaper dokumentasjon av både kortvarig og langvarig dokumentasjonsverdi. Skolen som eier systemet har behov for å sikre autentisitet, integritet og pålitelighet for dokumentasjonen, og tilpasser systemet til å dekke minimumsmodellen. 
+
+Skolen har behov for å dokumentere flere aktiviteter som sammenlagt utgjør hele prosessen med å gjennomføre skriftlig eksamen. Alle aktivitetene registreres i systemet manuelt. For hver registrering må alle de obligatoriske egenskapene for en registrering være med, herunder `identifikator`, `tittel` og `historikk`. Det vil i tillegg være behov for å registrere følgende egenskaper og støtteklasser for de ulike aktivitetene: 
+
+Lærestedet tilgjengeliggjør en oppgave som elevene skal svare på innen en frist
+
+- Oppgavetekst med informasjon om formaliteter `innholdsinformasjon`
+- Tidspunkt for tilgjengeliggjøring `hendelse`
+- Frist for innlevering `planlagt hendelse`
+
+Elevene leverer besvarelse for vurdering
+
+- Oppgavebesvarelse `innholdsinformasjon`
+- Tidspunkt for innlevering, og hvem som leverte `hendelse`
+
+Vurdering av innlevering er et vedtak som kan påklages – fastsettelse av karakter
+
+- Karakter `innholdsinformasjon` 
+- Tidspunkt for kunngjøring av vurdering `hendelse`
+- Frist for klage `planlagt hendelse`
+
+Klage på karakter
+
+- Klage `innholdsinformasjon` 
+- Tidspunkt for levering av klage `hendelse`
+- Behandlingsfrist `planlagt hendelse`
+
+Endelig fastsettelse av karakter
+
+- Vedtak `innholdsinformasjon` 
+- Tidspunkt `hendelse`
+
+Felles for all registreringene er at de er del av en dokumentasjonsprosess der dokumentfangst er en `hendelse`, bevaringstid (overføring eller kassering) er en `planlagt hendelse` og overføring eller kassasjon er en `hendelse`. 
+
+Alle registreringene kan inngå i flere ulike aggregeringer samtidig. Aggregeringene kan være permanente eller midlertidige. 
+
+Permanente aggregeringer kan for eksempel være:
+- Tilgjengeliggjøring av oppgave, innlevering og fastsettelse av karakter for alle elever samlet
+- Tilgjengeliggjøring av oppgave, innlevering og fastsettelse av karakter per elev
+
+Midlertidige aggregeringer kan for eksempel være: 
+- Kandidater med kommisjon (sensor), når flere kandidater skal vurderes samtidig, der en samling av kandidatnummer kun er nødvendig for en kort periode
+- Et enkelt søkeresultat som utføres etter behov, der aggregeringen avsluttes når søkeresultatet lukkes i systemet. 
+
+
 
 ## Spørsmål og svar
 
