@@ -23,6 +23,7 @@
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
         - [Eksempel: Bompenger](#eksempel-bompenger)
         - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
+        - [Eksempel: Dokmunetasjon fra en prosess - gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
 - [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
 
 
