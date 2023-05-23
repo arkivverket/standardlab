@@ -8,7 +8,7 @@ Vi gjennomfører statusmøter den siste torsdagen i hver måned. I møtene forte
 ## Neste møte
 
 **Tidspunkt:** Torsdag 25. mai kl 09.00 - 09.30  
-**Tema:** Kommer snart  
+**Tema:** Testing av minimumsmodellen  
 **Lenke:** [Bli med i møte](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTBkZTFhNDYtZWYyMS00MzEzLTg5NTYtMDFjMWUxNTkyN2I3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 
 ## Tidligere møter
