@@ -6,6 +6,9 @@ StandardLab jobber etter åpne og involverende prosesser. Vi deler derfor dokume
 
 Vi bruker GitHub til å melde inn og følge opp [behov i form av issues](https://github.com/arkivverket/standardlab/issues), og til å dele styrende dokumenter for arbeidet og standarder vi jobber med - både under utvikling og ferdigstilte. Om du ikke er komfortabel med å melde behov her på GitHub, kan de sendes til standardlab@arkivverket.no.
 
+> :wave: **Lyst til å bli hospitant?**  
+> Vi trenger ny hospitant til teamet. [Les mer om hva vi ser etter og hvordan du kan kontakte oss her.](/hospitering.md)
+
 ## Standarder
 
 ### Under arbeid
