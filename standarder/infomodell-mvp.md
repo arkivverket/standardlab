@@ -7,6 +7,7 @@
 ## Innhold i dokumentet
 <!-- TOC -->
 
+- [Innhold i dokumentet](#innhold-i-dokumentet)
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
     - [Hensikt](#hensikt)
         - [Bruksområde](#bruksomr%C3%A5de)
@@ -20,12 +21,12 @@
         - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
     - [Klasser og egenskaper](#klasser-og-egenskaper)
+        - [> #### Lesehjelp](#--lesehjelp)
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
         - [Eksempel: Bompenger](#eksempel-bompenger)
         - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
-        - [Eksempel: Dokmunetasjon fra en prosess - gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
+        - [Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
 - [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
-
 
 <!-- /TOC -->
 
@@ -285,3 +286,9 @@ Den semantiske modellen i seg selv er ikke lagd for å sikre dette. Det er derfo
 
 **Vil det finnes et overordnet metadata-katalog, ala et utvidet Noark 5-sett der alle mulige felttyper eller entiteter som vi ofte kaller det, blir unikt forklart hva er?**  
 Minimumsmodellen vil kompletteres med forklaring av de ulike egenskapene som er del av modellen. Men siden informasjonen i systemene vil være så ulik, vil en metadata-katalog aldri kunne bli komplett. Når det er sagt, er det nok enkelte egenskaper som går igjen i flere systemer/prosesser som det kan være relevant å beskrive. Hvor mange av disse som vil defineres av StandardLab/Arkivverket er ikke besluttet ennå.
+
+**Vil Noark bestå i parallell med denne minimumsmodellen?**  
+Arkivverket har besluttet at Noark ikke skal videreutvikles. StandardLabs mandat er å jobbe med ny standardisering uavhengig av når/om (og eventuelt hvordan) Noark avvikles. Minimumsmodellen vil ikke være til hinder for at systemer bygget på Noark metadatamodell vil kunne brukes videre uten endringer, men siden kravene her er mindre omfattende, vil det åpne for at også andre løsninger kan brukes.
+
+**Hvordan vil kvalitetssikring av etterlevelse og godkjenning skje for denne modellen?**  
+Dette er et viktig spørsmål, som vi ikke har funnet svaret på ennå, men vil måtte finne ut av før vi gjør normering. Vi tar gjerne imot tanker og innspill i [issue #82](https://github.com/arkivverket/standardlab/issues/82).
