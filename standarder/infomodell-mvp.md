@@ -20,7 +20,6 @@
         - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
     - [Klasser og egenskaper](#klasser-og-egenskaper)
-        - [> #### Lesehjelp](#--lesehjelp)
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
         - [Eksempel: Bompenger](#eksempel-bompenger)
         - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
