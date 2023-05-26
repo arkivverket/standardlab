@@ -7,7 +7,6 @@
 ## Innhold i dokumentet
 <!-- TOC -->
 
-- [Innhold i dokumentet](#innhold-i-dokumentet)
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
     - [Hensikt](#hensikt)
         - [Bruksområde](#bruksomr%C3%A5de)
