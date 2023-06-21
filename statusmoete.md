@@ -7,12 +7,13 @@ Vi gjennomfører statusmøter den siste torsdagen i hver måned. I møtene forte
 
 ## Neste møte
 
-**Tidspunkt:** Torsdag 25. mai kl 09.00 - 09.30  
-**Tema:** Testing av minimumsmodellen  
-**Lenke:** [Bli med i møte](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTBkZTFhNDYtZWYyMS00MzEzLTg5NTYtMDFjMWUxNTkyN2I3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
+**Tidspunkt:** Torsdag 29. juni kl 09.00 - 09.30  
+**Tema:** Status på informasjonsmodell + planer for andre halvår  
+**Lenke:** [Bli med i møte](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDQ1YjA2ODAtMWI2Ny00ZmY4LWIyY2EtNTFkYTI0ZDhiMTc3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 
 ## Tidligere møter
 
+- Testing av minumumsmodellen - 25. mai: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTBkZTFhNDYtZWYyMS00MzEzLTg5NTYtMDFjMWUxNTkyN2I3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 - Hvordan tenker vi minimumsmodellen kan brukes? Hva betyr det at den er på semantisk nivå - 27. april: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGYwYmJhNTItNTBhNC00MWM1LTk0NzAtYTZkMGFlMmJhOTUx%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 - MVP for informasjonsmodell - 30. mars 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjU4NmZiNGYtYzEyZi00OGU1LWJlZjctZDJkM2ZkYjVmZGVj%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 - Ny prioriteringsrunde og hypotese for informasjonsmodell og API - 23. februar 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQ5YTlhNDItYjg1Yy00MWQ3LWE2YzYtNjhjZGM0NGI5N2Q2%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
