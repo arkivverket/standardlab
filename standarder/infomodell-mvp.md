@@ -107,7 +107,7 @@ En konsekvens av at dette skal være en minimumsmodell, ikke en grunnmodell, er 
 
 - Vi starter fra grunnen med å definere metadatabehovene
 - ISO 23081-2 vil benyttes som første kilde til hvilke typer metadata som er nødvendig
-- For å definere konkrete metadata prøver vi ut to ulike tilnærminger
+- For å definere konkrete metadata prøver vi ut to ulike tilnærminger[^1]
   1. Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
   2. Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
 - Sammenligning og sammenslåing av resultatet fra de to tilnærmingene.
@@ -325,3 +325,5 @@ Arkivverket har besluttet at Noark ikke skal videreutvikles. StandardLabs mandat
 
 **Hvordan vil kvalitetssikring av etterlevelse og godkjenning skje for denne modellen?**  
 Dette er et viktig spørsmål, som vi ikke har funnet svaret på ennå, men vil måtte finne ut av før vi gjør normering. Vi tar gjerne imot tanker og innspill i [issue #82](https://github.com/arkivverket/standardlab/issues/82).
+
+[^1]: Tabell som viser sammenhengen mellom egenskapene i vår modell og de standardene vi har brukt som referanse vil bli lagt til som vedlegg til modellen
