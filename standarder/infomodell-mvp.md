@@ -28,6 +28,7 @@
         - [Eksempel: Bompenger](#eksempel-bompenger)
         - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
         - [Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
+        - [Eksempel: Bruk ved anskaffelse](#eksempel-bruk-ved-anskaffelse)
 - [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
 
 <!-- /TOC -->
@@ -248,7 +249,6 @@ Det kan opprettes en `aggregering` når det er fornuftig med en sammenstilling a
 
 En slik aggregering gir lettere tilgang til informasjon om den spesifikke flommen. Aggregeringen kan ha `type` «rapport om flom», slik at det er lettere å finne igjen informasjon om flere flommer.
 
-
 #### Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen
 
 Dette eksempelet viser hvordan man kan bruke minimumsmodellen til å dokumentere prosesser som skaper dokumentasjon. Utgangspunktet er et scenario der man skal ta vare på dokumentasjonen som skapes ved å gjennomføre skriftlig eksamen på en videregående skole. Dette er en strukturert prosess som skaper dokumentasjon av både kortvarig og langvarig dokumentasjonsverdi. Skolen som eier systemet har behov for å sikre autentisitet, integritet og pålitelighet for dokumentasjonen, og tilpasser systemet til å dekke minimumsmodellen. 
@@ -288,14 +288,45 @@ Felles for all registreringene er at de er del av en dokumentasjonsprosess der d
 Alle registreringene kan inngå i flere ulike aggregeringer samtidig. Aggregeringene kan være permanente eller midlertidige. 
 
 Permanente aggregeringer kan for eksempel være:
+
 - Tilgjengeliggjøring av oppgave, innlevering og fastsettelse av karakter for alle elever samlet
 - Tilgjengeliggjøring av oppgave, innlevering og fastsettelse av karakter per elev
 
 Midlertidige aggregeringer kan for eksempel være: 
+
 - Kandidater med kommisjon (sensor), når flere kandidater skal vurderes samtidig, der en samling av kandidatnummer kun er nødvendig for en kort periode
-- Et enkelt søkeresultat som utføres etter behov, der aggregeringen avsluttes når søkeresultatet lukkes i systemet. 
+- Et enkelt søkeresultat som utføres etter behov, der aggregeringen avsluttes når søkeresultatet lukkes i systemet.
 
+#### Eksempel: Bruk ved anskaffelse
 
+Eksempelet viser hvordan minimumsmodellen kan være svar på brukstilfellet _«Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til systemer slik at jeg kan vite at løsningen jeg anskaffer sørger for at riktige metadata for å dekke (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den»_
+
+> **Merk:** Eksempelet under vil kunne falle inn under journalpliktig dokumentasjon. I et slikt tilfelle vil det etter gjeldende lovverk ikke være anledning til å bruke minimumsmodellen, siden Noark vil være pålagt standard. Minimumsmodellen er ikke ment å være utfyllende for alle metadata som er relevant i en offentlig journal.
+
+Gran kommune har besluttet å anskaffe et nytt system for strømlinjeforming av prosessen med å gjennomføre høringer. Kommunen ønsker å sikre at de ivaretar autentisitet, pålitelighet, integritet og anvendbarhet for informasjonen som deles og samles inn i dette systemet, og vil bruke minimumsmodellen som et verktøy for å sikre dette.
+
+De vurderer at ivaretakelse av både aggregeringer (samlinger av svar knyttet til en bestemt høring) og registreringer (det enkelte høringssvar) er nyttig i systemet som skal anskaffes. De gjør deretter en vurdering av hvilke av de ikke-obligatoriske egenskapene som er relevant for systemet, og kommer fram til at de fleste er relevant, men at de ikke har behov for `andre relasjoner` og `tilgangsregler`. De vurderer også hvor viktig de ulike egenskapene er, og kommer fran til at støtte for `planlagte hendelser` anses som mindre viktig enn øvrige egenskaper, siden dette kan håndteres manuelt ved overgang til et nytt system eller til langtidsbevaring.
+
+De ser også at det er relevant å stille noen krav til hvordan modellen brukes, for eksempel til format på informasjonsinnhold og hvordan man holder oversikt over hvem som har sendt inn hvilke svar.  
+
+Som følge av denne vurderingen stiller de følgende krav i kravspesifikasjonen for anskaffelsen, **i tillegg til** kravene de ellers ville ha stilt til systemet:
+
+> **Merk:** Kravene under er kun ment som illustrasjon, ikke et forslag til kravspesifikasjon.
+
+1. Systemet skal håndtere registreringer og aggregeringer, jf. minimumsmodell for metadata i dokumentasjonssystemer
+2. Datamodellen til systemet skal inneholde metadata som dekker alle obligatoriske egenskaper, samt egenskapene type og informasjonsinnhold, jf. minimumsmodell for metadata i dokumentasjonssystemer, på et vis som etterlever funksjonelle krav i samme modell
+3. Datamodellen til systemet bør inneholde metadata som dekker egenskapen planlagte hendelser, jf. minimumsmodell for metadata i dokumentasjonssystemer, på et vis som etterlever funksjonelle krav i samme modell
+4. Systemet skal støtte at både strukturerte data (fra et nettskjema) og filer (mottatt på e-post eller som vedlegg til nettskjema) skal kunne angis som informasjonsinnhold i registreringer ved utveksling og uttrekk av informasjon.
+5. For alle svar på en høring skal den (personen eller organisasjonen) som sendte svaret være registrert i datamodellen, slik at det kan regnes som utfører på hendelsen «opprettet» i historikken
+
+For å kunne vurdere hvor godt kravene er dekket, ber de om vurderingsgrunnlag.
+
+- Til krav 1 ber kommunen om beskrivelse av hvordan klasser i systemet tilsvarer klasser i modellen.
+- Til krav 2 og 3 ber kommunen om en mappingtabell mellom datafelter i systemets datamodell og egenskapene i minimumsmodellen, samt en beskrivelse av hvordan de funksjonelle kravene til egenskapene ivaretas.
+- Til krav 4 ber kommunen om eksempel på utvekslingsformat for data fra systemet som viser hvordan ulike typer informasjonsinnhold håndteres.
+- Til krav 5 trenger ikke kommunen utdypelse utover en bekreftelse på at kravet er dekket. 
+
+På denne måten sikrer kommunen at riktige metadata blir ivaretatt, og at sentrale funksjonelle krav er dekket – samt at dette kan verifiseres mer enn bare å være en lovnad fra potensielle leverandører.
 
 ## Spørsmål og svar
 
