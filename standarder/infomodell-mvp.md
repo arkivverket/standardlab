@@ -17,7 +17,6 @@
         - [Hvordan har vi avgrenset oss?](#hvordan-har-vi-avgrenset-oss)
         - [Hvorfor har vi ikke avgrenset oss mer?](#hvorfor-har-vi-ikke-avgrenset-oss-mer)
     - [Tilnærming](#tiln%C3%A6rming)
-        - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
     - [Klasser](#klasser)
     - [Egenskaper](#egenskaper)
@@ -112,23 +111,6 @@ En konsekvens av at dette skal være en minimumsmodell, ikke en grunnmodell, er 
   1. Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
   2. Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
 - Sammenligning og sammenslåing av resultatet fra de to tilnærmingene.
-
-#### Hypotese på format / metamodell
-
-Formatet vil ligne noe på Noark metadatakatalog objektsortert - det vil si at utgangspunktet er at det finnes ulike objekttyper/klasser, og for hver objekttype vil det være spesifisert hvilke egenskaper/metadata som skal/bør være definert for det enkelte objekt av typen. Vi ser for oss tre typer/klasser - registering/record (et generisk enkelt informasjonsobjekt), aggregering (en generisk samling av informasjonsobjekter) og hendelse (en beskrivelse av noe som har skjedd (potensielt også skal skje) med en record eller aggregering).
-
-For hver egenskap vil følgende beskrives:
-
-- Identifikator - stabil id for egenskapen - unik innen den gitte konteksten, lik på tvers av språk
-- Tittel - navn på egenskapen - kan være ulik mellom språk
-- Beskrivelse - utfyllende forklaring på hva egenskapen er - ikke obligatorisk, kan være ulik mellom språk
-- Tilsvarende hos andre - mapping til hvordan tilsvarende egenskaper er navngitt/identifisert i andre standarder
-- Relasjon til grunnleggende egenskaper - hvordan egenskapen bidrar til APIA
-  - Autentisitet
-  - Anvendbarhet
-  - Pålitelighet
-  - Integritet
-- Begrunnelse - beskrivelse av hvorfor egenskapen trenger være del av minimumsmodellen
 
 ## Selve modellen
 
