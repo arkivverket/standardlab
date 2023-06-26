@@ -172,20 +172,20 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 
 |**Egenskapsidentifikator**|**Tittel**|**Definisjon**|**Kommentar**|**Obligatorisk**|
 | :- | :- | :- | :- | :- |
-|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier| |` `X|
+|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier| |x|
 |tittel|Tittel|Kort navn som beskriver hva den enkelte hendelse innebar.<br>Relatert definisjon: http://purl.org/dc/terms/title|Informasjonen skal være forståelig for mennesker| |
-|type|Type|Hva slags hendelse inntraff (eksempelvis oppretting, endring, kassering). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|` `X|
-|tid|Tidsangivelse for hendelse|Angivelse av når en hendelse har inntruffet, enten i form av tidspunkt eller tidsperiode<br>Relatert definisjon: http://purl.org/dc/terms/created| |` `x|
-|utfører|Utfører av hendelse|Aktør som har utført denne hendelsen.<br>Realtert definisjon: http://purl.org/dc/terms/creator| |` `x|
+|type|Type|Hva slags hendelse inntraff (eksempelvis oppretting, endring, kassering). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|x|
+|tid|Tidsangivelse for hendelse|Angivelse av når en hendelse har inntruffet, enten i form av tidspunkt eller tidsperiode<br>Relatert definisjon: http://purl.org/dc/terms/created| |x|
+|utfører|Utfører av hendelse|Aktør som har utført denne hendelsen.<br>Realtert definisjon: http://purl.org/dc/terms/creator| |x|
 
 #### Planlagt hendelse
 
 |**Egenskapsidentifikator**|**Tittel**|**Definisjon**|**Kommentar**|**Obligatorisk**|
 | :- | :- | :- | :- | :- |
-|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier| |` `X|
+|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier| |x|
 |tittel|Tittel|Kort navn som beskriver hva den enkelte hendelse innebar.<br>Relatert definisjon: http://purl.org/dc/terms/title|Informasjonen skal være forståelig for mennesker| |
-|type|Type|Hva slags hendelse er planlagt (eksempelvis endring, kassering, overføring). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|` `X|
-|tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |` `X|
+|type|Type|Hva slags hendelse er planlagt (eksempelvis endring, kassering, overføring). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|x|
+|tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |x|
 |oppretter|Oppretter av hendelse|Aktør som har opprettet den planlagte hendelsen.| | |
 
 
