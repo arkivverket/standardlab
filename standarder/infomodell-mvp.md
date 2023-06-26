@@ -7,6 +7,7 @@
 ## Innhold i dokumentet
 <!-- TOC -->
 
+- [Innhold i dokumentet](#innhold-i-dokumentet)
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
     - [Hensikt](#hensikt)
         - [Bruksområde](#bruksomr%C3%A5de)
@@ -19,7 +20,13 @@
     - [Tilnærming](#tiln%C3%A6rming)
         - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
-    - [Klasser og egenskaper](#klasser-og-egenskaper)
+    - [Klasser](#klasser)
+        - [> #### Lesehjelp](#--lesehjelp)
+    - [Egenskaper](#egenskaper)
+        - [Registrering](#registrering)
+        - [Aggregering](#aggregering)
+        - [Inntruffet hendelse](#inntruffet-hendelse)
+        - [Planlagt hendelse](#planlagt-hendelse)
     - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
         - [Eksempel: Bompenger](#eksempel-bompenger)
         - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
@@ -127,7 +134,7 @@ For hver egenskap vil følgende beskrives:
 
 ## Selve modellen
 
-### Klasser og egenskaper
+### Klasser
 
 Som nevnt over er det to klasser for dokumentasjonsobjekter - aggregering og registrering. Sammenhengen mellom dem kan illustreres slik:
 
@@ -154,6 +161,54 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 > Asterisk (*): Obligatorisk på det enkelte objekt
 >
 > NB! Alt fortsatt åpent for diskusjon
+
+### Egenskaper
+
+#### Registrering
+
+|**Egenskapsidentifikator**|**Tittel**|**Definisjon**|**Kommentar**|**Obligatorisk**|
+| :- | :- | :- | :- | :- |
+|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier|1: Det er ønskelig at identifiaktor skal være i leselig og menneskeanvendbart format.<br>2: Entydig identifikator er helt grunnleggende for å vite hvilken forekomst det er snakk om. At den er menneskeanvendbar er nyttig for gjenfinning.|x|
+|tittel|Tittel|Kort navn som beskriver hva det enkelte objektet inneholder.<br>Relatert definisjon: http://purl.org/dc/terms/title|Gjenfinnbarhet svekkes vesentlig hvis man ikke raskt kan få et inntrykk av hva man har funnet|x|
+|type|Type|Hva slags objekt er det snakk om (eksempelvis nivå, spesialisering).<br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som organet definerer for det enkelte datasett.| |
+|inntruffetHendelse|Hendelseshistorikk|Referanser til (eller opplisting av) de intrufne hendelsene rundt eksempelvis oppretting, vedlikehold og utført avhending av objektet.<br><br>Bruk: Som minimum skal hendelsen "opprettet" være med - andre hendelser skal også være logget hvis de har skjedd.|1: Organet definerer selv hvilke hendelser (utover opprettet) det bør registreres inntrufne hendelser for<br>2: Hendelsen av typen opprettet vil ikke nødvendigvis være første kronologiske hendelse i historikken - for eksempel dersom organet finner det hensiktsmessig å registrere når hendelsen en registrering dokumenterer inntraff<br>3: Tillit svekkes vesentlig om ikke et minimum av logging er på plass også på aggregeringsnivået|x|
+|planlagtHendelse|Planlagte hendelser|Referanser til (eller opplisting av) de hendelser som er planlagt (eksempelvis kassasjon, vedlikehold og regelmessig kvalitetskontroll). |1: Organet definerer selv hva det bør registreres planlagte hendelser for<br>2: Nyttig hjelpemiddel for å kunne definere planer på tvers av innholdet i en aggregering.| |
+|informasjonsinnhold|Registreringen inneholder|Den informasjonen som er innholdet i registreringen. Det kan være informasjonen i seg selv, eller referanse til de innholdselementene informasjonen består av.|Informasjonen skal i dette tilfellet være logisk fattbart||
+|relasjon|Relasjoner|Referanse som viser sammenheng med andre aggregeringer eller registreringer, fortrinnsvis med angitt type relasjon<br>Relatert definisjon: http://purl.org/dc/terms/relation|1: Denne egenskapen skal **ikke** benyttes for hierarkiske relasjoner (der aggregeringer med knyttetDokumentasjon skal benyttes)<br>2: Organet definerer selv de relasjonstypene som er relevant for det enkelte datasett.<br>3: Historikk for relasjoner registreres som hendelser i den grad det er relevant.| |
+
+#### Aggregering
+
+|**Egenskapsidentifikator**|**Tittel**|**Definisjon**|**Kommentar**|**Obligatorisk**|
+| :- | :- | :- | :- | :- |
+|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier|1: Det er ønskelig at identifiaktor skal være i leselig og menneskeanvendbart format.<br>2: Entydig identifikator er helt grunnleggende for å vite hvilken forekomst det er snakk om. At den er menneskeanvendbar er nyttig for gjenfinning.|x|
+|tittel|Tittel|Kort navn som beskriver hva det enkelte objektet inneholder.<br>Relatert definisjon: http://purl.org/dc/terms/title|Gjenfinnbarhet svekkes vesentlig hvis man ikke raskt kan få et inntrykk av hva man har funnet|x|
+|type|Type|Hva slags objekt er det snakk om (eksempelvis nivå, spesialisering).<br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som organet definerer for det enkelte datasett.| |
+|inntruffetHendelse|Hendelseshistorikk|Referanser til (eller opplisting av) de intrufne hendelsene rundt eksempelvis oppretting, vedlikehold og utført avhending av objektet.<br><br>Bruk: Som minimum skal hendelsen "opprettet" være med - andre hendelser skal også være logget hvis de har skjedd.|1: Organet definerer selv hvilke hendelser (utover opprettet) det bør registreres inntrufne hendelser for<br>2: Hendelsen av typen opprettet vil ikke nødvendigvis være første kronologiske hendelse i historikken - for eksempel dersom organet finner det hensiktsmessig å registrere når hendelsen en registrering dokumenterer inntraff<br>3: Tillit svekkes vesentlig om ikke et minimum av logging er på plass også på aggregeringsnivået|x|
+|planlagtHendelse|Planlagte hendelser|Referanser til (eller opplisting av) de hendelser som er planlagt (eksempelvis kassasjon, vedlikehold og regelmessig kvalitetskontroll). |1: Organet definerer selv hva det bør registreres planlagte hendelser for<br>2: Nyttig hjelpemiddel for å kunne definere planer på tvers av innholdet i en aggregering.| |
+|knyttetDokumentasjon|Aggregeringen inneholder|Referanser til (eller opplisting av) de registreringer eller aggregeringer som hører inn i denne aggregeringen.<br>Relatert definisjon: http://purl.org/dc/terms/hasPart|1: Det medfører økt risiko for at krav ikke er ivaretatt når opplisting benyttes. Det bør derfor kun unntaksvis gjøres<br>2: Dette er innholdet for aggregeringen, tilsvarende "informasjonsinnhold" for Registreringen.|x|
+|relasjon|Relasjoner|Referanse som viser sammenheng med andre aggregeringer eller registreringer, fortrinnsvis med angitt type relasjon<br>Relatert definisjon: http://purl.org/dc/terms/relation|1: Denne egenskapen skal **ikke** benyttes for hierarkiske relasjoner (der aggregeringer med knyttetDokumentasjon skal benyttes)<br>2: Organet definerer selv de relasjonstypene som er relevant for det enkelte datasett.<br>3: Historikk for relasjoner registreres som hendelser i den grad det er relevant.| |
+
+#### Inntruffet hendelse
+
+|**Egenskapsidentifikator**|**Tittel**|**Definisjon**|**Kommentar**|**Obligatorisk**|
+| :- | :- | :- | :- | :- |
+|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier| |` `X|
+|tittel|Tittel|Kort navn som beskriver hva den enkelte hendelse innebar.<br>Relatert definisjon: http://purl.org/dc/terms/title|Informasjonen skal være forståelig for mennesker| |
+|type|Type|Hva slags hendelse inntraff (eksempelvis oppretting, endring, kassering). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|` `X|
+|tid|Tidsangivelse for hendelse|Angivelse av når en hendelse har inntruffet, enten i form av tidspunkt eller tidsperiode<br>Relatert definisjon: http://purl.org/dc/terms/created| |` `x|
+|utfører|Utfører av hendelse|Aktør som har utført denne hendelsen.<br>Realtert definisjon: http://purl.org/dc/terms/creator| |` `x|
+
+#### Planlagt hendelse
+
+|**Egenskapsidentifikator**|**Tittel**|**Definisjon**|**Kommentar**|**Obligatorisk**|
+| :- | :- | :- | :- | :- |
+|id|Identifikator|Entydig referanse til det enkelte objekt. Den skal være unik innen kontekst (innen sin klasse i datasettet). <br>Relatert definisjon: http://purl.org/dc/terms/identifier| |` `X|
+|tittel|Tittel|Kort navn som beskriver hva den enkelte hendelse innebar.<br>Relatert definisjon: http://purl.org/dc/terms/title|Informasjonen skal være forståelig for mennesker| |
+|type|Type|Hva slags hendelse er planlagt (eksempelvis endring, kassering, overføring). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|` `X|
+|tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |` `X|
+|oppretter|Oppretter av hendelse|Aktør som har opprettet den planlagte hendelsen.| | |
+
+
 
 ### Eksempler på bruk
 
