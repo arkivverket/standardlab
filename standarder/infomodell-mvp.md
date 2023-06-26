@@ -7,7 +7,6 @@
 ## Innhold i dokumentet
 <!-- TOC -->
 
-- [Innhold i dokumentet](#innhold-i-dokumentet)
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
     - [Hensikt](#hensikt)
         - [Bruksområde](#bruksomr%C3%A5de)
@@ -21,7 +20,6 @@
         - [Hypotese på format / metamodell](#hypotese-p%C3%A5-format--metamodell)
 - [Selve modellen](#selve-modellen)
     - [Klasser](#klasser)
-        - [> #### Lesehjelp](#--lesehjelp)
     - [Egenskaper](#egenskaper)
         - [Registrering](#registrering)
         - [Aggregering](#aggregering)
