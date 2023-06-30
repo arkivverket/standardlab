@@ -24,11 +24,11 @@
         - [Aggregering](#aggregering)
         - [Inntruffet hendelse](#inntruffet-hendelse)
         - [Planlagt hendelse](#planlagt-hendelse)
-    - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
-        - [Eksempel: Bompenger](#eksempel-bompenger)
-        - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
-        - [Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
-        - [Eksempel: Bruk ved anskaffelse](#eksempel-bruk-ved-anskaffelse)
+- [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
+    - [Eksempel: Bompenger](#eksempel-bompenger)
+    - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
+    - [Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
+    - [Eksempel: Bruk ved anskaffelse](#eksempel-bruk-ved-anskaffelse)
 - [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
 
 <!-- /TOC -->
@@ -121,15 +121,15 @@ Som nevnt over er det to klasser for dokumentasjonsobjekter - aggregering og reg
 
 ![Dokumentasjonsobjekter i minimumsmodellen: Aggregering peker på seg selv og på registrering](/standarder/figurer/infomodell-mvp-dokumentasjonsobjekter.png)
 
-**Registrering** er et enkelt informasjonselement som ikke har kobling "nedover". Det er tenkt som "atom" av informasjon. Hva det i praksis er avhenger av oppgaven som løsningen ivaretar.  
+**Registrering** er et enkelt informasjonselement som ikke har kobling "nedover". Det er tenkt som "atom" av informasjon, og kan likestilles med "record" i internasjonale dokumentasjonsforvaltningsstandarder. Hva det i praksis er avhenger av oppgaven som løsningen ivaretar.  
 **Aggregering** er en samling av registreringer og andre aggregeringer. Aggregeringer skal alltid ha kobling(er) til andre (underliggende) objekter.Det kan variere veldig hva en aggregering er avhengig av hvilke oppgaver som løses.
 
 For både registreringer og aggregeringer har vi støtteklasser for hendelser og planlagte hendelser. Sammenhengen kan illustreres slik:
 
 ![Klasser i minimumsmodellen: Aggregering og registrering peker på hendelse og planlagt hendelse](/standarder/figurer/infomodell-mvp-klasser.png)
 
-**Hendelse** er del av endringshistorikk på registrering og aggregering. Det er hendelse eller handling som har skjedd med registrering eller aggregering.Eksempel er opprettelse av registrering eller aggregering.  
-**Planlagt hendelse** er hendelse eller handling som skal skje med registrering eller aggregering.Eksempel er kassasjon eller oppheving av skjermingshjemmel.
+**Inntruffet hendelse** er del av endringshistorikk på den enkelte registrering eller aggregering. Det er en hendelse eller handling som har skjedd med registreringen eller aggregeringen. Eksempel er opprettelse av registrering eller aggregering.  
+**Planlagt hendelse** er en hendelse eller handling som skal skje med den enkelte registrering eller aggregering. Eksempel er kassasjon av registrering eller aggregering.
 
 For hver klasse er det definert hvilke egenskaper det skal finnes metadata for på hvert objekt av klassen:
 
@@ -189,11 +189,9 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 |tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |x|
 |oppretter|Oppretter av hendelse|Aktør som har opprettet den planlagte hendelsen.| | |
 
+## Eksempler på bruk
 
-
-### Eksempler på bruk
-
-#### Eksempel: Bompenger
+### Eksempel: Bompenger
 
 For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel på hvordan den kan brukes i et system som håndterer bompasseringer. Begge eksempler bygger på følgende scenario:
 
@@ -201,27 +199,27 @@ For å illustrere hvordan modellen kan brukes, har vi laget et tenkt eksempel p�
 - Bompengeselskapet har forvaltningsmessig behov for å ivareta grunnegenskaper ved dokumentasjonen (APIA) som skapes i denne prosessen over en viss tid.
 - De tar i bruk minimumsmodellen
 
-##### Variant 1: Dokumentbasert innhold
+#### Variant 1: Dokumentbasert innhold
 
 - Ved hver bompassering tas det et bilde av bilen som passerer
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har bildet som informasjonsinnhold
-- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en hendelse av typen «opprettelse») og (indirekte) hvor det skjedde (=utfører for opprettelsen, dvs. kameraet som registrerte)
+- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en inntruffet hendelse av typen «opprettelse») og (indirekte) hvor det skjedde (=utfører for opprettelsen, dvs. kameraet som registrerte)
 - Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som pdf som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
 
-##### Variant 2: Strukturert innhold
+#### Variant 2: Strukturert innhold
 
 - Ved hver bompassering leses data fra autopass-brikken til bilen som passerer av en sensor
 - I dokumentasjonssystemet opprettes det en registrering for hver passering, som har data om passeringen som informasjonsinnhold
-- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en hendelse av typen «opprettelse») og hvordan det skjedde (=utfører for opprettelsen, dvs. systemet som registrerte)
+- Historikken for registreringen inneholder informasjon om når passeringen skjedde (=tidspunkt for en inntruffet hendelse av typen «opprettelse») og hvordan det skjedde (=utfører for opprettelsen, dvs. systemet som registrerte)
 - Systemet oppretter også en aggregering for passeringer for den enkelte bil for faktureringsperioden
 - Hver gang bilen passerer lages det ny registrering som har aggregeringen som «forelder»
 - Ved fakturering lages det en registrering med aggregeringen som forelder. Denne inneholder fakturaen som strukturerte data som dokumentinnhold. Bompengeselskapet har valgt å ha registreringstypen «faktura» for enklere å finne igjen alle fakturaer
 
-#### Eksempel: Sensordata med verdi over tid
+### Eksempel: Sensordata med verdi over tid
 
-Dette hypotetiske eksempelet viser hvordan data i en database som ikke følger modellen kan avbildes mot modellen. Utgangspunktet er et scenario der det er plassert ut sensorer som måler f.eks. vannivå og vanntemperatur i vassdrag.Disse sensorene rapporterer jevnlig inn i et system som tar vare på opplysningene. Opplysningene brukes blant annet til å observere endringer over tid i de ulike verdiene. NVE som eier av systemet ønsker å sikre autentisitet, integritet og pålitelighet for måledataene, og tilpasser systemet til å dekke minimumsmodellen
+Dette hypotetiske eksempelet viser hvordan data i en database som ikke følger modellen kan avbildes mot modellen. Utgangspunktet er et scenario der det er plassert ut sensorer som måler f.eks. vannivå og vanntemperatur i vassdrag. Disse sensorene rapporterer jevnlig inn i et system som tar vare på opplysningene. Opplysningene brukes blant annet til å observere endringer over tid i de ulike verdiene. NVE som eier av systemet ønsker å sikre autentisitet, integritet og pålitelighet for måledataene, og tilpasser systemet til å dekke minimumsmodellen
 
 Hver innrapporterte måling kan regnes som en registrering i systemet. Systemet lagrer data i en database med feltene:
 
@@ -238,7 +236,7 @@ Dette kan avbildes til klassen `registrering` i minimumsmodellen slik:
 - Måledataene er `informasjonsinnhold` i registreringen(e)
 - Hvis ønskelig kan `type` benyttes til å skille ulike data  
 Istedenfor en registrering med `informasjonsinnhold` om både vannivå og vanntemperatur, kan det opprettes en registrering av type «vannivå» og en annen registrering av type «vanntemperatur». I et slikt tilfelle kan tittel også berikes med informasjon om typen registrering - f.eks på formatet "Måling av `type` for `sensor` - `tidspunkt`»
-- Hendelsene som ligger i `historikk` kan få `identifikator` opprettet automatisk. Den vanligste `Type` for hendelser vil være «opprettet», `tidspunkt` er navngitt likt i databasen og `utfører` av hendelsen er `sensor` i databasen.
+- De intrufne hendelsene som ligger i `historikk` kan få `identifikator` opprettet automatisk. Den vanligste `Type` for intrufne hendelser vil være «opprettet», `tidspunkt` er navngitt likt i databasen og `utfører` av hendelsen er `sensor` i databasen.
 
 Det kan opprettes en `aggregering` når det er fornuftig med en sammenstilling av flere registreringer. Et eksempel på en slik aggregering kan være «Målinger av vannivå under vårflommen i Numedalslågen 2022». Den kan se slik ut:
 
@@ -249,7 +247,7 @@ Det kan opprettes en `aggregering` når det er fornuftig med en sammenstilling a
 
 En slik aggregering gir lettere tilgang til informasjon om den spesifikke flommen. Aggregeringen kan ha `type` «rapport om flom», slik at det er lettere å finne igjen informasjon om flere flommer.
 
-#### Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen
+### Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen
 
 Dette eksempelet viser hvordan man kan bruke minimumsmodellen til å dokumentere prosesser som skaper dokumentasjon. Utgangspunktet er et scenario der man skal ta vare på dokumentasjonen som skapes ved å gjennomføre skriftlig eksamen på en videregående skole. Dette er en strukturert prosess som skaper dokumentasjon av både kortvarig og langvarig dokumentasjonsverdi. Skolen som eier systemet har behov for å sikre autentisitet, integritet og pålitelighet for dokumentasjonen, og tilpasser systemet til å dekke minimumsmodellen. 
 
@@ -258,32 +256,32 @@ Skolen har behov for å dokumentere flere aktiviteter som sammenlagt utgjør hel
 Lærestedet tilgjengeliggjør en oppgave som elevene skal svare på innen en frist
 
 - Oppgavetekst med informasjon om formaliteter `innholdsinformasjon`
-- Tidspunkt for tilgjengeliggjøring `hendelse`
+- Tidspunkt for tilgjengeliggjøring `inntruffet hendelse`
 - Frist for innlevering `planlagt hendelse`
 
 Elevene leverer besvarelse for vurdering
 
 - Oppgavebesvarelse `innholdsinformasjon`
-- Tidspunkt for innlevering, og hvem som leverte `hendelse`
+- Tidspunkt for innlevering, og hvem som leverte `inntruffet hendelse`
 
 Vurdering av innlevering er et vedtak som kan påklages – fastsettelse av karakter
 
 - Karakter `innholdsinformasjon` 
-- Tidspunkt for kunngjøring av vurdering `hendelse`
+- Tidspunkt for kunngjøring av vurdering `inntruffet hendelse`
 - Frist for klage `planlagt hendelse`
 
 Klage på karakter
 
 - Klage `innholdsinformasjon` 
-- Tidspunkt for levering av klage `hendelse`
+- Tidspunkt for levering av klage `inntruffet hendelse`
 - Behandlingsfrist `planlagt hendelse`
 
 Endelig fastsettelse av karakter
 
 - Vedtak `innholdsinformasjon` 
-- Tidspunkt `hendelse`
+- Tidspunkt `inntruffet hendelse`
 
-Felles for all registreringene er at de er del av en dokumentasjonsprosess der dokumentfangst er en `hendelse`, bevaringstid (overføring eller kassering) er en `planlagt hendelse` og overføring eller kassasjon er en `hendelse`. 
+Felles for all registreringene er at de er del av en dokumentasjonsprosess der dokumentfangst er en `inntruffet hendelse`, bevaringstid (overføring eller kassering) er en `planlagt hendelse` og overføring eller kassasjon er en `inntruffet hendelse`. 
 
 Alle registreringene kan inngå i flere ulike aggregeringer samtidig. Aggregeringene kan være permanente eller midlertidige. 
 
@@ -297,7 +295,7 @@ Midlertidige aggregeringer kan for eksempel være:
 - Kandidater med kommisjon (sensor), når flere kandidater skal vurderes samtidig, der en samling av kandidatnummer kun er nødvendig for en kort periode
 - Et enkelt søkeresultat som utføres etter behov, der aggregeringen avsluttes når søkeresultatet lukkes i systemet.
 
-#### Eksempel: Bruk ved anskaffelse
+### Eksempel: Bruk ved anskaffelse
 
 Eksempelet viser hvordan minimumsmodellen kan være svar på brukstilfellet _«Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til systemer slik at jeg kan vite at løsningen jeg anskaffer sørger for at riktige metadata for å dekke (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den»_
 
@@ -305,7 +303,7 @@ Eksempelet viser hvordan minimumsmodellen kan være svar på brukstilfellet _«S
 
 Gran kommune har besluttet å anskaffe et nytt system for strømlinjeforming av prosessen med å gjennomføre høringer. Kommunen ønsker å sikre at de ivaretar autentisitet, pålitelighet, integritet og anvendbarhet for informasjonen som deles og samles inn i dette systemet, og vil bruke minimumsmodellen som et verktøy for å sikre dette.
 
-De vurderer at ivaretakelse av både aggregeringer (samlinger av svar knyttet til en bestemt høring) og registreringer (det enkelte høringssvar) er nyttig i systemet som skal anskaffes. De gjør deretter en vurdering av hvilke av de ikke-obligatoriske egenskapene som er relevant for systemet, og kommer fram til at de fleste er relevant, men at de ikke har behov for `andre relasjoner` og `tilgangsregler`. De vurderer også hvor viktig de ulike egenskapene er, og kommer fran til at støtte for `planlagte hendelser` anses som mindre viktig enn øvrige egenskaper, siden dette kan håndteres manuelt ved overgang til et nytt system eller til langtidsbevaring.
+De vurderer at ivaretakelse av både aggregeringer (samlinger av svar knyttet til en bestemt høring) og registreringer (det enkelte høringssvar) er nyttig i systemet som skal anskaffes. De gjør deretter en vurdering av hvilke av de ikke-obligatoriske egenskapene som er relevant for systemet, og kommer fram til at de fleste er relevant, men at de ikke har behov for `relasjoner`. De vurderer også hvor viktig de ulike egenskapene er, og kommer fran til at støtte for `planlagte hendelser` anses som mindre viktig enn øvrige egenskaper, siden dette kan håndteres manuelt ved overgang til et nytt system eller til langtidsbevaring.
 
 De ser også at det er relevant å stille noen krav til hvordan modellen brukes, for eksempel til format på informasjonsinnhold og hvordan man holder oversikt over hvem som har sendt inn hvilke svar.  
 
@@ -317,7 +315,7 @@ Som følge av denne vurderingen stiller de følgende krav i kravspesifikasjonen 
 2. Datamodellen til systemet skal inneholde metadata som dekker alle obligatoriske egenskaper, samt egenskapene type og informasjonsinnhold, jf. minimumsmodell for metadata i dokumentasjonssystemer, på et vis som etterlever funksjonelle krav i samme modell
 3. Datamodellen til systemet bør inneholde metadata som dekker egenskapen planlagte hendelser, jf. minimumsmodell for metadata i dokumentasjonssystemer, på et vis som etterlever funksjonelle krav i samme modell
 4. Systemet skal støtte at både strukturerte data (fra et nettskjema) og filer (mottatt på e-post eller som vedlegg til nettskjema) skal kunne angis som informasjonsinnhold i registreringer ved utveksling og uttrekk av informasjon.
-5. For alle svar på en høring skal den (personen eller organisasjonen) som sendte svaret være registrert i datamodellen, slik at det kan regnes som utfører på hendelsen «opprettet» i historikken
+5. For alle svar på en høring skal den (personen eller organisasjonen) som sendte svaret være registrert i datamodellen, slik at det kan regnes som utfører på den intrufne hendelsen «opprettet» i historikken
 
 For å kunne vurdere hvor godt kravene er dekket, ber de om vurderingsgrunnlag.
 
