@@ -192,7 +192,8 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 
 ## Teknisk modell
 
-
+Tekniske modeller er viktige for både å kunne oppnå interoperabilitet mellom løsninger som tar var på dokumentasjon og vise modellene på måte som engasjerer mer teknisk auditorie. Samtidig skal ikke de tekniske modellene normeres på like bestemt nivå som den semantiske modellen. Teknisk modell skal helelr være veiledning på hvordan det er mulig å ta den semantiske modellen i bruk for å løse sine oppgaver.
+Derfor samles de illustrasjonene for mulige tekniske modeller i egen fil: [tekniske-modeller.md](tekniske-modeller.md)
 
 ## Eksempler på bruk
 
