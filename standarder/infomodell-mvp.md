@@ -24,6 +24,7 @@
         - [Aggregering](#aggregering)
         - [Inntruffet hendelse](#inntruffet-hendelse)
         - [Planlagt hendelse](#planlagt-hendelse)
+- [Teknisk modell](#teknisk-modell)
 - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
     - [Eksempel: Bompenger](#eksempel-bompenger)
     - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
@@ -188,6 +189,11 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 |type|Type|Hva slags hendelse er planlagt (eksempelvis endring, kassering, overføring). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|x|
 |tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |x|
 |oppretter|Oppretter av hendelse|Aktør som har opprettet den planlagte hendelsen.| | |
+
+## Teknisk modell
+
+Tekniske modeller er viktige for både å kunne oppnå interoperabilitet mellom løsninger som tar var på dokumentasjon og vise modellene på en måte som engasjerer mer teknisk publikum. Samtidig skal ikke de tekniske modellene normeres på like bestemt nivå som den semantiske modellen. Teknisk modell skal heller være veiledning på hvordan det er mulig å ta den semantiske modellen i bruk for å løse sine oppgaver.
+Derfor samles de illustrasjonene for mulige tekniske modeller i egen fil: [tekniske-modeller.md](tekniske-modeller.md)
 
 ## Eksempler på bruk
 
