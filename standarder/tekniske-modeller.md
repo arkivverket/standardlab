@@ -17,13 +17,13 @@
 
 ## Om tekniske modeller og arbeid med de
 
-Tekniske modeller viser hvordan det er mulig å gå frem for å tilpasse den semantiske modellen til bruk i et eller annet konrekt tilfelle. Teknisk modell detaljerer videre semantisk modell, og gjør det mulig å oppnå faktisk interoperabilitet mellom løsninger som tar vare på dokumentasjon.
+Tekniske modeller viser hvordan det er mulig å gå frem for å tilpasse den semantiske modellen til bruk i et eller annet spesifikk tilfelle. Teknisk modell detaljerer videre semantisk modell, og gjør det mulig å oppnå faktisk interoperabilitet mellom løsninger som tar vare på dokumentasjon.
 
 StandardLab teamet har utarbeidet 3 eksempler på hvordan det er mulig å bygge opp teknisk modell uten å ha konkret tilfelle å forholde seg til. Følgende forutsetninger har vært tatt:
 
 * Tekniske modeller baserer seg på semantisk modell som er beskrevet her: [infomodell-mvp.md](infomodell-mvp.md)
 * Sammenheng mellom den semantiske og den tekniske modeller er innlysende. Det er ingen behov for støttemateriale som gjør kobling mellom klasser og egenskaper entydig
-* Modell er formulert i [UML klassediagramm](https://en.wikipedia.org/wiki/Unified_Modeling_Language) notasjon. En av modelleту bruker OCL ([Object Constraint Language](https://en.wikipedia.org/wiki/Object_Constraint_Language))
+* Modell er formulert i [UML klassediagramm](https://en.wikipedia.org/wiki/Unified_Modeling_Language) notasjon. En av modellene bruker OCL ([Object Constraint Language](https://en.wikipedia.org/wiki/Object_Constraint_Language))
 * Norsk språk brukes i navn på både klasser og egenskaper
 * Typestruktur tilsvarer en eller annen moder objektorientert språk, uten å peke tydelig på noe konkret språk
 
@@ -31,9 +31,9 @@ StandardLab teamet har utarbeidet 3 eksempler på hvordan det er mulig å bygge 
 
 Denne modellen ligger seg tettest inn til den semantiske modellen. Ingen av verktøy som er tilgjengelige for objektorientert modellering er brukte. Det er ganske lett å kjenne igjen klasser `Registrering` og `Aggregering` og begge støtteklassene.
 
-Mengde piler i diagrammen er betydelig større, siden arv er ikke brukt. De fleste koblingene som kunne ha gått til både `Registrering` og `Aggregering` er blitt doblet opp.
+Mengde piler i diagram er betydelig større, siden arv er ikke brukt. De fleste koblingene som kunne ha gått til både `Registrering` og `Aggregering` er blitt doblet opp.
 
-Det er nødvendig til å bruke Object Contraint Language for å vise at selv om det er mulig at `Aggregering` innholder ingen `Registrering` eller ingen `Aggregering`, den er nødt til å inneholde en av de.
+Det er nødvendig til å bruke Object Contraint Language for å vise at selv om det er mulig at `Aggregering` inneholder ingen `Registrering` eller ingen `Aggregering`, den er nødt til å inneholde en av de.
 
 Alt dette gjør modell detaljer, og noe tungt å vedlikeholde.
 
@@ -41,7 +41,7 @@ Alt dette gjør modell detaljer, og noe tungt å vedlikeholde.
 
 ## Noe generalisert
 
-Bruk av [arv](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) og [abstrakt klasse](https://en.wikipedia.org/wiki/Abstract_type) gir oss mulighet for å tegne kortere og mer konsist diagramm.
+Bruk av [arv](https://en.wikipedia.org/wiki/Inheritance_(object-oriented_programming)) og [abstrakt klasse](https://en.wikipedia.org/wiki/Abstract_type) gir oss mulighet for å tegne kortere og mer konsist diagram.
 
 Støtteklassene (`InntruffetHendelse` og `PlanlagtHendelse`) abstraheres fremdeles ikke, og er sett på som 2 helt uavhengige klasser.
 
@@ -50,6 +50,7 @@ Støtteklassene (`InntruffetHendelse` og `PlanlagtHendelse`) abstraheres fremdel
 
 ## Generalisert til det ytterste
 
+Det er også mulig å generalisere modellen videre ved å definere klassen som er felles stammor for alle andre klasser. Dette gjør modellen mer abstrakt, og innfører avhengigheter som er muligens ikke nødvendige. Eksempel på en er at egenskapen `type` med datatype `String` defineres på `Objekt`. Dette kan gjøre det vanskeligere å definere egne typer for `Aggregering`, `Registerering` og støtteklasser.
 
 
 ![Teknisk modell: Generalisert](/standarder/figurer/teknisk-modell-3.png)
