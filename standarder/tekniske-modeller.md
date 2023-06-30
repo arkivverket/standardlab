@@ -25,7 +25,7 @@ StandardLab-teamet har utarbeidet 3 eksempler på hvordan det er mulig å bygge 
 * Sammenheng mellom den semantiske og den tekniske modeller er innlysende. Det er ingen behov for støttemateriale som gjør kobling mellom klasser og egenskaper entydig
 * Modell er formulert i [UML klassediagram](https://en.wikipedia.org/wiki/Unified_Modeling_Language) notasjon. En av modellene bruker OCL ([Object Constraint Language](https://en.wikipedia.org/wiki/Object_Constraint_Language))
 * Norsk språk brukes i navn på både klasser og egenskaper
-* Typestruktur tilsvarer et eller annet modern objektorientert språk, uten å peke tydelig på noe konkret språk
+* Typestruktur tilsvarer et eller annet moderne objektorientert språk, uten å peke tydelig på noe konkret språk
 
 ## En-til-en
 
