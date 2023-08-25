@@ -235,17 +235,17 @@ Det er ganske innlysende hvordan identifikator, tittel og informasjonsinnhold i 
 
 ### Aggregering 
 
-Det er flere typer aggregeringer, hvor en av de er alle meldinger sendt fra en bestemt foresatt. Det er da relevant å være bevisst på hvilke egenskaper har foresatt og elev i KvikkKontakt. 
+Det er flere typer aggregeringer, hvor en av de er alle meldinger sendt fra en bestemt foresatt. Det er da relevant å være bevisst på hvilke egenskaper foresatt og elev har i KvikkKontakt.
 
 ![Egenskaper ved elever og foresatte](/standarder/figurer/leverandoer-fig-5.png)
 
 *Fig. 5: Egenskaper ved elever og foresatte*
 
-Det er en kobling fra foresatte til elever som viser hvem er vedkomne er foresatt for. 
+Det er en kobling fra foresatte til elever som viser hvem er vedkommende er foresatt for.
 
-Det er viktig å legge merke til at selve objekt av type Foresatt har ingen opprettelsesdato, og minimumsmodell krever at Aggregering skal ha en Hendelse av type Opprettet. Vi løser dette ved å presisere at aggregering er en samling av meldinger som er blitt sendt eller mottatt av en foresatt. Denne aggregeringer representerer ikke selve foresatt, men meldingen til foresatt. Vi går mer i detalj på dette senere. 
+Det er viktig å legge merke til at selve objekt av type Foresatt ikke har noen opprettelsesdato, og minimumsmodell krever at Aggregering skal ha en Hendelse av type Opprettet. Vi løser dette ved å presisere at aggregering er en samling av meldinger som er blitt sendt eller mottatt av en foresatt. Denne aggregeringen representerer ikke selve foresatt, men meldingen til foresatt. Vi går mer i detalj på dette senere. 
 
-Overordnet struktur for aggregering for alle meldinger for en bestemt foresatt kan se slik ut 
+Overordnet struktur for aggregering for alle meldinger for en bestemt foresatt kan se slik ut. 
 
 ![Aggregering av meldinger for en foresatt](/standarder/figurer/leverandoer-fig-6.png)
 
