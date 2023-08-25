@@ -5,7 +5,7 @@
 > Merk: Dette er kun på hypotese-stadiet. Vesentlige endringer kan forekomme.
 
 ## Innhold i dokumentet
-<!-- TOC -->
+<!-- MarkdownTOC -->
 
 - [Om modellen og arbeidet med den](#om-modellen-og-arbeidet-med-den)
     - [Hensikt](#hensikt)
@@ -26,13 +26,9 @@
         - [Planlagt hendelse](#planlagt-hendelse)
 - [Teknisk modell](#teknisk-modell)
 - [Eksempler på bruk](#eksempler-p%C3%A5-bruk)
-    - [Eksempel: Bompenger](#eksempel-bompenger)
-    - [Eksempel: Sensordata med verdi over tid](#eksempel-sensordata-med-verdi-over-tid)
-    - [Eksempel: Dokumentasjon fra en prosess - Gjennomføre skriftlig eksamen](#eksempel-dokumentasjon-fra-en-prosess---gjennomf%C3%B8re-skriftlig-eksamen)
-    - [Eksempel: Bruk ved anskaffelse](#eksempel-bruk-ved-anskaffelse)
 - [Spørsmål og svar](#sp%C3%B8rsm%C3%A5l-og-svar)
 
-<!-- /TOC -->
+<!-- /MarkdownTOC -->
 
 ## Om modellen og arbeidet med den
 
