@@ -127,7 +127,7 @@ Midlertidige aggregeringer kan for eksempel være:
 
 Eksempelet viser hvordan minimumsmodellen kan være svar på brukstilfellet _«Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til systemer slik at jeg kan vite at løsningen jeg anskaffer sørger for at riktige metadata for å dekke (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den»_
 
-> **Merk:** Eksempelet under vil kunne falle inn under journalpliktig dokumentasjon. I et slikt tilfelle vil det etter gjeldende lovverk ikke være anledning til å bruke minimumsmodellen, siden Noark vil være pålagt standard. Minimumsmodellen er ikke ment å være utfyllende for alle metadata som er relevant i en offentlig journal.
+> **⚠️ Merk:** Eksempelet under vil kunne falle inn under journalpliktig dokumentasjon. I et slikt tilfelle vil det etter gjeldende lovverk ikke være anledning til å bruke minimumsmodellen, siden Noark vil være pålagt standard. Minimumsmodellen er ikke ment å være utfyllende for alle metadata som er relevant i en offentlig journal.
 
 Gran kommune har besluttet å anskaffe et nytt system for strømlinjeforming av prosessen med å gjennomføre høringer. Kommunen ønsker å sikre at de ivaretar autentisitet, pålitelighet, integritet og anvendbarhet for informasjonen som deles og samles inn i dette systemet, og vil bruke minimumsmodellen som et verktøy for å sikre dette.
 
@@ -137,7 +137,7 @@ De ser også at det er relevant å stille noen krav til hvordan modellen brukes,
 
 Som følge av denne vurderingen stiller de følgende krav i kravspesifikasjonen for anskaffelsen, **i tillegg til** kravene de ellers ville ha stilt til systemet:
 
-> **Merk:** Kravene under er kun ment som illustrasjon, ikke et forslag til kravspesifikasjon.
+> **⚠️ Merk:** Kravene under er kun ment som illustrasjon, ikke et forslag til kravspesifikasjon.
 
 1. Systemet skal håndtere registreringer og aggregeringer, jf. minimumsmodell for metadata i dokumentasjonssystemer
 2. Datamodellen til systemet skal inneholde metadata som dekker alle obligatoriske egenskaper, samt egenskapene type og informasjonsinnhold, jf. minimumsmodell for metadata i dokumentasjonssystemer, på et vis som etterlever funksjonelle krav i samme modell
@@ -192,7 +192,7 @@ De viktigste informasjonselementene ved kommunikasjon mellom ansatte i fylkeskom
 
 *Fig. 1: Aktørmodellen i KvikkKontakt*
 
-Det er mulig å sende tekstmeldinger og beskjeder om at en elev trenger ikke skyss. Det er kun mulig å ha én avsender og én mottaker per melding. Dette gjenspeiles i informasjonsmodellen for meldinger. 
+Det er mulig å sende tekstmeldinger og beskjeder om at en elev trenger ikke skyss (melding om fravær). Det er kun mulig å ha én avsender og én mottaker per melding. Dette gjenspeiles i informasjonsmodellen for meldinger. 
 
 ![Meldingsmodell i KvikkKontakt](/standarder/figurer/leverandoer-fig-2.png)
 
@@ -202,7 +202,7 @@ Siden minimumsinformasjonsmodell fra Arkivverket er utformet som en semantisk mo
 
 ### Registrering 
 
-Storevik Software bestemmer at både vanlig tekstmelding og tekstmelding skal være registreringen i minimumsmodellen. Alle meldinger som er knyttet til foresatt og elev skal være aggregeringer. Her er komplett oversikt over egenskaper ved tekst- og tekstmeldinger. 
+Storevik Software bestemmer at både vanlig tekstmelding og melding om fravær skal være registreringen i minimumsmodellen. Alle meldinger som er knyttet til foresatt og elev skal være aggregeringer. Her er komplett oversikt over egenskaper ved tekstmelding og melding om fravær. 
 
 ![Egenskaper ved meldinger](/standarder/figurer/leverandoer-fig-3.png)
 
@@ -210,27 +210,27 @@ Storevik Software bestemmer at både vanlig tekstmelding og tekstmelding skal v�
 
 Storevik Software definerer kobling mellom de aktuelle meldingstypene og registrering på en slik måte. 
 
-![Kobling mellom tekstmelding og registrering](/standarder/figurer/leverandoer-fig-4.png)
+![Kobling mellom melding om fravær og registrering](/standarder/figurer/leverandoer-fig-4.png)
 
-*Fig. 4: Kobling mellom tekstmelding og registrering*
+*Fig. 4: Kobling mellom melding om fravær og registrering*
 
-Det er ganske innlysende hvordan identifikator, tittel og informasjonsinnhold i Registrering ble hentet fra tekstmeldingen. Egenskapen «type» i Registreringen tas fra typen av meldingen. I dette tilfelle definere alle tekstmeldinger med egenskap type «Leave». Historikk av en tekstmelding beskrives på følgende måte: 
+Det er ganske innlysende hvordan identifikator, tittel og informasjonsinnhold i Registrering ble hentet fra meldingen om fravær. Egenskapen «type» i Registreringen tas fra typen av meldingen. I dette tilfelle defineres alle meldinger med egenskap type «Leave». Historikk av en melding beskrives på følgende måte: 
 
 * **Opprettelse**
     * Hendelse av type «Opprettelse» skapes basert på verdi i egenskap «`created`» på Leave. 
     * Identifikator skapes automatisk 
-    * Tittel fylles ut som «Opprettelse av tekstmelding fra `<sender>` til `<receiver>` den `<created>`» 
+    * Tittel fylles ut som «Opprettelse av melding om fravær fra `<sender>` til `<receiver>` den `<created>`» 
     * Tidspunkt settes på verdi av `created` egenskap på `Leave`
     * Utfører settes til verdi av egenskap `creator` på `Leave`
  * **Utsending**
     * Hendelse av type «Utsending» skapes basert på verdi i egenskap «`sent`» på `Leave`.
     * Identifikator skapes automatisk 
-    * Tittel fylles ut som «Utsending av tekstmelding fra `<sender>` til `<receiver>` den `<sent>`» 
+    * Tittel fylles ut som «Utsending av melding om fravær fra `<sender>` til `<receiver>` den `<sent>`» 
     * Tidspunkt settes på verdi av `sent` egenskap på `Leave`
 * **Lest**
     * Hendelse av type «Lest» skapes basert på verdi i egenskap «`read`» på Leave. 
     * Identifikator skapes automatisk 
-    * Tittel fylles ut som «tekstmelding fra `<sender>` til `<receiver>` har vært lest den `<read>`» 
+    * Tittel fylles ut som «Melding om fravær fra `<sender>` til `<receiver>` har vært lest den `<read>`» 
     * Tidspunkt settes på verdi av `read` egenskap på `Leave`
 
 ### Aggregering 
