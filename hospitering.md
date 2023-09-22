@@ -22,7 +22,7 @@ Arkivverket har besluttet å ikke videreutvikle Noark i sin nåværende form, me
 
 ## Vi ser etter deg som
 
-- Jobber i en arkivskapende virksomhet enten i arkiv- eller dokumentasjonsforvaltning, eller i andre relevante fagområder (teknologi,arkitektur, informasjonsforvaltning eller tjenestedesign) sammen med arkivet i virksomheten  
+- Jobber i en arkivskapende virksomhet enten i arkiv- eller dokumentasjonsforvaltning, eller i andre relevante fagområder (teknologi, arkitektur, informasjonsforvaltning eller tjenestedesign) sammen med arkivet i virksomheten  
 - Har erfaring med (eller interesse for og ser nytten av) involvering av interessenter i utviklingsarbeid​
 - Har forståelse for offentlig forvaltning  
 - Liker å jobbe i team​
