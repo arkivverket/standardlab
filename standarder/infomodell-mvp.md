@@ -36,9 +36,15 @@ Denne modellen er ment å være MVP for [informasjonsmodell for dokumentasjonssy
 
 ### Hensikt
 
-Minimumsmodellen er lagd for å sikre at **nødvendige** egenskaper for at objekter skal regnes som dokumentasjon (ref. Arkivfaglige hensyn i [forslag til ny Arkivlov (§4)](https://www.regjeringen.no/contentassets/27ee1149002f49788beaf21e56ae7742/hoyringsnotat-5.oktober-.pdf#page=190) / grunnegenskaper for dokumentasjon) er på plass i de systemene som skal ivareta dokumentasjon og i de datasettene som skal regnes som dokumentasjon. Med grunnegenskaper mener vi autentisitet, pålitelighet, integritet og anvendbarhet - ref. ISO 15489 kap 5.2.2.
+Minimumsmodellen er lagd for å sikre at **nødvendige** egenskaper for at objekter skal regnes som dokumentasjon (jf. krav til hva som skal sikres i [forslag til ny Arkivlov (§4)](https://www.regjeringen.no/contentassets/27ee1149002f49788beaf21e56ae7742/hoyringsnotat-5.oktober-.pdf#page=190) og grunnegenskaper for dokumentasjon) er på plass i de systemene som skal ivareta dokumentasjon og i de datasettene som skal regnes som dokumentasjon. Med grunnegenskaper mener vi autentisitet, pålitelighet, integritet og anvendbarhet - ref. ISO 15489 kap 5.2.2.
 
-Mer konkret skal modellen peke på de konkrete metadataene som er **nødvendige** for at en skal kunne fastslå at egenskapene er ivaretatt. I tillegg er modellen en angivelse av hvilke klasser av objekter som bør støttes når innholdet i et system/datasett er dokumentasjon, men den pålegger ikke et hierarki.
+Mer konkret peker modellen på de konkrete metadataene som er **nødvendige** for at en skal kunne fastslå at egenskapene er ivaretatt.Modellen vil være et grunnsett av metadata, og som hovedregel vil den brukes sammen med ulike tillegg som er tilpasset de funksjonene og/eller de domenene en løsning eller et datasett skal dekke. 
+
+I tillegg er modellen en angivelse av hvilke klasser av objekter som bør støttes når innholdet i et system/datasett er dokumentasjon, men den pålegger ikke et hierarki.
+
+Modellen er en anbefalt standard[^1]. Det vil si at Arkivverket mener man bør ha god grunn hvis man velger å fravike den, men det vil ikke være behov for noen form for dispensasjon.
+
+Modellen utvikles og vedlikeholdes i tråd med StandardLabs prinsipper. Dette vil si at den bygger på gjenbruk av andre standarder (ref. [tilnærming](#tilnærming)), og at den vil evalueres kontinuerlig og justeres i tråd med endringer i hva som oppleves som beste praksis.
 
 #### Bruksområde
 
@@ -46,7 +52,7 @@ Modellen skal brukes i dokumentasjonssystemer som brukes i offentlig sektor.
 
 _Dokumentasjonssystemer_ er definert som "System som forvalter dokumentasjon over tid" (jf. ISO 30300)
 
-_Dokumentasjon_ er definert som "informasjon som en organisasjon eller person produserer, mottar og vedlikeholder som bevis og som et aktivum, som et ledd i å oppfylle rettslige forpliktelser eller i en forretningstransaksjon" (jf. ISO 30300)
+_Dokumentasjon_ er definert med utgangspunkt i definisjonene av _arkiv_ og _dokument_ i Arkivlova. Definisjonen blir "logisk avgrensa informasjonsmengder som vert til som lekk i ei verksemd, og som er lagra (på eit medium) for seinare lesing, lyding, framsyning eller overføring" (jf. §2 a./b.)
 
 Det brede bruksområdet medfører at modellen må være et slags minste felles multiplum av metadata en kan anta at er (eller i det minste bør være) til stede i alle systemer, og at det ikke stilles flere obligatoriske krav enn nødvendig.
 
@@ -54,9 +60,12 @@ Det brede bruksområdet medfører at modellen må være et slags minste felles m
 
 Følgende brukerhistorier skal løses av modellen:
 
-- Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til systemer slik at jeg kan vite at løsningen jeg anskaffer sørger for at riktige metadata for å dekke (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den
-- Som systemansvarlig for dokumentasjonssystem i forvaltningen / utvikler av dokumentasjonssystem / leverandør av felleskomponent ønsker jeg å oppnå/opprettholde semantisk interoperabilitet med systemer som følger standarden når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system for å sikre effektiv utveksling av dokumentasjon
-- Som leverandør av felleskomponent/fellesløsning eller dokumentasjonssystem ønsker jeg å sikre at krav (f.eks. regelverk) er ivaretatt når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system for å sikre at min løsning kan spille sammen med andre arkivløsninger
+- Som bestiller av dokumentasjonsløsning i forvaltningen ønsker jeg at standarden stiller krav til at riktige metadata for å vise at (sentrale) faglige krav til arkiv er ivaretatt for informasjonsobjekter i løsningen når jeg skal anskaffe (utvikling av) nytt system, for å sikre at løsningen er egnet til at vi som organisasjon oppfyller våre plikter ved å bruke den
+- Som leverandør av felleskomponent/fellesløsning eller dokumentasjonssystem ønsker jeg å vite hvilke metadata som kreves for å vise at (sentrale) faglige krav (f.eks. regelverk) er ivaretatt når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system, for å sikre at min løsning kan spille sammen med andre arkivløsninger
+
+Modellen skal også bidra til følgende brukerhistorie:
+
+- Som systemansvarlig for dokumentasjonssystem i forvaltningen / utvikler av dokumentasjonssystem / leverandør av felleskomponent ønsker jeg å oppnå/opprettholde semantisk interoperabilitet med systemer som behandler tilsvarende metadata når jeg skal (videre-)utvikle datamodell(er) som brukes i mitt system, for å sikre effektiv utveksling av dokumentasjon
 
 ### Semantisk informasjonsmodell
 
@@ -105,7 +114,7 @@ En konsekvens av at dette skal være en minimumsmodell, ikke en grunnmodell, er 
 
 - Vi starter fra grunnen med å definere metadatabehovene
 - ISO 23081-2 vil benyttes som første kilde til hvilke typer metadata som er nødvendig
-- For å definere konkrete metadata prøver vi ut to ulike tilnærminger[^1]
+- For å definere konkrete metadata prøver vi ut to ulike tilnærminger[^2]
   1. Utgangspunkt i kjente metadatastandarder som er konkretiseringer av 23081-2 ([Nederlandske retninglinjer](https://www.nationaalarchief.nl/archiveren/kennisbank/metagegevens-0) og [Australsk standard](https://www.naa.gov.au/information-management/standards/australian-government-recordkeeping-metadata-standard))
   2. Faglig diskusjon rundt hvilke metadata som er **nødvendige** og relasjon til mer omfattende standarder ([CITS ERMS](https://dilcis.eu/content-types/cserms) og [Noark](https://www.arkivverket.no/forvaltning-og-utvikling/noark-standarden/noark5-standarden))
 - Sammenligning og sammenslåing av resultatet fra de to tilnærmingene.
@@ -232,4 +241,5 @@ Arkivverket har besluttet at Noark ikke skal videreutvikles. StandardLabs mandat
 **Hvordan vil kvalitetssikring av etterlevelse og godkjenning skje for denne modellen?**  
 Dette er et viktig spørsmål, som vi ikke har funnet svaret på ennå, men vil måtte finne ut av før vi gjør normering. Vi tar gjerne imot tanker og innspill i [issue #82](https://github.com/arkivverket/standardlab/issues/82).
 
-[^1]: Tabell som viser sammenhengen mellom egenskapene i vår modell og de standardene vi har brukt som referanse vil bli lagt til som vedlegg til modellen
+[^1]: Dette vil bli formelt besluttet på et senere tidspunkt, og er arbeidshypotesen vi har jobbet ut fra.
+[^2]: Tabell som viser sammenhengen mellom egenskapene i vår modell og de standardene vi har brukt som referanse vil bli lagt til som vedlegg til modellen
