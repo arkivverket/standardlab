@@ -42,7 +42,7 @@ Mer konkret peker modellen på de konkrete metadataene som er **nødvendige** fo
 
 I tillegg er modellen en angivelse av hvilke klasser av objekter som bør støttes når innholdet i et system/datasett er dokumentasjon, men den pålegger ikke et hierarki.
 
-Modellen er en anbefalt standard[^1]. Det vil si at Arkivverket mener man bør ha god grunn hvis man velger å fravike den, men det vil ikke være behov for noen form for dispensasjon.
+Modellen vil være en anbefalt standard[^1]. Det vil si at Arkivverket mener man bør ha god grunn hvis man velger å fravike den, men det vil ikke være behov for noen form for dispensasjon.
 
 Modellen utvikles og vedlikeholdes i tråd med StandardLabs prinsipper. Dette vil si at den bygger på gjenbruk av andre standarder (ref. [tilnærming](#tilnærming)), og at den vil evalueres kontinuerlig og justeres i tråd med endringer i hva som oppleves som beste praksis.
 
@@ -52,7 +52,7 @@ Modellen skal brukes i dokumentasjonssystemer som brukes i offentlig sektor.
 
 _Dokumentasjonssystemer_ er definert som "System som forvalter dokumentasjon over tid" (jf. ISO 30300)
 
-_Dokumentasjon_ er definert med utgangspunkt i definisjonene av _arkiv_ og _dokument_ i Arkivlova. Definisjonen blir "logisk avgrensa informasjonsmengder som vert til som lekk i ei verksemd, og som er lagra (på eit medium) for seinare lesing, lyding, framsyning eller overføring" (jf. §2 a./b.)
+_Dokumentasjon_ er definert med utgangspunkt i definisjonene av _arkiv_ og _dokument_ i Arkivlova. Definisjonen blir "logisk avgrensa informasjonsmengder som vert til som lekk i ei verksemd, og som er lagra (på eit medium) for seinare lesing, lyding, framsyning eller overføring" (jf. §2 a./b.). Dette samsvarer i stor grad med definisjonen av dokumentasjon som brukes i ISO 30300 ("informasjon som en organisasjon eller person produserer, mottar og vedlikeholder som bevis og som et aktivum, som et ledd i å oppfylle rettslige forpliktelser eller i en forretningstransaksjon")
 
 Det brede bruksområdet medfører at modellen må være et slags minste felles multiplum av metadata en kan anta at er (eller i det minste bør være) til stede i alle systemer, og at det ikke stilles flere obligatoriske krav enn nødvendig.
 
