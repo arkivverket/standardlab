@@ -127,8 +127,11 @@ Som nevnt over er det to klasser for dokumentasjonsobjekter - aggregering og reg
 
 ![Dokumentasjonsobjekter i minimumsmodellen: Aggregering peker på seg selv og på registrering](/standarder/figurer/infomodell-mvp-dokumentasjonsobjekter.png)
 
-**Registrering** er et enkelt informasjonselement som ikke har kobling "nedover". Det er tenkt som "atom" av informasjon, og kan likestilles med "record" i internasjonale dokumentasjonsforvaltningsstandarder. Hva det i praksis er avhenger av oppgaven som løsningen ivaretar.  
-**Aggregering** er en samling av registreringer og andre aggregeringer. Aggregeringer skal alltid ha kobling(er) til andre (underliggende) objekter.Det kan variere veldig hva en aggregering er avhengig av hvilke oppgaver som løses.
+**Registrering** er et informasjonselement der informasjonsinnholdet behandles som er del av registreringen. Det er det laveste nivået i et informasjonshierarki der det er viktig å ivareta arkivfaglige verdier for. Dette innebærer at en registrering alltid har et informasjonsinnhold. Det kan likestilles med «record» i internasjonale dokumentasjonsforvaltningsstandarder. Det vil som hovedregel være dokumentasjon som skapes (mottas/innhentes/utformes/sammenstilles) som del av samme steg i et prosessforløp.
+  
+**Aggregering** er en samling av registreringer og/eller andre aggregeringer som det gir verdi å behandle samlet over tid. Aggregeringer har kobling(er) til andre (underliggende) objekter som sitt innhold. Aggregeringer kan brukes til å ivareta sammenheng med arbeidsprosesser generelt, de enkelte forløp av disse prosessene, hvilket objekt/organisasjon/person dokumentasjonen handler om, eller andre hierarkiske relasjoner der det er relevant. 
+
+> Merk at aggregering ikke er en obligatorisk klasse. Den kan benyttes der en flat struktur av registreringer er mest hensiktsmessig, og vil fortsatt være kompatibelt med denne minimumsmodellen.
 
 For både registreringer og aggregeringer har vi støtteklasser for hendelser og planlagte hendelser. Sammenhengen kan illustreres slik:
 
