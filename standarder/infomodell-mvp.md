@@ -160,7 +160,8 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 |type|Type|Hva slags objekt er det snakk om (eksempelvis nivå, spesialisering).<br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som organet definerer for det enkelte datasett.| |
 |inntruffetHendelse|Hendelseshistorikk|Referanser til (eller opplisting av) de intrufne hendelsene rundt eksempelvis oppretting, vedlikehold og utført avhending av objektet.<br><br>Bruk: Som minimum skal hendelsen "opprettet" være med - andre hendelser skal også være logget hvis de har skjedd.|1: Organet velger selv hvilke hendelser (utover opprettet) det bør registreres inntrufne hendelser for, og supplerer eventuelt med egne hendelsestyper.<br>2: Tillit svekkes vesentlig om ikke et minimum av logging er på plass også på aggregeringsnivået|x|
 |planlagtHendelse|Planlagte hendelser|Referanser til (eller opplisting av) de hendelser som er planlagt (eksempelvis kassasjon, vedlikehold og regelmessig kvalitetskontroll). |1: Organet velger selv hva det bør registreres planlagte hendelser for, og supplerer eventuelt med egne hendelsestyper.<br>2: Nyttig hjelpemiddel for å kunne definere planer på tvers av innholdet i en aggregering.| |
-|informasjonsinnhold|Registreringen inneholder|Den informasjonen som er innholdet i registreringen. Det kan være informasjonen i seg selv, eller referanse til de innholdselementene informasjonen består av.|Informasjonen skal i dette tilfellet være logisk fattbart||
+|informasjonsinnhold|Registreringen inneholder|Det som er innholdet i registreringen eller egenskaper på registreringen som beskriver innholdet (dvs. ikke det som er knyttet til dokumentasjonsforvaltningsprosessen). </br> Informasjonsinnholdet er dataene som er samlet, behandlet eller har oppstått som følge av forretningsaktiviteten som dokumenteres – ofte uttrykt gjennom fil(er), datastrømmer eller strukturerte data. I tillegg vil det ofte være en del egenskapsbeskrivelser ved denne som gjør den anvendbart dvs. identifiseres, presenteres, tolkes, vises/brukes.</br>En registrering (record) kan ha flere informasjonselementer i seg.
+|Informasjonen skal i dette tilfellet være logisk fattbart||
 |relasjon|Relasjoner|Referanse som viser sammenheng med andre aggregeringer eller registreringer, fortrinnsvis med angitt type relasjon<br>Relatert definisjon: http://purl.org/dc/terms/relation|1: Denne egenskapen skal **ikke** benyttes for hierarkiske relasjoner (der aggregeringer med knyttetDokumentasjon skal benyttes)<br>2: Organet definerer selv de relasjonstypene som er relevant for det enkelte datasett.<br>3: Historikk for relasjoner registreres som hendelser i den grad det er relevant.| |
 
 #### Aggregering
@@ -183,7 +184,7 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 |tittel|Tittel|Kort navn som beskriver hva den enkelte hendelse innebar.<br>Relatert definisjon: http://purl.org/dc/terms/title|Informasjonen skal være forståelig for mennesker| |
 |type|Type|Hva slags hendelse inntraff (eksempelvis oppretting, endring, kassering). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|x|
 |tid|Tidsangivelse for hendelse|Angivelse av når en hendelse har inntruffet, enten i form av tidspunkt eller tidsperiode<br>Relatert definisjon: http://purl.org/dc/terms/created| |x|
-|utfører|Utfører av hendelse|Aktør som har utført denne hendelsen.<br>Realtert definisjon: http://purl.org/dc/terms/creator| |x|
+|utfører|Utfører av hendelse|Aktør[^3] som har utført denne hendelsen.<br>Realtert definisjon: http://purl.org/dc/terms/creator| |x|
 
 #### Planlagt hendelse
 
@@ -193,7 +194,7 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 |tittel|Tittel|Kort navn som beskriver hva den enkelte hendelse innebar.<br>Relatert definisjon: http://purl.org/dc/terms/title|Informasjonen skal være forståelig for mennesker| |
 |type|Type|Hva slags hendelse er planlagt (eksempelvis endring, kassering, overføring). <br>Relatert definisjon: http://purl.org/dc/terms/type|Denne egenskapen burde fylles ut med kontrollert vokabular som defineres for det enkelte datasett.|x|
 |tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |x|
-|oppretter|Oppretter av hendelse|Aktør som har opprettet den planlagte hendelsen.| | |
+|oppretter|Oppretter av hendelse|Aktør[^3] som har opprettet den planlagte hendelsen.| | |
 
 ## Teknisk modell
 
@@ -243,3 +244,4 @@ Dette er et viktig spørsmål, som vi ikke har funnet svaret på ennå, men vil 
 
 [^1]: Dette vil bli formelt besluttet på et senere tidspunkt, og er arbeidshypotesen vi har jobbet ut fra.
 [^2]: Tabell som viser sammenhengen mellom egenskapene i vår modell og de standardene vi har brukt som referanse vil bli lagt til som vedlegg til modellen
+[^3]: Med aktør mener vi person, organisasjon eller system som innehar en rolle som starter, utfører, eller inngår i aktiviteter, jf. [Bergen kommunes oversettelse av TOGAF](https://data.norge.no/concepts/a91187c6-2ead-3da9-aba4-083885a8f03e) - se også [TOGAFs egen definisjon](https://pubs.opengroup.org/togaf-standard/introduction/chap04.html#tag_04_02)
