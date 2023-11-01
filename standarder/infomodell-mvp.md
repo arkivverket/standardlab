@@ -209,7 +209,7 @@ Innholdet i en slik tilleggsmodul vil kunne være flere klasser av informasjonso
 
 Eksempler på slike tilleggsmoduler kan være for eksempel tilgangsbestemmelser på informasjonsobjektnivå, korrespondansemetadata, metadata fra dokumentflyt og metadata innenfor domenet barnevern. Hvilke tilleggsmoduler som er relevant må vurderes utfra hva slags datasett/system det er snakk om, og når det er relevant kan flere tilleggsmoduler brukes i parallell som vist i figuren under.
 
-![Konseptskisse som viser hvordan minimumsmodellen kombineres med to tilleggsmoduler](./figurer/konseptskisse-tillegg.png)
+![Konseptskisse som viser at minimumsmodellen er blitt utvidet med to tilleggsmoduler. Den ene tilleggsmodulen er ekstra egenskaper på registrering for å dekke korrespondansemetadata. Den andre tilleggsmodulen er en ny klasse som heter tilgangsregel.](./figurer/konseptskisse-tillegg.png)
 
 Det er også åpent for at det lages lokale utvidelser på toppen av minimumsmodellen og tilleggsmodulene. Det vil i så fall være en forutsetning at det ved overføring også følger med informasjon om hva disse lokale utvidelsene inneholder og hvordan de skal tolkes.​
 
