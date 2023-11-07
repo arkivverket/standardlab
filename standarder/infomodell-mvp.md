@@ -199,6 +199,20 @@ For hver klasse er det definert hvilke egenskaper det skal finnes metadata for p
 |tid|Tidspunktet for hendelse|Tidspunkt for når en hendelse skal skje. Kan også være en tidsperiode i tilfelle hendelsen kommer å være lenge nok. Kan også være beskrivele av utløser for hendelsen.| |x|
 |oppretter|Oppretter av hendelse|Aktør[^3] som har opprettet den planlagte hendelsen.| | |
 
+## Konsept: Minimumsmodell med utvidelsesmoduler
+
+Minimumsmodellen tar vare på grunnleggende metadata om dokumentasjonen. I de fleste tilfeller vil det også være andre metadata som er relevant å ta vare på. Der disse metadataene er felles på tvers av flere aktører og systemer, vil det være relevant å lage en tilleggsmodul til minimumsmodellen for å dekke det relevante domenet/formålet.​
+
+Innholdet i en slik tilleggsmodul vil kunne være flere klasser av informasjonsobjekter, flere egenskaper det skal finnes metadata for, eller regler for hvordan eksisterende klasser og egenskaper skal brukes innen et domene (for eksempel standardiserte typer registreringer og aggregeringer). ​
+
+> Merk at tilleggsmodulene ikke nødvendigvis trenger komme fra Arkivverket.​
+
+Eksempler på slike tilleggsmoduler kan være for eksempel tilgangsbestemmelser på informasjonsobjektnivå, korrespondansemetadata, metadata fra dokumentflyt og metadata innenfor domenet barnevern. Hvilke tilleggsmoduler som er relevant må vurderes utfra hva slags datasett/system det er snakk om, og når det er relevant kan flere tilleggsmoduler brukes i parallell som vist i figuren under.
+
+![Konseptskisse som viser at minimumsmodellen er blitt utvidet med to tilleggsmoduler. Den ene tilleggsmodulen er ekstra egenskaper på registrering for å dekke korrespondansemetadata. Den andre tilleggsmodulen er en ny klasse som heter tilgangsregel.](./figurer/konseptskisse-tillegg.png)
+
+Det er også åpent for at det lages lokale utvidelser på toppen av minimumsmodellen og tilleggsmodulene. Det vil i så fall være en forutsetning at det ved overføring også følger med informasjon om hva disse lokale utvidelsene inneholder og hvordan de skal tolkes.​
+
 ## Teknisk modell
 
 Tekniske modeller er viktige for både å kunne oppnå interoperabilitet mellom løsninger som tar var på dokumentasjon og vise modellene på en måte som engasjerer mer teknisk publikum. Samtidig skal ikke de tekniske modellene normeres på like bestemt nivå som den semantiske modellen. Teknisk modell skal heller være veiledning på hvordan det er mulig å ta den semantiske modellen i bruk for å løse sine oppgaver.
