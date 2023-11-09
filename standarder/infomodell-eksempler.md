@@ -120,7 +120,7 @@ Permanente aggregeringer kan for eksempel være:
 
 Midlertidige aggregeringer (som ikke registreres i systemet) kan for eksempel være: 
 
-- Et enkelt søkeresultat som utføres etter behov, der aggregeringen avsluttes når søkeresultatet lukkes i systemet.
+- Et enkelt søkeresultat som utføres etter behov, der aggregeringen opphører når søkeresultatet lukkes i systemet.
 
 ## Eksempel: Bruk ved anskaffelse
 
