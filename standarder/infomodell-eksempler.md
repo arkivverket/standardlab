@@ -79,13 +79,13 @@ En slik aggregering gir lettere tilgang til informasjon om den spesifikke flomme
 
 Dette eksempelet viser hvordan man kan bruke minimumsmodellen til å dokumentere prosesser som skaper dokumentasjon. Utgangspunktet er et scenario der man skal ta vare på dokumentasjonen som skapes ved å gjennomføre skriftlig eksamen på en videregående skole. Dette er en strukturert prosess som skaper dokumentasjon av både kortvarig og langvarig dokumentasjonsverdi. Skolen som eier systemet har behov for å sikre autentisitet, integritet og pålitelighet for dokumentasjonen, og tilpasser systemet til å dekke minimumsmodellen. 
 
-Skolen har behov for å dokumentere flere aktiviteter som sammenlagt utgjør hele prosessen med å gjennomføre skriftlig eksamen. Alle aktivitetene registreres i systemet manuelt. For hver registrering må alle de obligatoriske egenskapene for en registrering være med, herunder `identifikator`, `tittel` og `historikk`. Det vil i tillegg være behov for å registrere følgende egenskaper og støtteklasser for de ulike aktivitetene: 
+Skolen har behov for å dokumentere flere aktiviteter som sammenlagt utgjør hele prosessen med å gjennomføre skriftlig eksamen. Alle aktivitetene registreres i systemet manuelt. For hver registrering må alle de obligatoriske egenskapene for en registrering være med, herunder `identifikator`, `tittel` og `historikk`. Det vil i tillegg være behov for å registrere følgende egenskaper og støtteklasser for de ulike aktivitetene. Det lages en aggregering for hver samlede eksamensgjennomføring: 
 
 Lærestedet tilgjengeliggjør en oppgave som elevene skal svare på innen en frist
 
 - Oppgavetekst med informasjon om formaliteter `innholdsinformasjon`
 - Tidspunkt for tilgjengeliggjøring `inntruffet hendelse`
-- Frist for innlevering `planlagt hendelse`
+- Frist for innlevering `planlagt hendelse` på aggregeringen
 
 Elevene leverer besvarelse for vurdering
 
@@ -96,13 +96,13 @@ Vurdering av innlevering er et vedtak som kan påklages – fastsettelse av kara
 
 - Karakter `innholdsinformasjon` 
 - Tidspunkt for kunngjøring av vurdering `inntruffet hendelse`
-- Frist for klage `planlagt hendelse`
+- Frist for klage `planlagt hendelse` på aggregeringen
 
 Klage på karakter
 
 - Klage `innholdsinformasjon` 
 - Tidspunkt for levering av klage `inntruffet hendelse`
-- Behandlingsfrist `planlagt hendelse`
+- Behandlingsfrist `planlagt hendelse` på aggregeringen
 
 Endelig fastsettelse av karakter
 
@@ -115,12 +115,11 @@ Alle registreringene kan inngå i flere ulike aggregeringer samtidig. Aggregerin
 
 Permanente aggregeringer kan for eksempel være:
 
-- Tilgjengeliggjøring av oppgave, innlevering og fastsettelse av karakter for alle elever samlet
-- Tilgjengeliggjøring av oppgave, innlevering og fastsettelse av karakter per elev
+- Samlet eksamensgjennomføring for alle elever samlet
+- Samlet eksamensgjennomføring per elev
 
-Midlertidige aggregeringer kan for eksempel være: 
+Midlertidige aggregeringer (som ikke registreres i systemet) kan for eksempel være: 
 
-- Kandidater med kommisjon (sensor), når flere kandidater skal vurderes samtidig, der en samling av kandidatnummer kun er nødvendig for en kort periode
 - Et enkelt søkeresultat som utføres etter behov, der aggregeringen avsluttes når søkeresultatet lukkes i systemet.
 
 ## Eksempel: Bruk ved anskaffelse
