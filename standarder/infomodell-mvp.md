@@ -140,17 +140,9 @@ For både registreringer og aggregeringer har vi støtteklasser for hendelser og
 **Inntruffet hendelse** er del av endringshistorikk på den enkelte registrering eller aggregering. Det er en hendelse eller handling som har skjedd med registreringen eller aggregeringen. Eksempel er opprettelse av registrering eller aggregering.  
 **Planlagt hendelse** er en hendelse eller handling som skal skje med den enkelte registrering eller aggregering. Eksempel er kassasjon av registrering eller aggregering.
 
-For hver klasse er det definert hvilke egenskaper det skal finnes metadata for på hvert objekt av klassen:
+For hver klasse er det definert hvilke egenskaper det skal finnes metadata for på hvert objekt av klassen. Obligatoriske egenskaper er markert med asterisk:
 
-![Egenskaper i minimumsmodellen: Egenskaper som ligger på de ulike klassene er utlistet](/standarder/figurer/infomodell-mvp-egenskaper.png)
-
-> #### Lesehjelp
->
-> **Fet:** Gjennomtenkt  
-> _Kursiv:_ Tenking påbegynt  
-> Asterisk (*): Obligatorisk på det enkelte objekt
->
-> NB! Alt fortsatt åpent for diskusjon
+![Egenskaper i minimumsmodellen: Egenskaper som ligger på de ulike klassene er utlistet - samme innhold som i tabellen under](/standarder/figurer/infomodell-mvp-egenskaper.png)
 
 ### Egenskaper
 
