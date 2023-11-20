@@ -7,18 +7,19 @@ Vi gjennomfører statusmøter den siste torsdagen i hver måned. I møtene forte
 
 ## Neste møte
 
-**Tidspunkt:** Torsdag 26. oktober kl 09.00 - 09.30  
-**Tema:** Resultat av oppfølging intern test + minimumsmodellens rolle   
-**Lenke:** [Bli med i møte](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWE0ODE1YWEtZjZmYi00YTM1LTg5ZTEtYzhiMTEwOGVjNmY4%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
+**Tidspunkt:** Torsdag 14. desember kl 09.00 - 09.30  
+**Tema:**  Kommer  
+**Lenke:** Kommer
 
 ## Tidligere møter
 
+- Resultat av oppfølging intern test + minimumsmodellens rolle - 26. oktober 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YWE0ODE1YWEtZjZmYi00YTM1LTg5ZTEtYzhiMTEwOGVjNmY4%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 - Intern testing av minimumsmodellen - funn og oppfølging - 28. september 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZWRiOThmY2MtYjI1NS00M2VjLWE5NmYtMzBhYjYxYjQyZWY3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
 - Verifikasjon av minimumsmodellen - kriterier og planer - 31. august 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_N2RkYTM4OGUtOTdmMC00ODk3LTkyNTYtYjJhNTgyYzA0YTQx%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- Status og planer for andre halvår - 29. juni 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZDQ1YjA2ODAtMWI2Ny00ZmY4LWIyY2EtNTFkYTI0ZDhiMTc3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- Testing av minumumsmodellen - 25. mai 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTBkZTFhNDYtZWYyMS00MzEzLTg5NTYtMDFjMWUxNTkyN2I3%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- Hvordan tenker vi minimumsmodellen kan brukes? Hva betyr det at den er på semantisk nivå - 27. april: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_ZGYwYmJhNTItNTBhNC00MWM1LTk0NzAtYTZkMGFlMmJhOTUx%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- MVP for informasjonsmodell - 30. mars 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjU4NmZiNGYtYzEyZi00OGU1LWJlZjctZDJkM2ZkYjVmZGVj%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- Ny prioriteringsrunde og hypotese for informasjonsmodell og API - 23. februar 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQ5YTlhNDItYjg1Yy00MWQ3LWE2YzYtNjhjZGM0NGI5N2Q2%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- Autentisitetsstøtte avsluttet + funn i behovssamtaler - 26. januar 2023: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWUxMWI5YjItMDhlYi00ZTVjLThjODMtZjRkOTI1NjU1OWRj%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
-- Introduksjon og status - 1. desember 2022: [Opptak](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OGI0ZGM2NjYtNDJlOS00ZWE3LWI1ZjgtOTY0NzA5ZGFmMGYz%40thread.v2/0?context=%7B%22Tid%22%3A%2299d3d298-60cf-4636-9772-4a191b6f0d94%22%2C%22Oid%22%3A%223362d44c-9ebd-4312-ab68-1247945cd5b1%22%2C%22IsBroadcastMeeting%22%3Atrue%2C%22role%22%3A%22a%22%7D&btype=a&role=a)
+- Status og planer for andre halvår - 29. juni 2023
+- Testing av minumumsmodellen - 25. mai 2023
+- Hvordan tenker vi minimumsmodellen kan brukes? Hva betyr det at den er på semantisk nivå - 27. april
+- MVP for informasjonsmodell - 30. mars 2023
+- Ny prioriteringsrunde og hypotese for informasjonsmodell og API - 23. februar 2023
+- Autentisitetsstøtte avsluttet + funn i behovssamtaler - 26. januar 2023
+- Introduksjon og status - 1. desember 2022
