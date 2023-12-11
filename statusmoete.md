@@ -7,7 +7,7 @@ Vi gjennomfører statusmøter den siste torsdagen i hver måned. I møtene forte
 
 ## Neste møte
 
-**Tidspunkt:** Torsdag 14. desember kl 09.00 - 09.30  
+**Tidspunkt:** Kommer
 **Tema:**  Kommer  
 **Lenke:** Kommer
 
